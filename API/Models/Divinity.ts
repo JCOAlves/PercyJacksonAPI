@@ -1,11 +1,9 @@
 import { type Character } from "./Character.ts";
-import { type Divinity } from "./Divinity.ts";
 
-type Creature = Character & {
+type Divinity = Character & {
     pantheon: "Greek" | "Roman",
-    camp?: "Camp Half-Blood" | "Camp Jupiter",
     ally?: boolean,
     parents?: (Divinity | Character | string)[],
-};
+}
 
-export { type Creature };
+export { type Divinity };

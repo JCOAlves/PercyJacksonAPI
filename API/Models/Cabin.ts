@@ -1,11 +1,13 @@
-import { type God } from "./God.ts";
+import { type Divinity } from "./Divinity.ts";
 import { type Demigod } from "./Demigod.ts";
 
 type Cabin = {
     cabinNumber: number,
-    god: God,
+    divinity: Divinity | string,
     members: Demigod[],
-    description: string
+    description: string,
+    place?: "Camp Half-Blood",
+    photoLink?: string[]
 };
 
 export { type Cabin };
