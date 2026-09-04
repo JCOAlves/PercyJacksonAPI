@@ -4,9 +4,15 @@ type Book = {
     publicationDate: string | Date,
     title: string,
     Synopsis: string,
-    pageNumber: number,
+    pagesNumber: number,
     photoLink?: string[] | string
     
 };
 
-export { type Book };
+type Saga = {
+    name: "Percy Jackson & the Olympians" | "The Heroes of Olympus" | "The Trials of Apollo",
+    booksNumber: number,
+    books: Book[]
+}
+
+export { type Book, type Saga };

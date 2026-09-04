@@ -1,5 +1,4 @@
-import { type Divinity } from "./Divinity.ts";
-import { type Demigod } from "./Demigod.ts";
+import { type Demigod, type Divinity } from "./Character.ts";
 
 type Cabin = {
     cabinNumber: number,

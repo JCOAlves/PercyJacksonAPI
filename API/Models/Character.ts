@@ -1,3 +1,5 @@
+import { type Item } from "./Item.ts";
+
 type Character = {
     name: string,
     description: string,
@@ -5,4 +7,27 @@ type Character = {
     photoLink?: string[] | string
 };
 
-export { type Character };
+type Divinity = Character & {
+    pantheon: "Greek" | "Roman",
+    ally?: boolean,
+    parents?: (Divinity | Character | string)[],
+};
+
+type Demigod = Character & {
+    birthday: string | Date,
+    camp: "Camp Half-Blood" | "Camp Jupiter",
+    cabin: number,
+    parents: (Divinity | Character | string)[],
+    skills: string[],
+    itens: Item[]
+
+};
+
+type Creature = Character & {
+    pantheon: "Greek" | "Roman",
+    camp?: "Camp Half-Blood" | "Camp Jupiter",
+    ally?: boolean,
+    parents?: (Divinity | Character | string)[],
+};
+
+export { type Character, type Divinity, type Demigod, type Creature };
