@@ -3,7 +3,7 @@ import { type Item } from "./Item.ts";
 type Character = {
     name: string,
     description: string,
-    type: "Mortal" | "Demigod" | "God" | "Titan" | "Giant" | "Creature" | "Monster",
+    category: "Mortal" | "Demigod" | "God" | "Titan" | "Giant" | "Creature" | "Monster",
     photoLink?: string[] | string
 };
 

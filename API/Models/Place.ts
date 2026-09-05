@@ -1,6 +1,4 @@
-import { type Demigod } from "./Demigod.ts";
-import { type Creature } from "./Creature.ts";
-import { type Divinity } from "./Divinity.ts";
+import { type Demigod, type Creature, type Divinity } from "./Character.ts";
 
 type Place = {
     name: string,
