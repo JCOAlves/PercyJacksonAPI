@@ -7,6 +7,12 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga="" } = req.query;
 
+        let listBooks: Saga[] = dates.books;
+
+        //if(saga)
+
+
+
         const responseAPI = new ResponseHTTP(true, "Books successfully listed", { books: dates.books });
         responseAPI.showMessage();
         return res.status(200).json(responseAPI);

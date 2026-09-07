@@ -2,7 +2,7 @@ import express, { type Express, type Request, type Response } from 'express';
 import dates from './dates.json' with { type: 'json' };
 import RoutersCharacter from "./Routers/RoutersCharacter.ts";
 import RoutersCabin from "./Routers/RoutersCabin.ts";
-import RoutersItem from "./Routers/RoutersItem.ts";
+import RoutersItem from "./Routers/RoutersArtifact.ts";
 import RoutersPlace from "./Routers/RoutersPlace.ts";
 import RoutersBook from "./Routers/RoutersBook.ts";
 import ResponseHTTP from './ResponseHTTP.ts';
@@ -39,7 +39,7 @@ app.get("/api", (req: Request, res: Response): Response | void => {
 });
 
 app.use("/api/characters", RoutersCharacter);
-app.use("/api/itens", RoutersItem);
+app.use("/api/artifacts", RoutersItem);
 app.use("/api/cabins", RoutersCabin);
 app.use("/api/places", RoutersPlace);
 app.use("/api/books", RoutersBook);

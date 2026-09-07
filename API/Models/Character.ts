@@ -1,9 +1,9 @@
-import { type Item } from "./Item.ts";
+import { type Artifact } from "./Artifact.ts";
 
 type Character = {
     name: string,
     description: string,
-    category: "Mortal" | "Demigod" | "God" | "Titan" | "Giant" | "Creature" | "Monster",
+    category: "Mortal" | "Demigod" | "Divinity" | "Titan" | "Giant" | "Creature" | "Monster",
     photoLink?: string[] | string
 };
 
@@ -19,7 +19,7 @@ type Demigod = Character & {
     cabin: number,
     parents: (Divinity | Character | string)[],
     skills: string[],
-    itens: Item[]
+    artifacts: Artifact[]
 
 };
 

@@ -1,15 +1,15 @@
 import { type Character, type Demigod, type Divinity, type Creature } from "./Models/Character.ts";
-import { type Item } from "./Models/Item.ts";
+import { type Artifact } from "./Models/Artifact.ts";
 import { type Cabin } from "./Models/Cabin.ts";
 import { type Place } from "./Models/Place.ts";
-import { type Book } from "./Models/Book.ts";
+import { type Book, type Saga } from "./Models/Book.ts";
 
 type Data = {
-    characters?: (Character | Demigod | Divinity | Creature)[],
-    itens?: Item[],
-    cabins?: Cabin[],
-    places?: Place[],
-    books?: Book[]
+    characters?: (Character | Demigod | Divinity | Creature)[] | Character | Demigod | Divinity | Creature | null,
+    artifacts?: Artifact[] | Artifact | null,
+    cabins?: Cabin[] | Cabin | null,
+    places?: Place[] | Place | null,
+    books?: Saga[] | Saga | Book | null
 }
 
 // Class Response HTTP
