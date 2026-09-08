@@ -4,28 +4,72 @@
             "name": "Percy Jackson",
             "description": "string",
             "category": "Demigod",
-            "photoLink": [""]
+            "photoLink": [
+                ""
+            ]
         },
         {
             "name": "Annabeth Chase",
             "description": "string",
             "category": "Divinity",
-            "photoLink": [""]
+            "photoLink": [
+                ""
+            ],
+            "pantheon": "Roman"
         },
         {
             "name": "Grover Underwood",
             "description": "string",
             "category": "Demigod",
-            "photoLink": [""]
+            "photoLink": [
+                ""
+            ]
         },
         {
             "name": "Luke Castellan",
             "description": "string",
             "category": "Demigod",
-            "photoLink": [""]
+            "photoLink": [
+                ""
+            ]
+        },
+        {
+            "name": "Castellan",
+            "description": "string",
+            "category": "Divinity",
+            "photoLink": [
+                ""
+            ],
+            "pantheon": "Greek"
         }
     ],
-    "artifacts": [],
+    "artifacts": [
+        {
+            "name": "1string",
+            "description": "string",
+            "category": [
+                "weapon",
+                "food"
+            ],
+            "photoLink": []
+        },
+        {
+            "name": "2string",
+            "description": "string",
+            "category": [
+                "food"
+            ],
+            "photoLink": []
+        },
+        {
+            "name": "3string",
+            "description": "string",
+            "category": [
+                "weapon"
+            ],
+            "photoLink": []
+        }
+    ],
     "cabins": [],
     "places": [],
     "books": []

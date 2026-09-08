@@ -9,11 +9,20 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
 
         let listArtifacts: Artifact[] = dates.artifacts;
 
-        if (name) listArtifacts = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
+        if (name) {
+            const listFilted = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
+            listArtifacts = listFilted;
+        };
 
-        if (category) listArtifacts = listArtifacts.filter(a => a.category?.includes(String(category) as "weapon" | "food" | "drink" | "protection" | "curing" | "futility" | "attack" | "defense"));
+        if (category) {
+            const listFilted = listArtifacts.filter(a => a.category?.includes(String(category) as "weapon" | "food" | "drink" | "protection" | "curing" | "futility" | "attack" | "defense"));
+            listArtifacts = listFilted;
+        }
 
-        if (description) listArtifacts = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase()));
+        if (description) { 
+            const listFilted = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase())); 
+            listArtifacts = listFilted;
+        }
 
         if (listArtifacts.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Artifacts successfully listed", { artifacts: listArtifacts });

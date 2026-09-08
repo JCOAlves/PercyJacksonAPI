@@ -1,14 +1,6 @@
 # Estrutura de rotas da API
-- personagens
-    - semideuses
-        - acampamento-meio-sangue
-        - acampamento-jupiter
-    - deuses
-    - criaturas
-        - acampamento-meio-sangue
-        - acampamento-jupiter
-    - mortais
-- itens
-- armas
-- chalés
-- lugares
+- personagens - Feito
+- itens - Feito
+- livros - Feito
+- chalés - Feito
+- lugares - Em andamento

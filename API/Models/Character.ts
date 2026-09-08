@@ -24,7 +24,7 @@ type Demigod = Character & {
 };
 
 type Creature = Character & {
-    pantheon: "Greek" | "Roman",
+    pantheon: "Greek" | "Roman" | string,
     camp?: "Camp Half-Blood" | "Camp Jupiter" | string,
     ally?: boolean,
     parents?: (Divinity | Character | string)[],

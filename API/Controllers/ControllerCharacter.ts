@@ -11,17 +11,23 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
         if (category){
             const listFilted = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
-            listCharacters = listFilted.length > 0 ? listFilted : listCharacters;
+            listCharacters = listFilted;
         };
 
         if (camp){ 
             const listFilted = listCharacters.filter(c => c.category === "Demigod" && "camp" in c && c.camp === camp);
-            listCharacters = listFilted.length > 0 ? listFilted : listCharacters;
+            listCharacters = listFilted;
         };
 
-        if (pantheon) listCharacters = listCharacters.filter(c => c.category === "Divinity" && "pantheon" in c && c.pantheon.toLowerCase() === String(pantheon).toLowerCase());
+        if (pantheon){
+            const listFilted = listCharacters.filter(c => c.category === "Divinity" && "pantheon" in c && c.pantheon.toLowerCase() === String(pantheon).toLowerCase());
+            listCharacters = listFilted;
+        };
 
-        if (cabin) listCharacters = listCharacters.filter(c => c.category === "Demigod" && "cabin" in c && c.cabin === Number(cabin));
+        if (cabin){ 
+            const listFilted = listCharacters.filter(c => c.category === "Demigod" && "cabin" in c && c.cabin === Number(cabin));
+            listCharacters = listFilted;
+        };
 
         if (listCharacters.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Characters successfully listed", { characters: listCharacters });
