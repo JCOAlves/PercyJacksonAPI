@@ -1,8 +1,32 @@
 {
-    "characters": [],
+    "characters": [
+        {
+            "name": "Percy Jackson",
+            "description": "string",
+            "category": "Demigod",
+            "photoLink": [""]
+        },
+        {
+            "name": "Annabeth Chase",
+            "description": "string",
+            "category": "Divinity",
+            "photoLink": [""]
+        },
+        {
+            "name": "Grover Underwood",
+            "description": "string",
+            "category": "Demigod",
+            "photoLink": [""]
+        },
+        {
+            "name": "Luke Castellan",
+            "description": "string",
+            "category": "Demigod",
+            "photoLink": [""]
+        }
+    ],
     "artifacts": [],
     "cabins": [],
     "places": [],
     "books": []
-
 }

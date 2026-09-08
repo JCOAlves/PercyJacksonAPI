@@ -5,16 +5,21 @@ import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_charactersList = (req: Request, res: Response): Response | void => {
     try {
-        const { camp = "", pantheon = "", cabin = "" } = req.query;
-        const { category = "" } = req.params;
+        const { camp = "", pantheon = "", cabin = "", category = "" } = req.query;
 
         let listCharacters: (Character | Divinity | Demigod | Creature)[] = dates.characters;
 
-        if (category) listCharacters = listCharacters.filter(c => c.category === category);
+        if (category){
+            const listFilted = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
+            listCharacters = listFilted.length > 0 ? listFilted : listCharacters;
+        };
 
-        if (camp) listCharacters = listCharacters.filter(c => c.category === "Demigod" && "camp" in c && c.camp === camp);
+        if (camp){ 
+            const listFilted = listCharacters.filter(c => c.category === "Demigod" && "camp" in c && c.camp === camp);
+            listCharacters = listFilted.length > 0 ? listFilted : listCharacters;
+        };
 
-        if (pantheon) listCharacters = listCharacters.filter(c => c.category === "Divinity" && "pantheon" in c && c.pantheon === pantheon);
+        if (pantheon) listCharacters = listCharacters.filter(c => c.category === "Divinity" && "pantheon" in c && c.pantheon.toLowerCase() === String(pantheon).toLowerCase());
 
         if (cabin) listCharacters = listCharacters.filter(c => c.category === "Demigod" && "cabin" in c && c.cabin === Number(cabin));
 
@@ -31,7 +36,7 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of characters");
+        const responseAPI = new ResponseHTTP(false, "Error in the list of characters", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI);
     };
@@ -45,12 +50,12 @@ const GET_character = (req: Request, res: Response): Response | void => {
         let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
 
         if (!name){
-            const responseAPI = new ResponseHTTP(false, "Character name parameter not provided", { characters: null });
+            const responseAPI = new ResponseHTTP(false, "Character name parameter not provided");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI);
         };
             
-        characterFound = listCharacters.find(c => c.name.startsWith(String(name)) || c.name === name);
+        characterFound = listCharacters.find(c => c.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
         if (characterFound) {
             const responseAPI = new ResponseHTTP(true, "Character successfully listed", { characters: characterFound });
@@ -64,7 +69,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of character");
+        const responseAPI = new ResponseHTTP(false, "Error in the list of character", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI);
     };

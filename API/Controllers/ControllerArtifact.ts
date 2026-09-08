@@ -9,11 +9,11 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
 
         let listArtifacts: Artifact[] = dates.artifacts;
 
-        if (name) listArtifacts = listArtifacts.filter(a => a.name.startsWith(String(name)) || a.name === name);
+        if (name) listArtifacts = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
-        if (category) listArtifacts = listArtifacts.filter(a => a.category === category);
+        if (category) listArtifacts = listArtifacts.filter(a => a.category?.includes(String(category) as "weapon" | "food" | "drink" | "protection" | "curing" | "futility" | "attack" | "defense"));
 
-        if (description) listArtifacts = listArtifacts.filter(a => a.description.includes(String(description)));
+        if (description) listArtifacts = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase()));
 
         if (listArtifacts.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Artifacts successfully listed", { artifacts: listArtifacts });
@@ -21,13 +21,13 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified criteria was found", { artifacts: listArtifacts });
+            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified criteria was found", { artifacts: [] });
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of artifacts");
+        const responseAPI = new ResponseHTTP(false, "Error in the list of artifacts", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI);
     };
@@ -41,12 +41,12 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
         let artifactFound: Artifact | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, "Artifact name parameter not provided", { artifacts: null });
+            const responseAPI = new ResponseHTTP(false, "Artifact name parameter not provided");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI);
         };
 
-        artifactFound = listArtifacts.find(a => a.name.startsWith(String(name)) || a.name === name);
+        artifactFound = listArtifacts.find(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
         if (artifactFound) {
             const responseAPI = new ResponseHTTP(true, "Artifact successfully listed", { artifacts: artifactFound });
@@ -60,7 +60,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of item");
+        const responseAPI = new ResponseHTTP(false, "Error in the list of artifact", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI);
     };

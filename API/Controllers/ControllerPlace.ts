@@ -7,6 +7,12 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
     try {
         const { location="", member="", description="" } = req.query;
 
+        let listPlaces: Place[] = dates.places;
+
+        if(location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
+
+        //if(member) listPlaces = listPlaces.filter(p => p.members?.includes(member))
+
         const responseAPI = new ResponseHTTP(true, "Places successfully listed", { places: dates.places });
         responseAPI.showMessage();
         return res.status(200).json(responseAPI);

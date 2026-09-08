@@ -17,9 +17,9 @@ class ResponseHTTP {
     sucess: boolean;
     message: string;
     data: Data | null | undefined
-    error: TypeError | string | undefined;
+    error: Error | any | unknown;
 
-    constructor(sucess: boolean, message: string, data?: Data | null | undefined, error?: TypeError | string | undefined){
+    constructor(sucess: boolean, message: string, data?: Data | null | undefined, error?: Error | any | unknown){
         this.sucess = sucess;
         this.message = message;
         this.data = data;

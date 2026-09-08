@@ -1,7 +1,7 @@
 type Artifact = {
     name: string, 
     description: string,
-    category?: ("Weapon" | "Food" | "Drink" | "Protection" | "Curing" | "Futility" | "Attack" | "Defense")[],
+    category?: ("weapon" | "food" | "drink" | "protection" | "curing" | "futility" | "attack" | "defense")[],
     photoLink?: string[] | string
 };
 

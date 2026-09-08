@@ -9,7 +9,7 @@ type Book = {
 };
 
 type Saga = {
-    name: "Percy Jackson & the Olympians" | "The Heroes of Olympus" | "The Trials of Apollo",
+    name: "Percy Jackson & the Olympians" | "The Heroes of Olympus" | "The Trials of Apollo" | string,
     booksNumber: number,
     books: Book[],
     description?: string
