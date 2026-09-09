@@ -6,8 +6,16 @@ The project aims to make data from the Percy Jackson universe available for prog
 The data used in project from the official websites of the saga author Rick Riordan [*Rickriordan.com*](https://rickriordan.com/) and [*Readriordan.com*](https://www.readriordan.com/), as well the fans website [*Fandom.com*](https://www.fandom.com/).
 
 ## Routes of API
-- ``/characters``
-- ``/artifacts``
-- ``/cabins``
-- ``/places``
-- ``/books``
+- ``/api``
+- ``/api/characters``
+- ``/api/characters/:name`` 
+- ``/api/artifacts``
+- ``/api/artifacts/:name``
+- ``/api/cabins``
+- ``/api/cabins/:cabinNumber``
+- ``/api/places``
+- ``/api/places/:name``
+- ``/api/books``
+- ``/api/books/sagas``
+- ``/api/books/:title``
+- ``/api/books/sagas/:name``
