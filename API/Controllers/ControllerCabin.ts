@@ -7,7 +7,7 @@ const GET_cabinsList = (req: Request, res: Response): Response | void => {
     try {
         const listCabins: Cabin[] = dates.cabins;
 
-        const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", { cabins: listCabins });
+        const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", listCabins);
         responseAPI.showMessage();
         return res.status(200).json(responseAPI);
 
@@ -33,12 +33,12 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
 
         cabinFound = listCabins.find(c => c.cabinNumber === Number(cabinNumber));
         if (cabinFound) {
-            const responseAPI = new ResponseHTTP(true, "Cabin successfully listed", { cabins: cabinFound });
+            const responseAPI = new ResponseHTTP(true, "Cabin successfully listed", cabinFound);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No cabin matching the specified number was found", { cabins: null });
+            const responseAPI = new ResponseHTTP(true, "No cabin matching the specified number was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };

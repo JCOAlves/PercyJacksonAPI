@@ -5,11 +5,11 @@ type Book = {
     Synopsis: string,
     pagesNumber: number,
     photoLink?: string[] | string
-    
+
 };
 
 type Saga = {
-    name: "Percy Jackson & the Olympians" | "The Heroes of Olympus" | "The Trials of Apollo" | string,
+    name: string | "Percy Jackson & the Olympians" | "The Heroes of Olympus" | "The Trials of Apollo",
     booksNumber: number,
     books: Book[],
     description?: string

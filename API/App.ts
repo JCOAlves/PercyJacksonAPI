@@ -32,7 +32,7 @@ app.get("/api", (req: Request, res: Response): Response | void => {
         return res.status(200).json(responseAPI);
         
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Erro");
+        const responseAPI = new ResponseHTTP(false, "Error in the list of data", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI);
     };
@@ -45,5 +45,5 @@ app.use("/api/places", RoutersPlace);
 app.use("/api/books", RoutersBook);
 
 app.listen(3000, () => {
-  console.log("Percy Jackson API");
+  console.log("--- Percy Jackson API ---");
 });

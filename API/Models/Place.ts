@@ -4,7 +4,6 @@ type Place = {
     name: string,
     description: string,
     location: string,
-    members?: (Character | Demigod | Creature | Divinity)[],
     photoLink?: string[] | string
 };
 

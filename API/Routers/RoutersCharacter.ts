@@ -4,7 +4,6 @@ import { GET_charactersList, GET_character } from "../Controllers/ControllerChar
 const router = express.Router();
 
 router.get("/", GET_charactersList);
-router.get("/:category", GET_charactersList);
-router.get("/character/:name", GET_character);
+router.get("/:name", GET_character);
 
 export default router;

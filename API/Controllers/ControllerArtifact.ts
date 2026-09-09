@@ -19,18 +19,18 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
             listArtifacts = listFilted;
         }
 
-        if (description) { 
-            const listFilted = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase())); 
+        if (description) {
+            const listFilted = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase()));
             listArtifacts = listFilted;
         }
 
         if (listArtifacts.length > 0) {
-            const responseAPI = new ResponseHTTP(true, "Artifacts successfully listed", { artifacts: listArtifacts });
+            const responseAPI = new ResponseHTTP(true, "Artifacts successfully listed", listArtifacts);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified criteria was found", { artifacts: [] });
+            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };
@@ -58,12 +58,12 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
         artifactFound = listArtifacts.find(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
         if (artifactFound) {
-            const responseAPI = new ResponseHTTP(true, "Artifact successfully listed", { artifacts: artifactFound });
+            const responseAPI = new ResponseHTTP(true, "Artifact successfully listed", artifactFound);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified name was found", { artifacts: null });
+            const responseAPI = new ResponseHTTP(true, "No artifact matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };

@@ -9,33 +9,33 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
         let listCharacters: (Character | Divinity | Demigod | Creature)[] = dates.characters;
 
-        if (category){
+        if (category) {
             const listFilted = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
             listCharacters = listFilted;
         };
 
-        if (camp){ 
+        if (camp) {
             const listFilted = listCharacters.filter(c => c.category === "Demigod" && "camp" in c && c.camp === camp);
             listCharacters = listFilted;
         };
 
-        if (pantheon){
+        if (pantheon) {
             const listFilted = listCharacters.filter(c => c.category === "Divinity" && "pantheon" in c && c.pantheon.toLowerCase() === String(pantheon).toLowerCase());
             listCharacters = listFilted;
         };
 
-        if (cabin){ 
+        if (cabin) {
             const listFilted = listCharacters.filter(c => c.category === "Demigod" && "cabin" in c && c.cabin === Number(cabin));
             listCharacters = listFilted;
         };
 
         if (listCharacters.length > 0) {
-            const responseAPI = new ResponseHTTP(true, "Characters successfully listed", { characters: listCharacters });
+            const responseAPI = new ResponseHTTP(true, "Characters successfully listed", listCharacters);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No character matching the specified criteria was found", { characters: [] });
+            const responseAPI = new ResponseHTTP(true, "No character matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };
@@ -50,26 +50,26 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
 const GET_character = (req: Request, res: Response): Response | void => {
     try {
-        const { name="" } = req.params;
+        const { name = "" } = req.params;
 
         const listCharacters: (Character | Divinity | Demigod | Creature)[] = dates.characters;
         let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
 
-        if (!name){
+        if (!name) {
             const responseAPI = new ResponseHTTP(false, "Character name parameter not provided");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI);
         };
-            
+
         characterFound = listCharacters.find(c => c.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
         if (characterFound) {
-            const responseAPI = new ResponseHTTP(true, "Character successfully listed", { characters: characterFound });
+            const responseAPI = new ResponseHTTP(true, "Character successfully listed", characterFound);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI);
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No character matching the specified name was found", { characters: null });
+            const responseAPI = new ResponseHTTP(true, "No character matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI);
         };

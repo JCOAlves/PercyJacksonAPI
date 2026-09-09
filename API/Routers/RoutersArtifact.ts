@@ -4,6 +4,6 @@ import { GET_artifactsList, GET_artifact } from "../Controllers/ControllerArtifa
 const router = express.Router();
 
 router.get("/", GET_artifactsList);
-router.get("/artifact/:name", GET_artifact);
+router.get("/:name", GET_artifact);
 
 export default router;
