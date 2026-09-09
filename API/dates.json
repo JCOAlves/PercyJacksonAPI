@@ -1,52 +1,55 @@
 {
     "characters": [
         {
-            "name": "Percy Jackson",
+            "name": "Personagem1",
             "description": "string",
             "category": "Demigod",
+            "camp": "Camp Half-Blood",
+            "cabin": 1,
             "photoLink": [
                 ""
             ]
         },
         {
-            "name": "Annabeth Chase",
+            "name": "Personagem2",
             "description": "string",
             "category": "Divinity",
-            "photoLink": [
-                ""
-            ],
-            "pantheon": "Roman"
-        },
-        {
-            "name": "Grover Underwood",
-            "description": "string",
-            "category": "Demigod",
+            "pantheon": "Roman",
             "photoLink": [
                 ""
             ]
         },
         {
-            "name": "Luke Castellan",
+            "name": "Personagem3",
             "description": "string",
-            "category": "Demigod",
+            "category": "Creature",
+            "pantheon": "Greek",
             "photoLink": [
                 ""
             ]
         },
         {
-            "name": "Castellan",
+            "name": "Personagem4",
+            "description": "string",
+            "category": "Mortal",
+            "photoLink": [
+                ""
+            ]
+        },
+        {
+            "name": "Personagem5",
             "description": "string",
             "category": "Divinity",
+            "pantheon": "Greek",
             "photoLink": [
                 ""
-            ],
-            "pantheon": "Greek"
+            ]
         }
     ],
     "artifacts": [
         {
-            "name": "1string",
-            "description": "string",
+            "name": "Artefato1",
+            "description": "string1",
             "category": [
                 "weapon",
                 "food"
@@ -54,7 +57,7 @@
             "photoLink": []
         },
         {
-            "name": "2string",
+            "name": "Artefato2",
             "description": "string",
             "category": [
                 "food"
@@ -62,15 +65,134 @@
             "photoLink": []
         },
         {
-            "name": "3string",
-            "description": "string",
+            "name": "Artefato3",
+            "description": "string2",
             "category": [
                 "weapon"
             ],
             "photoLink": []
         }
     ],
-    "cabins": [],
-    "places": [],
-    "books": []
+    "cabins": [
+        {
+            "cabinNumber": 1,
+            "divinity": "Divinity | string",
+            "members": [
+                ""
+            ],
+            "description": "string"
+        },
+        {
+            "cabinNumber": 2,
+            "divinity": "Divinity | string",
+            "members": [
+                ""
+            ],
+            "description": "string"
+        },
+        {
+            "cabinNumber": 3,
+            "divinity": "Divinity | string",
+            "members": [
+                ""
+            ],
+            "description": "string"
+        }
+    ],
+    "places": [
+        {
+            "name": "Lugar1",
+            "description": "string",
+            "location": "string",
+            "photoLink": [
+                ""
+            ]
+        },
+        {
+            "name": "Lugar2",
+            "description": "string2",
+            "location": "string",
+            "photoLink": [
+                ""
+            ]
+        },
+        {
+            "name": "Lugar3",
+            "description": "string",
+            "location": "string",
+            "photoLink": [
+                ""
+            ]
+        },
+        {
+            "name": "Lugar4",
+            "description": "string",
+            "location": "string",
+            "photoLink": [
+                ""
+            ]
+        }
+    ],
+    "books": [
+        {
+            "name": "Percy Jackson & the Olympians",
+            "booksNumber": 5,
+            "books": [
+                {
+                    "title": "string1",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                },
+                {
+                    "title": "string2",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                }
+            ]
+        },
+        {
+            "name": "Percy Jackson",
+            "booksNumber": 5,
+            "books": [
+                {
+                    "title": "string3",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                },
+                {
+                    "title": "string4",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                }
+            ]
+        },
+        {
+            "name": "the Olympians",
+            "booksNumber": 5,
+            "books": [
+                {
+                    "title": "string5",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                },
+                {
+                    "title": "string6",
+                    "author": "Rick Riordan",
+                    "publicationDate": "string | Date",
+                    "synopsis": "string",
+                    "pagesNumber": 3
+                }
+            ]
+        }
+    ]
 }

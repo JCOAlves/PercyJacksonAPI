@@ -32,6 +32,7 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
         };
 
         cabinFound = listCabins.find(c => c.cabinNumber === Number(cabinNumber));
+
         if (cabinFound) {
             const responseAPI = new ResponseHTTP(true, "Cabin successfully listed", cabinFound);
             responseAPI.showMessage();

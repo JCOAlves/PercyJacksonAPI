@@ -1,8 +1,8 @@
 type Book = {
     title: string,
-    author: "Rick Riordan",
+    author: string | "Rick Riordan",
     publicationDate: string | Date,
-    Synopsis: string,
+    synopsis: string,
     pagesNumber: number,
     photoLink?: string[] | string
 

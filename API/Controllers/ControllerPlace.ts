@@ -9,15 +9,9 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
 
         let listPlaces: Place[] = dates.places;
 
-        if (location) {
-            const listFilted = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
-            listPlaces = listFilted;
-        };
+        if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
 
-        if (description) {
-            const listFilted = listPlaces.filter(p => p.description.toLowerCase().includes(String(description).toLowerCase()));
-            listPlaces = listFilted;
-        };
+        if (description) listPlaces = listPlaces.filter(p => p.description.toLowerCase().includes(String(description).toLowerCase()));
 
         if (listPlaces.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Places successfully listed", listPlaces);

@@ -3,6 +3,32 @@ import { type Book, type Saga } from "../Models/Book.ts";
 import dates from '../dates.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
+const GET_sagasList = (req: Request, res: Response): Response | void => {
+    try {
+        const { name = "" } = req.query;
+
+        let listSagas: Saga[] = dates.books;
+
+        if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
+
+        if (listSagas.length > 0) {
+            const responseAPI = new ResponseHTTP(true, "Sagas successfully listed", listSagas);
+            responseAPI.showMessage();
+            return res.status(200).json(responseAPI);
+
+        } else {
+            const responseAPI = new ResponseHTTP(true, "No saga matching the specified criteria was found", []);
+            responseAPI.showMessage();
+            return res.status(404).json(responseAPI);
+        };
+
+    } catch (error) {
+        const responseAPI = new ResponseHTTP(false, "Error in the list of sagas", null, error);
+        responseAPI.showMessage();
+        return res.status(500).json(responseAPI);
+    };
+}
+
 const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
@@ -98,4 +124,4 @@ const GET_book = (req: Request, res: Response): Response | void => {
     };
 };
 
-export { GET_booksList, GET_saga, GET_book };
+export { GET_booksList, GET_sagasList, GET_saga, GET_book };
