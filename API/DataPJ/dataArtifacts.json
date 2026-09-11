@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Artefato1",
+        "description": "string1",
+        "category": [
+            "weapon",
+            "food"
+        ],
+        "photoLink": []
+    },
+    {
+        "name": "Artefato2",
+        "description": "string",
+        "category": [
+            "food"
+        ],
+        "photoLink": []
+    },
+    {
+        "name": "Artefato3",
+        "description": "string2",
+        "category": [
+            "weapon"
+        ],
+        "photoLink": []
+    }
+]

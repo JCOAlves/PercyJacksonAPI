@@ -1,13 +1,13 @@
 import { type Request, type Response } from "express";
 import { type Book, type Saga } from "../Models/Book.ts";
-import dates from '../dates.json' with { type: 'json' };
+import dataBooks from '../DataPJ/dataBooks.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_sagasList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.query;
 
-        let listSagas: Saga[] = dates.books;
+        let listSagas: Saga[] = dataBooks;
 
         if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -24,7 +24,7 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of sagas", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 }
@@ -33,7 +33,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
 
-        let listBooks: Saga[] = dates.books;
+        let listBooks: Saga[] = dataBooks;
 
         if (saga) listBooks = listBooks.filter(b => b.name.toLowerCase().startsWith(String(saga).toLowerCase()));
 
@@ -50,7 +50,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of books", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -59,7 +59,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listBooks: Saga[] = dates.books;
+        const listBooks: Saga[] = dataBooks;
         let sagaFound: Saga | undefined | null = null;
 
         if (!name) {
@@ -83,7 +83,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of saga", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -92,7 +92,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
     try {
         const { title = "" } = req.params;
 
-        const listSagas: Saga[] = dates.books;
+        const listSagas: Saga[] = dataBooks;
         let listBooks: Book[] = [];
         let bookFound: Book | undefined | null = null;
 
@@ -119,7 +119,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of book", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };

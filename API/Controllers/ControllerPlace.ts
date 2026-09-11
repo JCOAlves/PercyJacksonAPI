@@ -1,13 +1,13 @@
 import { type Request, type Response } from "express";
 import { type Place } from "../Models/Place.ts";
-import dates from '../dates.json' with { type: 'json' };
+import dataPlaces from '../DataPJ/dataPlaces.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_placesList = (req: Request, res: Response): Response | void => {
     try {
         const { location = "", description = "" } = req.query;
 
-        let listPlaces: Place[] = dates.places;
+        let listPlaces: Place[] = dataPlaces;
 
         if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
 
@@ -26,7 +26,7 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of places");
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -35,7 +35,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listPlaces: Place[] = dates.places;
+        const listPlaces: Place[] = dataPlaces;
         let placeFound: Place | undefined | null = null;
 
         if (!name) {
@@ -59,7 +59,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of place");
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };

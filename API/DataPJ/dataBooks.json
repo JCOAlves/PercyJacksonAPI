@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Percy Jackson & the Olympians",
+        "booksNumber": 5,
+        "books": [
+            {
+                "title": "string1",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            },
+            {
+                "title": "string2",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            }
+        ]
+    },
+    {
+        "name": "Percy Jackson",
+        "booksNumber": 5,
+        "books": [
+            {
+                "title": "string3",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            },
+            {
+                "title": "string4",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            }
+        ]
+    },
+    {
+        "name": "the Olympians",
+        "booksNumber": 5,
+        "books": [
+            {
+                "title": "string5",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            },
+            {
+                "title": "string6",
+                "author": "Rick Riordan",
+                "publicationDate": "string | Date",
+                "synopsis": "string",
+                "pagesNumber": 3
+            }
+        ]
+    }
+]

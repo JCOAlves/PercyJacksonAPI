@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Lugar1",
+        "description": "string",
+        "location": "string",
+        "photoLink": [
+            ""
+        ]
+    },
+    {
+        "name": "Lugar2",
+        "description": "string2",
+        "location": "string",
+        "photoLink": [
+            ""
+        ]
+    },
+    {
+        "name": "Lugar3",
+        "description": "string",
+        "location": "string",
+        "photoLink": [
+            ""
+        ]
+    },
+    {
+        "name": "Lugar4",
+        "description": "string",
+        "location": "string",
+        "photoLink": [
+            ""
+        ]
+    }
+]

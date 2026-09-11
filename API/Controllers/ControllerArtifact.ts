@@ -1,13 +1,13 @@
 import { type Request, type Response } from "express";
 import { type Artifact } from "../Models/Artifact.ts";
-import dates from '../dates.json' with { type: 'json' };
+import dataArtifacts from '../DataPJ/dataArtifacts.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_artifactsList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "", category = "", description = "" } = req.query;
 
-        let listArtifacts: Artifact[] = dates.artifacts;
+        let listArtifacts: Artifact[] = dataArtifacts;
 
         if (name) listArtifacts = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -28,7 +28,7 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of artifacts", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -37,7 +37,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listArtifacts: Artifact[] = dates.artifacts;
+        const listArtifacts: Artifact[] = dataArtifacts;
         let artifactFound: Artifact | undefined | null = null;
 
         if (!name) {
@@ -61,7 +61,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of artifact", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };

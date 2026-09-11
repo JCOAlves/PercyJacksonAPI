@@ -1,0 +1,26 @@
+[
+    {
+        "cabinNumber": 1,
+        "divinity": "Divinity | string",
+        "members": [
+            ""
+        ],
+        "description": "string"
+    },
+    {
+        "cabinNumber": 2,
+        "divinity": "Divinity | string",
+        "members": [
+            ""
+        ],
+        "description": "string"
+    },
+    {
+        "cabinNumber": 3,
+        "divinity": "Divinity | string",
+        "members": [
+            ""
+        ],
+        "description": "string"
+    }
+]

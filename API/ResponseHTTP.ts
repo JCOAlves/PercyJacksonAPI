@@ -46,4 +46,5 @@ class ResponseHTTP {
 
 };
 
+export { type Data };
 export default ResponseHTTP;

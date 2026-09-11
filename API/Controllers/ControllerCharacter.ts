@@ -1,13 +1,13 @@
 import { type Request, type Response } from "express";
 import { type Character, type Divinity, type Demigod, type Creature } from "../Models/Character.ts";
-import dates from '../dates.json' with { type: 'json' };
+import dataCharacters from '../DataPJ/dataCharacters.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_charactersList = (req: Request, res: Response): Response | void => {
     try {
         const { camp = "", pantheon = "", cabin = "", category = "" } = req.query;
 
-        let listCharacters: (Character | Divinity | Demigod | Creature)[] = dates.characters;
+        let listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters;
 
         if (category) listCharacters = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
 
@@ -31,7 +31,7 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of characters", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -40,7 +40,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listCharacters: (Character | Divinity | Demigod | Creature)[] = dates.characters;
+        const listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters;
         let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
 
         if (!name) {
@@ -64,7 +64,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of character", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };

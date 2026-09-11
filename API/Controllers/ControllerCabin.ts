@@ -1,11 +1,11 @@
 import { type Request, type Response } from "express";
 import { type Cabin } from "../Models/Cabin.ts";
-import dates from '../dates.json' with { type: 'json' };
+import dataCabins from '../DataPJ/dataCabins.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_cabinsList = (req: Request, res: Response): Response | void => {
     try {
-        const listCabins: Cabin[] = dates.cabins;
+        const listCabins: Cabin[] = dataCabins;
 
         const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", listCabins);
         responseAPI.showMessage();
@@ -13,7 +13,7 @@ const GET_cabinsList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of cabins", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
@@ -22,7 +22,7 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
     try {
         const { cabinNumber } = req.params;
 
-        const listCabins: Cabin[] = dates.cabins;
+        const listCabins: Cabin[] = dataCabins;
         let cabinFound: Cabin | undefined | null = null;
 
         if (!cabinNumber) {
@@ -46,7 +46,7 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of cabin", null, error);
-        responseAPI.showMessage();
+        responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI);
     };
 };
