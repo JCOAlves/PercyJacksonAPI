@@ -1,45 +1,163 @@
 [
     {
-        "name": "Personagem1",
-        "description": "string",
+        "name": "Percy Jackson",
+        "description": "Perseus 'Percy' Jackson is a Greek demigod, son of Poseidon and Sally Jackson. He is the main protagonist and narrator of the Percy Jackson and the Olympians saga and one of the central characters in the Heroes of Olympus series. Percy is the head counselor of the Poseidon Cabin at Camp Half-Blood and former praetor of the 12th Legion at Camp Jupiter, having previously belonged to the 5th Cohort of the legion. He was also the temporary host of the Egyptian goddess Nekhbet. He is currently dating Annabeth Chase.",
         "category": "Demigod",
         "camp": "Camp Half-Blood",
-        "cabin": 1,
+        "cabin": 3,
+        "birthday": "August 18th",
+        "parents": [
+            "Poseidon",
+            "Sally Jackson"
+        ],
+        "skills": [
+            "Atmokinesis (limited)",
+            "Aerokinesis (limited)",
+            "Communication",
+            "Zoolingualism (limited)",
+            "Geokinesis (limited)",
+            "Hydrokinesis",
+            "Cryokinesis (limited)",
+            "Water Diversion",
+            "Aquatic Enhancement",
+            "Aquatic Immunity",
+            "Water Removal",
+            "Heat Resistance (limited)",
+            "Water Solidification",
+            "Toxicokinesis (limited)",
+            "Vitacinesis (limited)",
+            "Manipulation of Vessels",
+            "Instinctive Understanding of Navigation",
+            "Nautical Senses"
+        ],
+        "artifacts": [
+            "Eagle of the 12th Legion",
+            "Celestial Bronze Whistle",
+            "Stygian Ice Whistle",
+            "Chameleon Armor",
+            "Wings of Daedalus",
+            "Annabeth's Yankees cap",
+            "Medusa's Head",
+            "Ganymede's Chalice",
+            "Horn of the Minotaur",
+            "Riptide",
+            "Sand Dollar",
+            "Shield Wristwatch",
+            "Thermos Bottle of the Winds",
+            "Tyson's Javelin",
+            "Kopis",
+            "Mercedes",
+            "Moonlace",
+            "Hermes ' Multivitamins",
+            "Nemean Lion's Skin",
+            "Poseidon's Pearls",
+            "Pithos of Pandora",
+            "Master Bolt",
+            "Travel Rose",
+            "Winged Shoes",
+            "Torches of Hecate",
+            "Golden Fleece"
+        ],
         "photoLink": [
             ""
         ]
     },
     {
-        "name": "Personagem2",
-        "description": "string",
-        "category": "Divinity",
-        "pantheon": "Roman",
+        "name": "Annabeth Chase",
+        "description": "Annabeth Chase is the Greek demigoddess daughter of Athena and Professor Frederick Chase, half-sister of Bobby and Matthew Chase, and paternal cousin of the Norse demigod Magnus Chase. She is the deuteragonist of the Percy Jackson and the Olympians series and a main character in the Heroes of Olympus series, as she is one of the Seven demigods of the Prophecy of Seven. Annabeth is the architect of Olympus and the former head counselor of the Athena Cabin. She is currently Percy Jackson's girlfriend.",
+        "category": "Demigod",
+        "camp":"Camp Half-Blood",
+        "cabin": 6,
+        "birthday": "July 12th",
+        "parents": ["Athena", "Professor Frederick Chase"],
+        "skills": [
+
+        ],
+        "artifacts": [
+
+        ],
         "photoLink": [
             ""
         ]
     },
     {
-        "name": "Personagem3",
-        "description": "string",
+        "name": "Grover Underwood",
+        "description": "Grover Underwood is a satyr and a Lord of Nature, along with Silenus and Maron. He is also a Chosen of Pan and carries the soul of Pan. He is the tritagonist of the Percy Jackson and the Olympians series and a secondary character in The Heroes of Olympus and The Trials of Apollo. Grover is the satyr who encountered the demigods Thalia Grace, Nico and Bianca di Angelo, Percy Jackson, Annabeth Chase, and Luke Castellan. Currently, Grover is in a relationship with the dryad Juniper.",
         "category": "Creature",
+        "camp":"Camp Half-Blood",
         "pantheon": "Greek",
         "photoLink": [
             ""
         ]
     },
     {
-        "name": "Personagem4",
-        "description": "string",
-        "category": "Mortal",
+        "name": "Luke Castellan",
+        "description": "Luke Castellan was a Greek demigod, son of Hermes and May Castellan. He was one of the main antagonists in the Percy Jackson and the Olympians series. He was the Head Counselor of the Hermes Cabin. Although he allowed the Lord of the Titans, Kronos, to possess his body, Luke died as the hero of the Great Prophecy. Before dying, Luke stated his intention to go through rebirth instead of going to Elysium, despite his heroic death, hoping to eventually reach the Isles of the Blessed.",
+        "category": "Demigod",
+        "camp":"Camp Half-Blood",
+        "cabin": 11,
+        "birthday": "Unknown",
+        "parents": ["Hermes", "May Castellan"],
+        "skills": [
+
+        ],
+        "artifacts": [
+
+        ],
         "photoLink": [
             ""
         ]
     },
     {
-        "name": "Personagem5",
-        "description": "string",
-        "category": "Divinity",
-        "pantheon": "Greek",
+        "name": "Nico di Angelo",
+        "description": "Niccolo 'Nico' di Angelo is a Greek demigod born in Italy, son of Hades and the late Maria di Angelo, and younger brother of the late Bianca di Angelo and paternal half-brother of the Roman demigoddess Hazel Levesque. He is a main character in the Percy Jackson and the Olympians, The Heroes of Olympus, and The Trials of Apollo book series, and the protagonist and title character of The Adventures of Nico di Angelo book series. He is known in the Underworld as the 'Phantom King' after taking the title from Minos in The Battle of the Labyrinth. He is openly gay and the boyfriend of Will Solace.",
+        "category": "Demigod",
+        "camp":"Camp Half-Blood",
+        "cabin": 13,
+        "birthday": "January 28th",
+        "parents": ["Hades", "Maria di Angelo"],
+        "skills": [
+
+        ],
+        "artifacts": [
+
+        ],
+        "photoLink": [
+            ""
+        ]
+    },
+    {
+        "name": "Thalia Grace",
+        "description": "Thalia Grace is the Greek demigoddess daughter of Zeus and the mortal Beryl Grace, and the older sister of the Roman demigod Jason. After being mortally wounded by monsters, she was transformed into a pine tree on Half-Blood Hill, which still stands as the official boundary of Camp Half-Blood to this day. She was later resurrected by the Golden Fleece under the manipulations of Kronos in an attempt to control the Great Prophecy. She is currently the lieutenant of the Hunters of Artemis, leading them in the goddess 's absence after accepting Artemis's offer following a failed attempt by Kronos to use Thalia to destroy the gods.",
+        "category": "Demigod",
+        "camp":"Camp Half-Blood",
+        "cabin": 1,
+        "birthday": "December 22th",
+        "parents": ["Zeus", "Beryl Grace"],
+        "skills": [
+
+        ],
+        "artifacts": [
+
+        ],
+        "photoLink": [
+            ""
+        ]
+    },
+    {
+        "name": "Tyson",
+        "description": "Tyson is a Cyclops, son of Poseidon and a nymph, and Percy Jackson 's paternal half-brother. He is currently transcribing the Sibylline Books with his girlfriend, Ella, the harpy.",
+        "category": "Creature",
+        "camp":"Camp Half-Blood",
+        "cabin": 3,
+        "birthday": "Unknown",
+        "parents": ["Poseidon", "A nymph"],
+        "skills": [
+
+        ],
+        "artifacts": [
+
+        ],
         "photoLink": [
             ""
         ]

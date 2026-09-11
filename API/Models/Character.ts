@@ -14,7 +14,7 @@ type Divinity = Character & {
 };
 
 type Demigod = Character & {
-    birthday: string | Date,
+    birthday: string | Date | null,
     camp: string | "Camp Half-Blood" | "Camp Jupiter",
     cabin: number,
     parents: (Divinity | Character | string)[],
@@ -25,6 +25,7 @@ type Demigod = Character & {
 
 type Creature = Character & {
     pantheon: string | "Greek" | "Roman",
+    cabin?: number,
     camp?: string | "Camp Half-Blood" | "Camp Jupiter",
     ally?: boolean,
     parents?: (Divinity | Character | string)[],

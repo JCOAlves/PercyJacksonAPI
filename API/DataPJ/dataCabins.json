@@ -1,26 +1,114 @@
 [
     {
         "cabinNumber": 1,
-        "divinity": "Divinity | string",
+        "divinity": "Zeus",
         "members": [
             ""
         ],
-        "description": "string"
+        "description": "The cabin is described as a large white marble box with heavy columns in front. It has polished bronze doors that, depending on the angle, appear to be pierced by lightning bolts. It features beds suspended from the walls, a mosaic on the ceiling depicting overcast clouds with golden lightning bolts cutting through them, and a large telescope (described by Jason in The Blood of Olympus)."
     },
     {
         "cabinNumber": 2,
-        "divinity": "Divinity | string",
+        "divinity": "Ivy",
         "members": [
             ""
         ],
-        "description": "string"
+        "description": "The large chalet, made of white marble and adorned with delicate columns topped with pomegranates and flowers. The walls are carved with peacock designs. (It is an honorary chalet, because if Hera didn't have one, she would be angry, and because she is the goddess of marriage, having no children with humans, only with Zeus , her husband)."
     },
     {
         "cabinNumber": 3,
-        "divinity": "Divinity | string",
+        "divinity": "Poseidon",
         "members": [
             ""
         ],
-        "description": "string"
+        "description": "The cabin is long, low, and solid. The exterior walls are of rustic gray stone, speckled with pieces of shells and coral. The interior walls are made of mother-of-pearl. It has a water fountain with gold drachmas inside (taken from the book The Titan's Curse)."
+    },
+    {
+        "cabinNumber": 4,
+        "divinity": "Demeter",
+        "members": [
+            ""
+        ],
+        "description": "The chalet is made of dark, brownish marble, has tomato plants growing on the walls, and a roof made of real grass. Trees bearing a variety of fruits surround the chalet, their branches reaching through the almost always open windows. There is a large oak tree in the middle of the chalet, supporting the roof."
+    },
+    {
+        "cabinNumber": 5,
+        "divinity": "Ares",
+        "members": [
+            ""
+        ],
+        "description": "The chalet is a poorly painted bright red, its roof lined with barbed wire, and a stuffed boar's head above the central door. Swords and machetes carved into the dark marble decorate the walls. Rock music can almost always be heard inside the chalet."
+    },
+    {
+        "cabinNumber": 6,
+        "divinity": "Athena",
+        "members": [
+            ""
+        ],
+        "description": "The chalet is made of pale white marble, adorned with thick columns twisted into braids and several branches from the enormous olive tree that stands to the west of the place. It has a dim glow at any time of day, and its interior walls are crammed with books. There is an owl carved on the front, with onyx eyes."
+    },
+    {
+        "cabinNumber": 7,
+        "divinity": "Apollo",
+        "members": [
+            ""
+        ],
+        "description": "The chalet appears to be made of solid gold; there's a golden arch at the front, and the place shines so brightly during the day it almost hurts the eyes. The walls are carved with thousands of musical notes, with the treble clef standing out. It has flowers from the island of Delos , which only grow in this chalet."
+    },
+    {
+        "cabinNumber": 8,
+        "divinity": "Artemis",
+        "members": [
+            ""
+        ],
+        "description": "A seemingly ordinary camp cabin during the day, but with a silvery glow in the dark. Images of animals and spears adorn the walls. The cabin is used when the Huntresses need a safe place to stay while Artemis goes on dangerous hunts."
+    },
+    {
+        "cabinNumber": 9,
+        "divinity": "Hephaestus",
+        "members": [
+            ""
+        ],
+        "description": "A black chalet, with chimneys on the roof. The sound of iron against stone is frequently heard inside. It appears to have only one floor from the outside, but inside it was fully equipped, with knowledge of two floors, several tunnels, and a huge forge."
+    },
+    {
+        "cabinNumber": 10,
+        "divinity": "Aphrodite",
+        "members": [
+            ""
+        ],
+        "description": "A pastel pink chalet, with crystals hanging from the windows. There are several rose bushes nearby—thornless roses—of various colors, nestled against the walls. A soft, sweet fragrance is everywhere, and there are many mirrors."
+    },
+    {
+        "cabinNumber": 11,
+        "divinity": "Hermes",
+        "members": [
+            ""
+        ],
+        "description": ""
+    },
+    {
+        "cabinNumber": 12,
+        "divinity": "Dionysus",
+        "members": [
+            ""
+        ],
+        "description": "A typical, old camp cabin, with peeling paint and a caduceus—often confused with the symbol of medicine, although this one has only one snake, while Hermes ' has two—above the door. It's the most crowded, because in addition to the children of Hermes , undetermined demigods also sleep there."
+    },
+    {
+        "cabinNumber": 13,
+        "divinity": "Hades",
+        "members": [
+            ""
+        ],
+        "description": "Hades ' cabin is made of obsidian, with heavy columns and no windows. Each step is adorned with skulls. In front of the cabin is a torch where Greek fire burns 24 hours a day. Inside, everything is dark and cold; there is also an altar for communicating with Hades or with spirits."
+    },
+    {
+        "cabinNumber": 0,
+        "divinity": "",
+        "members": [
+            ""
+        ],
+        "description": ""
     }
 ]
