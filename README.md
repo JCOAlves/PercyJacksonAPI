@@ -8,15 +8,47 @@ The REST API was builded with the framework **Express** in the code language **T
 [![Project tools](https://skillicons.dev/icons?i=express,ts)](https://skillicons.dev)
 
 ## Routes of API
-- ``/api``: main route that list of all data about characters, artifacts, cabins, places and books.
+Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, booths, locations, and books.
+
+- **Request route**:
+  ```
+  /api
+  ```
+
+- **Response response**:
+  ```typescript
+  {
+    sucess: boolean,
+    message: string,
+    data?: {
+      characters: (Character | Demigod | Divinity | Creature)[],
+      artifacts: Artifact[],
+      cabins: Cabin[],
+      places: Place[],
+      books: Book[]
+    },
+    error?: Error | any | undefined
+  }
+  ```
+  In the event of errors, the ``error`` attribute is returned in the response, and the ``data`` attribute is omitted.
+
+### Character route
 - ``/api/characters``: list of all saga characters. 
-- ``/api/characters/:name``: list a only character by name. 
+- ``/api/characters/:name``: list a only character by name.
+
+### Artifact route
 - ``/api/artifacts``: list of all saga artifacts.
 - ``/api/artifacts/:name``: list a only artifact by name.
+
+### Cabin route
 - ``/api/cabins``: list of all cabins in Camp Half-Blood.
 - ``/api/cabins/:cabinNumber``: list a only cabin by cabin number.
+
+### Place route
 - ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe.
 - ``/api/places/:name``: list a only place by name.
+
+### Book route
 - ``/api/books``: list of all Percy Jackson universe books.
 - ``/api/books/sagas``: list of Percy Jackson book series.
 - ``/api/books/:title``: list a only book by title.
