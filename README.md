@@ -26,7 +26,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
       cabins: Cabin[],
       places: Place[],
       books: Book[]
-    },
+    } | null,
     error?: Error | any | undefined
   }
   ```
