@@ -2,6 +2,8 @@ import express, { type Express, type Request, type Response } from 'express';
 import cors from "cors";
 import dotenv from "dotenv";
 import ReqLimit from './Config/RequestLimit.ts';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 import { type Data } from './ResponseHTTP.ts';
 import ResponseHTTP from './ResponseHTTP.ts';
@@ -23,11 +25,16 @@ dotenv.config();
 const app: Express = express();
 const PORT: number = Number(process.env.PORTAPI) || 3000;
 const HOST: string = String(process.env.HOSTAPI) || "localhost";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(cors());
+app.set('trust proxy', 1); 
 app.use(ReqLimit);
 
-app.use("/", express.static("../Website"));
+app.get("/", app.get("/", (req: Request, res: Response): Response | void => {
+    return res.sendFile(path.join(__dirname, "../Website/index.html"));
+}));
 
 app.get("/api", (req: Request, res: Response): Response | void => {
     try {
@@ -56,8 +63,10 @@ app.use("/api/cabins", RoutersCabin);
 app.use("/api/characters", RoutersCharacter);
 app.use("/api/places", RoutersPlace);
 
-app.get("*", (req: Request, res: Response): Response | void => {
-    res.send("<h1 style='text-align: center;'>The route was not found, or the route does not exist</h1>");
+app.get("*notfound", (req: Request, res: Response): Response | void => {
+    const { notfound } = req.params;
+    new ResponseHTTP(false, `The "/${notfound[1]}" route was not found or the route does not exist`).showMessage();
+    return res.status(404).sendFile(path.join(__dirname, "../Website/notfound.html"));
 });
 
 app.listen(PORT, () => {

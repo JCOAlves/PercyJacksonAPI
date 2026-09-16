@@ -27,20 +27,11 @@ class ResponseHTTP {
     };
 
     showMessage(typeMSG = "") {
-        const currentDate = new Date();
-        const Day = currentDate.getDate() < 10 ? `0${currentDate.getDate()}` : currentDate.getDate();
-        const Mouth = currentDate.getMonth() + 1 < 10 ? `0${currentDate.getMonth() + 1}` : currentDate.getMonth() + 1;
-        const Year = currentDate.getFullYear();
-        const Hour = currentDate.getHours() < 10 ? `0${currentDate.getHours()}` : currentDate.getHours();
-        const Minutes = currentDate.getMinutes() < 10 ? `0${currentDate.getMinutes()}` : currentDate.getMinutes();
-        const Seconds = currentDate.getSeconds() < 10 ? `0${currentDate.getSeconds()}` : currentDate.getSeconds();
-        const formattedDate = `${Day}/${Mouth}/${Year}`;
-        const formattedTime = `${Hour}:${Minutes}:${Seconds}`;
         if (typeMSG === "Error" && this.error) {
-            console.error(`${formattedDate} ${formattedTime} - ${this.message}: ${this.error}`);
+            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}: ${this.error}`);
 
         } else {
-            console.log(`${formattedDate} ${formattedTime} - ${this.message}`);
+            console.log(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}`);
         };
     };
 

@@ -9,31 +9,31 @@ The REST API was builded with the framework **Express** in the code language **T
 
 ## Routes of API
 Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, booths, locations, and books.
+ 
+**Request route**:
+```
+/api
+```
 
-- **Request route**:
-  ```
-  /api
-  ```
-
-- **Response response**:
-  ```typescript
-  {
-    sucess: boolean,
-    message: string,
-    data?: {
-      characters: (Character | Demigod | Divinity | Creature)[],
-      artifacts: Artifact[],
-      cabins: Cabin[],
-      places: Place[],
-      books: Book[]
-    } | null,
-    error?: Error | any | undefined
-  }
-  ```
-  In the event of errors, the ``error`` attribute is returned in the response, and the ``data`` attribute is omitted.
+**Response response**:
+```typescript
+{
+  sucess: boolean,
+  message: string,
+  data?: {
+    characters: (Character | Demigod | Divinity | Creature)[],
+    artifacts: Artifact[],
+    cabins: Cabin[],
+    places: Place[],
+    books: Book[]
+  } | null,
+  error?: Error | any | undefined
+}
+```
+In the event of errors, the ``error`` attribute is returned in the response, and the ``data`` attribute is omitted.
 
 ### Character route
-- ``/api/characters``: list of all saga characters. 
+- ``/api/characters``: list of all saga characters. It can be filted by `camp`, `pantheon`, `cabin` or `category`.
 
     **Response response**:
     ```typescript
@@ -45,7 +45,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ``` 
 
-- ``/api/characters/:name``: list a only character by name.
+- ``/api/characters/:name``: list a only character by name, that is a string type.
 
     **Response response**:
     ```typescript
@@ -58,7 +58,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 ### Artifact route
-- ``/api/artifacts``: list of all saga artifacts.
+- ``/api/artifacts``: list of all saga artifacts. It can be filted by `name`, `category` or `description` .
   
     **Response response**:
     ```typescript
@@ -70,7 +70,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
   
-- ``/api/artifacts/:name``: list a only artifact by name.
+- ``/api/artifacts/:name``: list a only artifact by name, that is a string type.
   
     **Response response**:
     ```typescript
@@ -95,7 +95,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
 
-- ``/api/cabins/:cabinNumber``: list a only cabin by cabin number.
+- ``/api/cabins/:cabinNumber``: list a only cabin by cabin number, that is a number type.
   
     **Response response**:
     ```typescript
@@ -108,7 +108,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 ### Place route
-- ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe.
+- ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe. It can be filted by `location` or `description`.
   
     **Response response**:
     ```typescript
@@ -120,7 +120,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
 
-- ``/api/places/:name``: list a only place by name.
+- ``/api/places/:name``: list a only place by name, that is a string type.
   
     **Response response**:
     ```typescript
@@ -133,7 +133,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 ### Book route
-- ``/api/books``: list of all Percy Jackson universe books.
+- ``/api/books``: list of all Percy Jackson universe books. It can be filted by `saga`.
   
     **Response response**:
     ```typescript
@@ -145,7 +145,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
 
-- ``/api/books/sagas``: list of Percy Jackson book series.
+- ``/api/books/sagas``: list of Percy Jackson book series. It can be filted by `name`.
   
     **Response response**:
     ```typescript
@@ -157,7 +157,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
   
-- ``/api/books/:title``: list a only book by title.
+- ``/api/books/:title``: list a only book by title, that is a string type.
   
     **Response response**:
     ```typescript
@@ -169,7 +169,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     }
     ```
 
-- ``/api/books/sagas/:name``: list a only Percy Jackson book serie by name.
+- ``/api/books/sagas/:name``: list a only Percy Jackson book serie by name, that is a string type.
   
     **Response response**:
     ```typescript
