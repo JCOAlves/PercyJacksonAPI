@@ -34,7 +34,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Character route
 - ``/api/characters``: list of all saga characters. 
-  - **Response response**:
+
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -45,7 +46,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ``` 
 
 - ``/api/characters/:name``: list a only character by name.
-  - **Response response**:
+
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -57,7 +59,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Artifact route
 - ``/api/artifacts``: list of all saga artifacts.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -68,7 +71,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
   
 - ``/api/artifacts/:name``: list a only artifact by name.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -80,7 +84,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Cabin route
 - ``/api/cabins``: list of all cabins in Camp Half-Blood.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -91,7 +96,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 - ``/api/cabins/:cabinNumber``: list a only cabin by cabin number.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -103,7 +109,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Place route
 - ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -114,7 +121,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 - ``/api/places/:name``: list a only place by name.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -126,7 +134,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Book route
 - ``/api/books``: list of all Percy Jackson universe books.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -137,7 +146,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 - ``/api/books/sagas``: list of Percy Jackson book series.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -148,7 +158,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
   
 - ``/api/books/:title``: list a only book by title.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
@@ -159,7 +170,8 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
     ```
 
 - ``/api/books/sagas/:name``: list a only Percy Jackson book serie by name.
-  - **Response response**:
+  
+    **Response response**:
     ```typescript
     {
       sucess: boolean,
