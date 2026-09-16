@@ -1,6 +1,7 @@
 import express, { type Express, type Request, type Response } from 'express';
 import cors from "cors";
 import dotenv from "dotenv";
+import ReqLimit from './Config/RequestLimit.ts';
 
 import { type Data } from './ResponseHTTP.ts';
 import ResponseHTTP from './ResponseHTTP.ts';
@@ -20,10 +21,11 @@ import RoutersPlace from "./Routers/RoutersPlace.ts";
 dotenv.config();
 
 const app: Express = express();
-const PORT = process.env.PORTAPI || 3000;
-const HOST = process.env.HOSTAPI || "localhost";
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = String(process.env.HOSTAPI) || "localhost";
 
 app.use(cors());
+app.use(ReqLimit);
 
 app.use("/", express.static("../Website"));
 
@@ -53,6 +55,10 @@ app.use("/api/books", RoutersBook);
 app.use("/api/cabins", RoutersCabin);
 app.use("/api/characters", RoutersCharacter);
 app.use("/api/places", RoutersPlace);
+
+app.get("*", (req: Request, res: Response): Response | void => {
+    res.send("<h1 style='text-align: center;'>The route was not found, or the route does not exist</h1>");
+});
 
 app.listen(PORT, () => {
     console.log(`-------- Percy Jackson API --------`);

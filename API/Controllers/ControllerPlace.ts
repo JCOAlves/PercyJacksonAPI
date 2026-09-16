@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import { type Place } from "../Models/Place.ts";
+import { type Place } from "../Types/Place.ts";
 import dataPlaces from '../DataPJ/dataPlaces.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 

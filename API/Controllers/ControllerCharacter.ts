@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import { type Character, type Divinity, type Demigod, type Creature } from "../Models/Character.ts";
+import { type Character, type Divinity, type Demigod, type Creature } from "../Types/Character.ts";
 import dataCharacters from '../DataPJ/dataCharacters.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 

@@ -1,8 +1,8 @@
-import { type Character, type Demigod, type Divinity, type Creature } from "./Models/Character.ts";
-import { type Artifact } from "./Models/Artifact.ts";
-import { type Cabin } from "./Models/Cabin.ts";
-import { type Place } from "./Models/Place.ts";
-import { type Book, type Saga } from "./Models/Book.ts";
+import { type Character, type Demigod, type Divinity, type Creature } from "./Types/Character.ts";
+import { type Artifact } from "./Types/Artifact.ts";
+import { type Cabin } from "./Types/Cabin.ts";
+import { type Place } from "./Types/Place.ts";
+import { type Book, type Saga } from "./Types/Book.ts";
 
 type Data = {
     characters?: (Character | Demigod | Divinity | Creature)[],

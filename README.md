@@ -34,22 +34,137 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 
 ### Character route
 - ``/api/characters``: list of all saga characters. 
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: (Character | Demigod | Divinity | Creature)[] | null,
+      error?: Error | any | undefined
+    }
+    ``` 
+
 - ``/api/characters/:name``: list a only character by name.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Character | Demigod | Divinity | Creature | null,
+      error?: Error | any | undefined
+    }
+    ```
 
 ### Artifact route
 - ``/api/artifacts``: list of all saga artifacts.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Artifact[] | null,
+      error?: Error | any | undefined
+    }
+    ```
+  
 - ``/api/artifacts/:name``: list a only artifact by name.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Artifact | null,
+      error?: Error | any | undefined
+    }
+    ```
 
 ### Cabin route
 - ``/api/cabins``: list of all cabins in Camp Half-Blood.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Cabin[] | null,
+      error?: Error | any | undefined
+    }
+    ```
+
 - ``/api/cabins/:cabinNumber``: list a only cabin by cabin number.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Cabin | null,
+      error?: Error | any | undefined
+    }
+    ```
 
 ### Place route
 - ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Place[] | null,
+      error?: Error | any | undefined
+    }
+    ```
+
 - ``/api/places/:name``: list a only place by name.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Place | null,
+      error?: Error | any | undefined
+    }
+    ```
 
 ### Book route
 - ``/api/books``: list of all Percy Jackson universe books.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Saga[] | null,
+      error?: Error | any | undefined
+    }
+    ```
+
 - ``/api/books/sagas``: list of Percy Jackson book series.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Saga[] | null,
+      error?: Error | any | undefined
+    }
+    ```
+  
 - ``/api/books/:title``: list a only book by title.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Book | null,
+      error?: Error | any | undefined
+    }
+    ```
+
 - ``/api/books/sagas/:name``: list a only Percy Jackson book serie by name.
+  - **Response response**:
+    ```typescript
+    {
+      sucess: boolean,
+      message: string,
+      data?: Saga | null,
+      error?: Error | any | undefined
+    }
+    ```

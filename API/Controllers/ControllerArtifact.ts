@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import { type Artifact } from "../Models/Artifact.ts";
+import { type Artifact } from "../Types/Artifact.ts";
 import dataArtifacts from '../DataPJ/dataArtifacts.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 

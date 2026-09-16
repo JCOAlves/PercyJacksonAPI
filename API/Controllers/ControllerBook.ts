@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import { type Book, type Saga } from "../Models/Book.ts";
+import { type Book, type Saga } from "../Types/Book.ts";
 import dataBooks from '../DataPJ/dataBooks.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
