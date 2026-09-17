@@ -1,21 +1,21 @@
 # Percy Jackson API
-An API REST system providing data on characters, creatures, artifacts, and themes from the Percy Jackson &amp; the Olympians universe (Riordanverse).
+A REST API system providing data on characters, creatures, artifacts, and themes from the Percy Jackson &amp; the Olympians universe (Riordanverse).
 
-The project aims to make data from the Percy Jackson universe available for programming studies using the REST API and for the development of applications for fans of the series, like a websites featuring character profiles, a glossary of terms and words from Greco-Roman mythology, and Camp Hail-Blood RPG games. 
+The project aims to make data from the Percy Jackson universe available for programming studies using the REST API and for the development of applications for fans of the series, like websites featuring character profiles, a glossary of terms and words from Greco-Roman mythology, and Camp Half-Blood RPG games. 
 
-The REST API was builded with the framework **Express** in the code language **TypeScript**. The data used in project from the official website of the saga author Rick Riordan [*Rickriordan.com*](https://rickriordan.com/), the publisher of the Percy Jackson books [*Readriordan.com*](https://www.readriordan.com/) and the fans website [*Fandom.com*](https://www.fandom.com/).
+The REST API was built with the framework **Express** using **TypeScript**. The data used in this project comes from the official website of the saga author Rick Riordan [*Rickriordan.com*](https://rickriordan.com/), the publisher of the Percy Jackson books [*Readriordan.com*](https://www.readriordan.com/) and the fan website [*Fandom.com*](https://www.fandom.com/).
 
 [![Project tools](https://skillicons.dev/icons?i=express,ts)](https://skillicons.dev)
 
 ## Routes of API
-Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, booths, locations, and books.
+Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, cabins, locations, and books.
  
 **Request route**:
 ```
 /api
 ```
 
-**Response response**:
+**Response body**:
 ```typescript
 {
   sucess: boolean,
@@ -33,9 +33,9 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 In the event of errors, the ``error`` attribute is returned in the response, and the ``data`` attribute is omitted.
 
 ### Character route
-- ``/api/characters``: list of all saga characters. It can be filted by `camp`, `pantheon`, `cabin` or `category`.
+- ``/api/characters``: list of all saga characters. It can be filtered by `camp`, `pantheon`, `cabin` or `category`.
 
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -45,9 +45,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ``` 
 
-- ``/api/characters/:name``: list a only character by name, that is a string type.
+- ``/api/characters/:name``: returns a specific character by name, which is a string.
 
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -58,9 +58,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     ```
 
 ### Artifact route
-- ``/api/artifacts``: list of all saga artifacts. It can be filted by `name`, `category` or `description` .
+- ``/api/artifacts``: list of all saga artifacts. It can be filtered by `name`, `category` or `description` .
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -70,9 +70,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
   
-- ``/api/artifacts/:name``: list a only artifact by name, that is a string type.
+- ``/api/artifacts/:name``: returns a specific artifact by name, which is a string.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -85,7 +85,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
 ### Cabin route
 - ``/api/cabins``: list of all cabins in Camp Half-Blood.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -95,9 +95,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/cabins/:cabinNumber``: list a only cabin by cabin number, that is a number type.
+- ``/api/cabins/:cabinNumber``: returns a specific cabin by cabin number, which is a number.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -108,9 +108,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     ```
 
 ### Place route
-- ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe. It can be filted by `location` or `description`.
+- ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe. It can be filtered by `location` or `description`.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -120,9 +120,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/places/:name``: list a only place by name, that is a string type.
+- ``/api/places/:name``: returns a specific place by name, which is a string.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -133,9 +133,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     ```
 
 ### Book route
-- ``/api/books``: list of all Percy Jackson universe books. It can be filted by `saga`.
+- ``/api/books``: list of all Percy Jackson universe books. It can be filtered by `saga`.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -145,9 +145,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/books/sagas``: list of Percy Jackson book series. It can be filted by `name`.
+- ``/api/books/sagas``: list of Percy Jackson book series. It can be filtered by `name`.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -157,9 +157,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
   
-- ``/api/books/:title``: list a only book by title, that is a string type.
+- ``/api/books/:title``: returns a specific book by title, which is a string.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
@@ -169,9 +169,9 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/books/sagas/:name``: list a only Percy Jackson book serie by name, that is a string type.
+- ``/api/books/sagas/:name``: returns a specific Percy Jackson book series by name, which is a string.
   
-    **Response response**:
+    **Response body**:
     ```typescript
     {
       sucess: boolean,
