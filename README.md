@@ -18,7 +18,7 @@ Five routes were created for the API, all of which are based on ``/api``, the ap
 **Response body**:
 ```typescript
 {
-  sucess: boolean,
+  success: boolean,
   message: string,
   data?: {
     characters: (Character | Demigod | Divinity | Creature)[],
@@ -38,7 +38,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: (Character | Demigod | Divinity | Creature)[] | null,
       error?: Error | any | undefined
@@ -50,7 +50,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Character | Demigod | Divinity | Creature | null,
       error?: Error | any | undefined
@@ -63,7 +63,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Artifact[] | null,
       error?: Error | any | undefined
@@ -75,7 +75,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Artifact | null,
       error?: Error | any | undefined
@@ -88,7 +88,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Cabin[] | null,
       error?: Error | any | undefined
@@ -100,7 +100,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Cabin | null,
       error?: Error | any | undefined
@@ -113,7 +113,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Place[] | null,
       error?: Error | any | undefined
@@ -125,7 +125,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Place | null,
       error?: Error | any | undefined
@@ -138,7 +138,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Saga[] | null,
       error?: Error | any | undefined
@@ -150,7 +150,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Saga[] | null,
       error?: Error | any | undefined
@@ -162,7 +162,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Book | null,
       error?: Error | any | undefined
@@ -174,7 +174,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     **Response body**:
     ```typescript
     {
-      sucess: boolean,
+      success: boolean,
       message: string,
       data?: Saga | null,
       error?: Error | any | undefined

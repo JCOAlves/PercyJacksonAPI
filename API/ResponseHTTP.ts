@@ -14,13 +14,13 @@ type Data = {
 
 // Class Response HTTP
 class ResponseHTTP {
-    sucess: boolean;
+    success: boolean;
     message: string;
     data: Data | Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book | (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | null | undefined;
     error: Error | any | unknown;
 
-    constructor(sucess: boolean, message: string, data?: Data | Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book | (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | null | undefined, error?: Error | any | unknown) {
-        this.sucess = sucess;
+    constructor(success: boolean, message: string, data?: Data | Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book | (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | null | undefined, error?: Error | any | unknown) {
+        this.success = success;
         this.message = message;
         this.data = data;
         this.error = error;

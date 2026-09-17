@@ -32,9 +32,9 @@ app.use(cors());
 app.set('trust proxy', 1); 
 app.use(ReqLimit);
 
-app.get("/", app.get("/", (req: Request, res: Response): Response | void => {
-    return res.sendFile(path.join(__dirname, "../Website/index.html"));
-}));
+app.get("/", (req: Request, res: Response): Response | void => {
+    return res.sendFile(path.join(__dirname, "../Website/main.html"));
+});
 
 app.get("/api", (req: Request, res: Response): Response | void => {
     try {
@@ -66,11 +66,11 @@ app.use("/api/places", RoutersPlace);
 app.get("*notfound", (req: Request, res: Response): Response | void => {
     const { notfound } = req.params;
     new ResponseHTTP(false, `The "/${notfound[1]}" route was not found or the route does not exist`).showMessage();
-    return res.status(404).sendFile(path.join(__dirname, "../Website/notfound.html"));
+    return res.status(404).sendFile(path.join(__dirname, "../Website/not-found.html"));
 });
 
 app.listen(PORT, () => {
-    console.log(`-------- Percy Jackson API --------`);
-    console.log(`| Runnig on http://${HOST}:${PORT} |`);
-    console.log(`-----------------------------------`)
+    console.log(`----------- Percy Jackson API -----------`);
+    console.log(` Runnig on http://${HOST}:${PORT}  `);
+    console.log(`-----------------------------------------`);
 });
