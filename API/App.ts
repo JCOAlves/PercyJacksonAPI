@@ -36,6 +36,10 @@ app.get("/", (req: Request, res: Response): Response | void => {
     return res.sendFile(path.join(__dirname, "../Website/main.html"));
 });
 
+app.get("/docs", (req: Request, res: Response): Response | void => {
+    return res.sendFile(path.join(__dirname, "../Website/document.html"));
+});
+
 app.get("/api", (req: Request, res: Response): Response | void => {
     try {
         const Data: Data = {
@@ -62,10 +66,16 @@ app.use("/api/books", RoutersBook);
 app.use("/api/cabins", RoutersCabin);
 app.use("/api/characters", RoutersCharacter);
 app.use("/api/places", RoutersPlace);
-
-app.get("*notfound", (req: Request, res: Response): Response | void => {
+app.all("/api/*notfound", (req: Request, res: Response): Response | void => {
     const { notfound } = req.params;
-    new ResponseHTTP(false, `The "/${notfound[1]}" route was not found or the route does not exist`).showMessage();
+    const responseAPI = new ResponseHTTP(false, `The '/api/${notfound[0]}' route was not found or the route does not exist`);
+    responseAPI.showMessage();
+    return res.status(404).json(responseAPI);
+});
+
+app.all("/*notfound", (req: Request, res: Response): Response | void => {
+    const { notfound } = req.params;
+    new ResponseHTTP(false, `The '/${notfound[0]}' route was not found or the route does not exist`).showMessage();
     return res.status(404).sendFile(path.join(__dirname, "../Website/not-found.html"));
 });
 
