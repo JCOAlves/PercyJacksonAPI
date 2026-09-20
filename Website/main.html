@@ -5,32 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="stylesheet" href="./style.css">
     <title>Percy Jackson API</title>
 </head>
 
 <body>
-    <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#FF7903] shadow">
+    <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#22396F] text-white shadow">
         <img src="" alt="Icon" srcset="">
-        <div class="flex gap-7">
-            <a href="">Documentation</a>
-            <a href="">API Test</a>
+        <div class="flex gap-5 justify-center items-center">
+            <a href="#seaction1">Inicial</a>
+            <a href="#seaction2">API Test</a>
+            <a href="#">Documentation</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
         </div>
     </nav>
-    <main class="flex flex-col gap-10 w-full">
-        <section class="p-5 mx-auto max-w-200 min-h-80">
-            <h1 class="text-center text-[40px] font-semibold">Percy Jackson API</h1>
-            <p class="text-center my-3">A REST API system providing data on characters, creatures, artifacts, and themes
+    <main class="flex flex-col w-full">
+        <section class="flex flex-col justify-center w-full min-h-90 text-white text-shadow-lg/30 p-6" id="seaction1">
+            <h1 class="text-center text-6xl font-semibold text-white">Percy Jackson API</h1>
+            <p class="text-center text-[18px] my-6">A REST API system providing data on characters, creatures, artifacts, and themes
                 from the Percy Jackson &amp; the Olympians universe (Riordanverse).
             </p>
-        </section class="p-5 mx-auto max-w-200 min-h-80">
-        <section>
-            Codigo para uso da API
+        </section>
+        <section class="p-6 w-full min-h-90 p-6 bg-[#FAF8F6]" id="seaction2">
+            <div class="flex flex-col gap-3 bg-white shadow w-full min-h-80 p-5 rounded-[15px]">
+                <div class="flex gap-5 items-center justify-center">
+                    <a href="">Characters</a>
+                    <a href="">Artifacts</a>
+                    <a href="">Cabins</a>
+                    <a href="">Places</a>
+                    <a href="">Books</a>
+                </div>
+                <form action="" method="get" id="testAPI">
+                    <div id="inputsForm"></div>
+                    <button type="button" class="py-2 px-4 bg-green-500 rounded text-white">Send</button>
+                    <button type="reset" class="py-2 px-4 bg-red-500 rounded text-white">Reset</button>
+                </form>
+                <div id="resultAPI"></div>
+            </div>
         </section>
     </main>
-    <footer class="w-full p-5 h-30 bg-[#FF7903]">
-        ere
+    <footer class="sticky bottom-0 top-full w-full p-5 h-30 bg-[#22396F] text-center text-white">
+        <div class="flex gap-7 justify-center items-center">
+            <a href="#seaction1">Inicial</a>
+            <a href="#seaction2">API Test</a>
+            <a href="#">Documentation</a>
+        </div>
     </footer>
+    <script src="./testAPI.js" type="module"></script>
 </body>
-
 </html>
