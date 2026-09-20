@@ -1,6 +1,4 @@
-/**/
-
-#seaction1{
+#seaction1 {
     background-color: #0D1C42;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./Public/photoBooks.webp");
     background-size: cover;
@@ -8,3 +6,39 @@
     background-position: center;
 }
 
+pre {
+    padding: 20px;
+    background-color: #0D1C42;
+    color: lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    min-width: 300px;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray rgba(0, 0, 0, 0);
+}
