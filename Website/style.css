@@ -1,4 +1,4 @@
-#seaction1 {
+#head {
     background-color: #0D1C42;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./Public/photoBooks.webp");
     background-size: cover;
@@ -6,16 +6,26 @@
     background-position: center;
 }
 
+input{
+    border: solid 1px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
 pre {
     padding: 20px;
     background-color: #0D1C42;
     color: lightgray;
-    margin-top: 10px;
+    margin: 10px 0px 15px 0px;
     border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
     min-width: 300px;
     overflow-x: auto;
+}
+
+code {
+    font-style: italic;
 }
 
 ::-webkit-scrollbar {
