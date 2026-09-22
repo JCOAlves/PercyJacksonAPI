@@ -24,7 +24,7 @@ dotenv.config();
 
 const app: Express = express();
 const PORT: number = Number(process.env.PORTAPI) || 3000;
-const HOST: string = String(process.env.HOSTAPI) || "localhost";
+const HOST: string = process.env.HOSTAPI || "localhost";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

@@ -1,3 +1,5 @@
+/*Main page style*/
+
 #head {
     background-color: #0D1C42;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./Public/photoBooks.webp");
@@ -12,6 +14,7 @@ input{
     border-radius: 5px;
 }
 
+/*Documentation page style*/
 pre {
     padding: 20px;
     background-color: #0D1C42;
