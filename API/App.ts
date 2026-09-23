@@ -34,11 +34,11 @@ app.use(ReqLimit);
 app.use(express.static(path.join(__dirname, '../Website')));
 
 app.get("/", (req: Request, res: Response): Response | void => {
-    return res.sendFile(path.join(__dirname, "../Website", "main.html"));
+    return res.sendFile(path.join(__dirname, "../Website/Pages", "main.html"));
 });
 
 app.get("/docs", (req: Request, res: Response): Response | void => {
-    return res.sendFile(path.join(__dirname, "../Website", "document.html"));
+    return res.sendFile(path.join(__dirname, "../Website/Pages", "document.html"));
 });
 
 app.get("/api", (req: Request, res: Response): Response | void => {
@@ -77,7 +77,7 @@ app.all("/api/*notfound", (req: Request, res: Response): Response | void => {
 app.all("/*notfound", (req: Request, res: Response): Response | void => {
     const { notfound } = req.params;
     new ResponseHTTP(false, `The '/${notfound[0]}' route was not found or the route does not exist`).showMessage();
-    return res.status(404).sendFile(path.join(__dirname, "../Website", "not-found.html"));
+    return res.status(404).sendFile(path.join(__dirname, "../Website/Pages", "not-found.html"));
 });
 
 app.listen(PORT, () => {

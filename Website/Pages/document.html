@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Style/docStyle.css">
     <title>Percy Jackson API</title>
 </head>
 
@@ -18,13 +18,20 @@
             <a href="#cabins" class="hover:font-semibold">Cabins</a>
             <a href="#places" class="hover:font-semibold">Places</a>
             <a href="#books" class="hover:font-semibold">Books</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu preview-icon">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
         </div>
     </nav>
     <main class="flex flex-col p-10">
         <h1 class="text-center text-4xl" id="headDoc">Documentation of Percy Jackson API</h1>
         <p class="text-justify my-4">
-            A REST API system providing data on characters, creatures, artifacts, and themes from the <span class="font-semibold">Percy Jackson  &amp; the Olympians</span>
+            A REST API system providing data on characters, creatures, artifacts, and themes from the <span
+                class="font-semibold">Percy Jackson &amp; the Olympians</span>
             universe (Riordanverse).
             The project aims to make data from the Percy Jackson universe available for programming studies using the
             REST API and for the development of applications
@@ -34,8 +41,10 @@
         <p class="text-justify mb-4">
             The REST API was built with the framework <strong>Express</strong> using <strong>TypeScript</strong>.
             The data used in this project comes from the official website of the saga author
-            Rick Riordan <a href="https://rickriordan.com/" class="italic hover:text-blue-900">Rickriordan.com</a>, the publisher of the
-            Percy Jackson books <a href="https://www.readriordan.com/" class="italic hover:text-blue-900">Readriordan.com</a> and the fan website
+            Rick Riordan <a href="https://rickriordan.com/" class="italic hover:text-blue-900">Rickriordan.com</a>, the
+            publisher of the
+            Percy Jackson books <a href="https://www.readriordan.com/"
+                class="italic hover:text-blue-900">Readriordan.com</a> and the fan website
             <a height="30" href="https://www.fandom.com/" class="italic hover:text-blue-900">Fandom.com</a>.
         </p>
         <div class="mb-6">
@@ -47,9 +56,9 @@
             Five routes were created for the API, all of which are based on <code>/api</code>, the application's main
             route, which returns all data about characters, artifacts, cabins, locations, and books.
             <br><strong>Request route</strong>:
-<pre><code>/api</code></pre>
-            <span><strong>Response body</strong>:</span>
-<pre><code class="language-typescript">{
+        <pre><code>/api</code></pre>
+        <span><strong>Response body</strong>:</span>
+        <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: {
@@ -62,17 +71,19 @@
     error?: Error | any | undefined
 }</code></pre>
         </p>
-        <p class="text-justify mt-1 mb-6">In the event of errors, the <code>error</code> attribute is returned in the response,
+        <p class="text-justify mt-1 mb-6">In the event of errors, the <code>error</code> attribute is returned in the
+            response,
             and the <code>data</code> attribute is omitted.
         </p>
 
         <h3 class="text-2xl" id="characters">Character route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/characters</code>: list of all saga characters. It can be filtered by <code>camp</code>, <code>pantheon</code>,
+                <code>/api/characters</code>: list of all saga characters. It can be filtered by <code>camp</code>,
+                <code>pantheon</code>,
                 <code>cabin</code> or <code>category</code>.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: (Character | Demigod | Divinity | Creature)[] | null,
@@ -82,7 +93,7 @@
             <li>
                 <code>/api/characters/:name</code>: returns a specific character by name, which is a string.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Character | Demigod | Divinity | Creature | null,
@@ -97,7 +108,7 @@
                 <code>/api/artifacts</code>: list of all saga artifacts. It can be filtered by <code>name</code>,
                 <code>category</code> or <code>description</code>.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Artifact[] | null,
@@ -106,7 +117,7 @@
             </li>
             <li><code>/api/artifacts/:name</code>: returns a specific artifact by name, which is a string.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Artifact | null,
@@ -120,7 +131,7 @@
             <li>
                 <code>/api/cabins</code> list of all cabins in Camp Half-Blood.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Cabin[] | null,
@@ -130,7 +141,7 @@
             <li>
                 <code>/api/cabins/:cabinNumber</code> returns a specific cabin by cabin number, which is a number.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Cabin | null,
@@ -145,7 +156,7 @@
                 <code>/api/places</code>: list of all places in the Percy Jackson &amp; the Olympians universe. It can
                 befiltered by <code>location</code> or <code>description</code>.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Place[] | null,
@@ -155,7 +166,7 @@
             <li>
                 <code>/api/places/:name</code>: returns a specific place by name, which is a string.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Place | null,
@@ -167,9 +178,10 @@
         <h3 class="text-2xl" id="books">Book route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/books</code>: list of all Percy Jackson universe books. It can be filtered by <code>saga</code>.
+                <code>/api/books</code>: list of all Percy Jackson universe books. It can be filtered by
+                <code>saga</code>.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Saga[] | null,
@@ -177,9 +189,10 @@
 }</code></pre>
             </li>
             <li>
-                <code>/api/books/sagas</code>: list of Percy Jackson book series. It can be filtered by <code>name</code>.
+                <code>/api/books/sagas</code>: list of Percy Jackson book series. It can be filtered by
+                <code>name</code>.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Saga[] | null,
@@ -189,7 +202,7 @@
             <li>
                 <code>/api/books/:title</code>: returns a specific book by title, which is a string.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Book | null,
@@ -200,7 +213,7 @@
                 <code>/api/books/sagas/:name</code>: returns a specific Percy Jackson book series by name, which is a
                 string.
                 <br><strong>Response body</strong>:
-<pre><code class="language-typescript">{
+                <pre><code class="language-typescript">{
     success: boolean,
     message: string,
     data?: Saga | null,
