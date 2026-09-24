@@ -10,31 +10,46 @@ type Data = {
     cabins?: Cabin[],
     places?: Place[],
     books?: (Saga | Book)[]
-}
+};
+type UniqueData = Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book;
+type ListData = (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[];
 
 // Class Response HTTP
 class ResponseHTTP {
     success: boolean;
     message: string;
-    data: Data | Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book | (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | null | undefined;
-    error: Error | any | unknown;
+    #data: Data | UniqueData | ListData | null | undefined;
+    #error: Error | TypeError | any | unknown;
 
-    constructor(success: boolean, message: string, data?: Data | Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book | (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | null | undefined, error?: Error | any | unknown) {
+    constructor(success: boolean, message: string, data?: Data | UniqueData | ListData | null | undefined, error?: Error | TypeError | any | unknown) {
         this.success = success;
         this.message = message;
-        this.data = data;
-        this.error = error;
+        this.#data = data;
+        this.#error = error;
     };
 
     showMessage(typeMSG = "") {
-        if (typeMSG === "Error" && this.error) {
-            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}: ${this.error}`);
+        if (typeMSG === "Error" && this.#error) {
+            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}: ${this.#error}`);
 
         } else {
             console.log(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}`);
         };
+        return;
     };
 
+    returnJSON() {
+        const JSON = this.success ? {
+            success: this.success,
+            message: this.message,
+            data: this.#data
+
+        } : {
+            success: this.success,
+            message: this.message
+        };
+        return JSON;
+    };
 };
 
 export { type Data };

@@ -6,7 +6,7 @@ type Cabin = {
     members: (Demigod | Creature | string)[],
     description: string,
     place?: "Camp Half-Blood",
-    photoLink?: string[] | string
+    photoLink?: string
 };
 
 export { type Cabin };

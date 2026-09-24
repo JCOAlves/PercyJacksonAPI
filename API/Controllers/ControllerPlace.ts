@@ -7,7 +7,7 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
     try {
         const { location = "", description = "" } = req.query;
 
-        let listPlaces: Place[] = dataPlaces;
+        let listPlaces: Place[] = dataPlaces as Place[];
 
         if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
 
@@ -16,18 +16,18 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
         if (listPlaces.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Places successfully listed", listPlaces);
             responseAPI.showMessage();
-            return res.status(200).json(responseAPI);
+            return res.status(200).json(responseAPI.returnJSON());
 
         } else {
             const responseAPI = new ResponseHTTP(true, "No place matching the specified criteria was found", []);
             responseAPI.showMessage();
-            return res.status(404).json(responseAPI);
+            return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of places");
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 
@@ -35,13 +35,13 @@ const GET_place = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listPlaces: Place[] = dataPlaces;
+        const listPlaces: Place[] = dataPlaces as Place[];
         let placeFound: Place | undefined | null = null;
 
         if (!name) {
             const responseAPI = new ResponseHTTP(false, "Place name parameter not provided");
             responseAPI.showMessage();
-            return res.status(400).json(responseAPI);
+            return res.status(400).json(responseAPI.returnJSON());
         };
 
         placeFound = listPlaces.find(p => p.name.toLowerCase().startsWith(String(name).toLowerCase()));
@@ -49,18 +49,18 @@ const GET_place = (req: Request, res: Response): Response | void => {
         if (placeFound) {
             const responseAPI = new ResponseHTTP(true, "Place successfully listed", placeFound);
             responseAPI.showMessage();
-            return res.status(200).json(responseAPI);
+            return res.status(200).json(responseAPI.returnJSON());
 
         } else {
             const responseAPI = new ResponseHTTP(true, "No place matching the specified name was found", null);
             responseAPI.showMessage();
-            return res.status(404).json(responseAPI);
+            return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of place");
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 

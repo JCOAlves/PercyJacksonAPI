@@ -5,16 +5,16 @@ import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_cabinsList = (req: Request, res: Response): Response | void => {
     try {
-        const listCabins: Cabin[] = dataCabins;
+        const listCabins: Cabin[] = dataCabins as Cabin[];
 
         const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", listCabins);
         responseAPI.showMessage();
-        return res.status(200).json(responseAPI);
+        return res.status(200).json(responseAPI.returnJSON());
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of cabins", null, error);
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 
@@ -22,13 +22,13 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
     try {
         const { cabinNumber } = req.params;
 
-        const listCabins: Cabin[] = dataCabins;
+        const listCabins: Cabin[] = dataCabins as Cabin[];
         let cabinFound: Cabin | undefined | null = null;
 
         if (!cabinNumber) {
             const responseAPI = new ResponseHTTP(false, "Cabin number parameter not provided");
             responseAPI.showMessage();
-            return res.status(400).json(responseAPI);
+            return res.status(400).json(responseAPI.returnJSON());
         };
 
         cabinFound = listCabins.find(c => c.cabinNumber === Number(cabinNumber));
@@ -36,18 +36,18 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
         if (cabinFound) {
             const responseAPI = new ResponseHTTP(true, "Cabin successfully listed", cabinFound);
             responseAPI.showMessage();
-            return res.status(200).json(responseAPI);
+            return res.status(200).json(responseAPI.returnJSON());
 
         } else {
             const responseAPI = new ResponseHTTP(true, "No cabin matching the specified number was found", null);
             responseAPI.showMessage();
-            return res.status(404).json(responseAPI);
+            return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of cabin", null, error);
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 

@@ -2,7 +2,7 @@ type Place = {
     name: string,
     description: string,
     location: string,
-    photoLink?: string[] | string
+    photoLink?: string
 };
 
 export { type Place };

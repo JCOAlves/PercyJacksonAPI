@@ -12,9 +12,7 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Annabeth Chase",
@@ -29,9 +27,7 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Grover Underwood",
@@ -39,9 +35,7 @@
         "category": "Creature",
         "camp": "Camp Half-Blood",
         "pantheon": "Greek",
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Luke Castellan",
@@ -56,9 +50,7 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Nico di Angelo",
@@ -73,9 +65,7 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Thalia Grace",
@@ -90,9 +80,7 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     },
     {
         "name": "Tyson",
@@ -107,8 +95,6 @@
         ],
         "skills": [],
         "artifacts": [],
-        "photoLink": [
-            ""
-        ]
+        "photoLink": ""
     }
 ]

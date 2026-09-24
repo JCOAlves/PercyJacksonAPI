@@ -7,7 +7,7 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
     try {
         const { camp = "", pantheon = "", cabin = "", category = "" } = req.query;
 
-        let listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters;
+        let listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters as (Character | Divinity | Demigod | Creature)[];
 
         if (category) listCharacters = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
 
@@ -20,19 +20,19 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
         if (listCharacters.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Characters successfully listed", listCharacters);
             responseAPI.showMessage();
-            return res.status(200).json(responseAPI);
+            return res.status(200).json(responseAPI.returnJSON());
 
         } else {
             const responseAPI = new ResponseHTTP(true, "No character matching the specified criteria was found", []);
             responseAPI.showMessage();
-            return res.status(404).json(responseAPI);
+            return res.status(404).json(responseAPI.returnJSON());
         };
 
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of characters", null, error);
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 
@@ -40,13 +40,13 @@ const GET_character = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters;
+        const listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters as (Character | Divinity | Demigod | Creature)[];
         let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
 
         if (!name) {
             const responseAPI = new ResponseHTTP(false, "Character name parameter not provided");
             responseAPI.showMessage();
-            return res.status(400).json(responseAPI);
+            return res.status(400).json(responseAPI.returnJSON());
         };
 
         characterFound = listCharacters.find(c => c.name.toLowerCase().startsWith(String(name).toLowerCase()));
@@ -54,18 +54,18 @@ const GET_character = (req: Request, res: Response): Response | void => {
         if (characterFound) {
             const responseAPI = new ResponseHTTP(true, "Character successfully listed", characterFound);
             responseAPI.showMessage();
-            return res.status(200).json(responseAPI);
+            return res.status(200).json(responseAPI.returnJSON());
 
         } else {
             const responseAPI = new ResponseHTTP(true, "No character matching the specified name was found", null);
             responseAPI.showMessage();
-            return res.status(404).json(responseAPI);
+            return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of character", null, error);
         responseAPI.showMessage("Error");
-        return res.status(500).json(responseAPI);
+        return res.status(500).json(responseAPI.returnJSON());
     };
 };
 

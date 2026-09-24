@@ -8,7 +8,7 @@ async function GetData(nameRoute, data = {}) {
         });
         const filters = param.length > 0 ? `?${param.join("&")}` : "";
 
-        let Response = await fetch(`http://localhost:3000${nameRoute}${filters}`);
+        let Response = await fetch(`http://localhost:3000/api/${nameRoute}${filters}`);
         let Data = await Response.json();
         return Data;
 
@@ -30,8 +30,10 @@ export default async function RequestingData(event) {
         const ResponseServer = await GetData(nameRoute);
         if (ResponseServer.success) {
             let listData = ResponseServer.data;
+            console.log(listData);
             listData = formattingData(listData, nameRoute);
-            document.getElementById("resultAPI").innerHTML = listData.join("");
+            console.log(listData);
+            document.getElementById("resultAPI").innerHTML = listData.join(" - ");
 
         } else {
             document.getElementById("resultAPI").innerHTML = `<div class="text-center text-lg font-semibold">${ResponseServer.message}</div>`
