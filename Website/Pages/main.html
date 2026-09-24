@@ -14,7 +14,7 @@
         <img src="" alt="Icon" srcset="">
         <div class="flex gap-5 justify-center items-center">
             <a href="#testAPI" class="hover:font-semibold">API Test</a>
-            <a href="/docs" class="hover:font-semibold">Documentation</a>
+            <a href="/documentation" class="hover:font-semibold">Documentation</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-menu preview-icon">
@@ -24,6 +24,7 @@
             </svg>
         </div>
     </nav>
+
     <main class="flex flex-col w-full">
         <section class="flex flex-col justify-center w-full min-h-90 text-white text-shadow-lg/30 p-6" id="head">
             <h1 class="text-center text-6xl font-semibold text-white">Percy Jackson API</h1>
@@ -32,6 +33,7 @@
                 from the Percy Jackson &amp; the Olympians universe (Riordanverse).
             </p>
         </section>
+
         <section class="p-10 w-full min-h-90 p-6 bg-gray-200" id="testAPI">
             <div class="flex flex-col gap-3 bg-white shadow w-full min-h-80 p-5 rounded-[15px]">
                 <h2 class="text-center text-3xl">Test API</h2>
@@ -42,6 +44,7 @@
                     <li class="border py-1 px-2 rounded-xl list_typeRoutes">Places</li>
                     <li class="border py-1 px-2 rounded-xl list_typeRoutes">Books</li>
                 </ul>
+
                 <form action="" method="get" id="testAPI">
                     <div id="inputsForm"></div>
                     <input type="hidden" name="typeRoute" id="typeRoute">
@@ -49,12 +52,13 @@
                     <button type="reset" class="py-2 px-4 bg-red-500 rounded text-white">Reset</button>
                     <button type="submit" class="py-2 px-4 bg-green-500 rounded text-white">Filter</button>
                 </form>
+                
                 <div id="resultAPI"></div>
-
-
             </div>
         </section>
+
     </main>
+
     <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 bg-[#22396F] text-center text-white">
         <div class="mb-3 font-semibold text-lg">
             <a href="#head">Back to the top of the page</a>
@@ -64,6 +68,7 @@
             <a href="/docs" class="hover:font-semibold">Documentation</a>
         </div>
     </footer>
+
     <script type="module" src="../JS/mainScript.js"></script>
 </body>
 
