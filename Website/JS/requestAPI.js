@@ -10,6 +10,7 @@ async function GetData(nameRoute, data = {}) {
 
         let Response = await fetch(`http://localhost:3000/api/${nameRoute}${filters}`);
         let Data = await Response.json();
+        console.log(Data);
         return Data;
 
     } catch (error) {
@@ -29,10 +30,9 @@ export default async function RequestingData(event) {
         const nameRoute = document.getElementById("typeRoute").value;
         const ResponseServer = await GetData(nameRoute);
         if (ResponseServer.success) {
+            console.log(ResponseServer.data)
             let listData = ResponseServer.data;
-            console.log(listData);
             listData = formattingData(listData, nameRoute);
-            console.log(listData);
             document.getElementById("resultAPI").innerHTML = listData.join("");
 
         } else {

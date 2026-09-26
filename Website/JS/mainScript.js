@@ -11,6 +11,7 @@ document.querySelectorAll(".list_typeRoutes").forEach(element => {
 document.querySelector("form").addEventListener("submit", RequestingData);
 
 window.addEventListener("DOMContentLoaded", async (event) => {
-    select_typeRoute("characters");
+    const nameRoute = localStorage.getItem("nameRoute");
+    nameRoute ? select_typeRoute(nameRoute) : select_typeRoute("characters");
     await RequestingData(event);
 });

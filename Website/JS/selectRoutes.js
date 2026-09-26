@@ -13,6 +13,7 @@ export default function select_typeRoute(nameRoute) {
             element.style.backgroundColor = "lightblue";
             document.getElementById("typeRoute").value = `${nameRoute.trim().toLowerCase()}`;
             document.getElementById("inputsForm").innerHTML = formsAPI[`${nameRoute.trim().toLowerCase()}`];
+            localStorage.setItem("nameRoute", nameRoute.trim().toLowerCase());
 
         } else {
             element.style.backgroundColor = "white";
