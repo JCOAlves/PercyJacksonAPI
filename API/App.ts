@@ -41,6 +41,6 @@ app.all("/*notfound", notFound);
 
 app.listen(PORT, () => {
     console.log(`----------- Percy Jackson API -----------`);
-    console.log(` Runnig on http://${HOST}:${PORT}  `);
+    console.log(`|    Started on ${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}     |`);
     console.log(`-----------------------------------------`);
 });
