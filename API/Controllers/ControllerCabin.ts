@@ -31,7 +31,7 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        cabinFound = listCabins.find(c => c.cabinNumber === Number(cabinNumber));
+        cabinFound = listCabins.find(c => Number(cabinNumber) && c.cabinNumber === Number(cabinNumber));
 
         if (cabinFound) {
             const responseAPI = new ResponseHTTP(true, "Cabin successfully listed", cabinFound);

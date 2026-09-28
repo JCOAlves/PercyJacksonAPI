@@ -49,7 +49,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        characterFound = listCharacters.find(c => c.name.toLowerCase().startsWith(String(name).toLowerCase()));
+        characterFound = listCharacters.find(c => c.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (characterFound) {
             const responseAPI = new ResponseHTTP(true, "Character successfully listed", characterFound);

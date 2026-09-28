@@ -44,7 +44,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        placeFound = listPlaces.find(p => p.name.toLowerCase().startsWith(String(name).toLowerCase()));
+        placeFound = listPlaces.find(p => p.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (placeFound) {
             const responseAPI = new ResponseHTTP(true, "Place successfully listed", placeFound);

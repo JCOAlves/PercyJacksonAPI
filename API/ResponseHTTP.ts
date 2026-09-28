@@ -12,7 +12,7 @@ type Data = {
     books?: (Saga | Book)[]
 };
 type UniqueData = Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book;
-type ListData = (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[];
+type ListData = (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | Book[];
 
 // Class Response HTTP
 class ResponseHTTP {

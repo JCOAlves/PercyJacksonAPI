@@ -46,7 +46,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        artifactFound = listArtifacts.find(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
+        artifactFound = listArtifacts.find(a => a.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (artifactFound) {
             const responseAPI = new ResponseHTTP(true, "Artifact successfully listed", artifactFound);

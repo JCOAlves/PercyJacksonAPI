@@ -7,8 +7,10 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.query;
 
+        const listBooks: Book[] = dataBooks as Book[];
+        let listSagas: Saga[] = [];
 
-        let listSagas: Saga[] = dataBooks as Saga[];
+        listBooks.forEach(b => !listSagas.some(s => s.name === b.saga.name) ? listSagas.push(b.saga) : null);
 
         if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -34,10 +36,10 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
 
-        let listBooks: Saga[] = dataBooks as Saga[];
+        let listBooks: Book[] = dataBooks as Book[];
 
-        if (saga) listBooks = listBooks.filter(b => b.name.toLowerCase().startsWith(String(saga).toLowerCase()));
-
+        if (saga) listBooks = listBooks.filter(s => s.saga.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()));
+            
         if (listBooks.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Books successfully listed", listBooks);
             responseAPI.showMessage();
@@ -47,7 +49,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
             const responseAPI = new ResponseHTTP(true, "No book matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
-        }
+        };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of books", null, error);
@@ -60,8 +62,8 @@ const GET_saga = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listBooks: Saga[] = dataBooks as Saga[];
-        let sagaFound: Saga | undefined | null = null;
+        const listBooks: Book[] = dataBooks as Book[];
+        let sagaFound: Book | Saga | undefined | null = null;
 
         if (!name) {
             const responseAPI = new ResponseHTTP(false, "Saga name parameter not provided");
@@ -69,7 +71,8 @@ const GET_saga = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        sagaFound = listBooks.find(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
+        sagaFound = listBooks.find(s => s.saga.name.toLowerCase() === (String(name).toLowerCase()));
+        sagaFound = sagaFound?.saga;
 
         if (sagaFound) {
             const responseAPI = new ResponseHTTP(true, "Saga successfully listed", sagaFound);
@@ -93,11 +96,8 @@ const GET_book = (req: Request, res: Response): Response | void => {
     try {
         const { title = "" } = req.params;
 
-        const listSagas: Saga[] = dataBooks as Saga[];
-        let listBooks: Book[] = [];
+        const listBooks: Book[] = dataBooks as Book[];
         let bookFound: Book | undefined | null = null;
-
-        listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
 
         if (!title) {
             const responseAPI = new ResponseHTTP(false, "Book title parameter not provided");
@@ -105,7 +105,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        bookFound = listBooks.find(b => b.title.toLowerCase().startsWith(String(title).toLowerCase()));
+        bookFound = listBooks.find(b => b.title.toLowerCase() === (String(title).toLowerCase()));
 
         if (bookFound) {
             const responseAPI = new ResponseHTTP(true, "Book successfully listed", bookFound);

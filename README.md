@@ -40,7 +40,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: (Character | Demigod | Divinity | Creature)[] | null,
+      data?: (Character | Demigod | Divinity | Creature)[] | [],
       error?: Error | any | undefined
     }
     ``` 
@@ -65,7 +65,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: Artifact[] | null,
+      data?: Artifact[] | [],
       error?: Error | any | undefined
     }
     ```
@@ -90,7 +90,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: Cabin[] | null,
+      data?: Cabin[] | [],
       error?: Error | any | undefined
     }
     ```
@@ -115,7 +115,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: Place[] | null,
+      data?: Place[] | [],
       error?: Error | any | undefined
     }
     ```
@@ -140,7 +140,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: Saga[] | null,
+      data?: Book[] | [],
       error?: Error | any | undefined
     }
     ```
@@ -152,7 +152,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     {
       success: boolean,
       message: string,
-      data?: Saga[] | null,
+      data?: Saga[] | [],
       error?: Error | any | undefined
     }
     ```

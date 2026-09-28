@@ -20,7 +20,6 @@ type Demigod = Character & {
     parents: (Divinity | Character | string)[],
     skills: string[],
     artifacts: Artifact[]
-
 };
 
 type Creature = Character & {
