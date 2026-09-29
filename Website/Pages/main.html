@@ -39,19 +39,16 @@
             <div class="flex flex-col gap-5 bg-white shadow w-full p-5 rounded-[15px]">
                 <h2 class="text-center text-3xl">Test API</h2>
                 <ul class="flex flex-wrap gap-2 items-center">
-                    <li class="border py-1 px-2 rounded-xl list_typeRoutes">Characters</li>
-                    <li class="border py-1 px-2 rounded-xl list_typeRoutes">Artifacts</li>
-                    <li class="border py-1 px-2 rounded-xl list_typeRoutes">Cabins</li>
-                    <li class="border py-1 px-2 rounded-xl list_typeRoutes">Places</li>
-                    <li class="border py-1 px-2 rounded-xl list_typeRoutes">Books</li>
+                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Characters route">Characters</li>
+                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Artifacts route">Artifacts</li>
+                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Cabins route">Cabins</li>
+                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Places route">Places</li>
+                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Books route">Books</li>
                 </ul>
 
-                <form class="flex flex-wrap gap-2 justify-start items-center">
-                    <div id="inputsForm" class="flex flex-wrap gap-2"></div>
-
+                <form class="flex flex-col md:flex-row flex-wrap gap-2 justify-start items-center w-full">
+                    <div id="inputsForm" class="flex flex-col flex-wrap gap-2 md:flex-row w-full"></div>
                     <input type="hidden" name="typeRoute" id="typeRoute">
-                    <button type="reset" class="bg-red-500 text-white hover:font-semibold">Reset</button>
-                    <button type="submit" class="bg-green-500 text-white hover:font-semibold">Filter</button>
                 </form>
                 
                 <div id="resultAPI"></div>
@@ -68,7 +65,9 @@
             <a href="#testAPI" class="hover:font-semibold">API Test</a>
             <a href="/docs" class="hover:font-semibold">Documentation</a>
         </div>
-        <p class="text-center">Copyright (c) 2026 Júlio César</p>
+        <p class="mt-5">
+            <a href="https://github.com/JCOAlves" class="text-center text-[12px] text-gray-200">Copyright (c) 2026 Júlio César</a>
+        </p>
     </footer>
 
     <script type="module" src="../JS/mainScript.js"></script>
