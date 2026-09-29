@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../Style/mainStyle.css">
+    <link rel="icon" href="" type="image/svg+xml">
     <title>Percy Jackson API</title>
 </head>
 
 <body>
     <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#22396F] text-white shadow">
-        <img src="" alt="Icon" srcset="">
+        <img src="" alt="Icon">
         <div class="flex gap-5 justify-center items-center">
             <a href="#testAPI" class="hover:font-semibold">API Test</a>
             <a href="/documentation" class="hover:font-semibold">Documentation</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-menu preview-icon">
                 <path d="M4 5h16" />
@@ -35,7 +36,7 @@
         </section>
 
         <section class="flex flex-col justify-center items-center p-10 w-full p-6 bg-gray-200" id="testAPI">
-            <div class="flex flex-col gap-3 bg-white shadow w-full p-5 rounded-[15px]">
+            <div class="flex flex-col gap-5 bg-white shadow w-full p-5 rounded-[15px]">
                 <h2 class="text-center text-3xl">Test API</h2>
                 <ul class="flex flex-wrap gap-2 items-center">
                     <li class="border py-1 px-2 rounded-xl list_typeRoutes">Characters</li>
@@ -45,12 +46,12 @@
                     <li class="border py-1 px-2 rounded-xl list_typeRoutes">Books</li>
                 </ul>
 
-                <form method="get" class="flex flex-wrap gap-2 justify-start items-center">
+                <form class="flex flex-wrap gap-2 justify-start items-center">
                     <div id="inputsForm" class="flex flex-wrap gap-2"></div>
 
                     <input type="hidden" name="typeRoute" id="typeRoute">
-                    <button type="reset" class="bg-red-500 text-white">Reset</button>
-                    <button type="submit" class="bg-green-500 text-white">Filter</button>
+                    <button type="reset" class="bg-red-500 text-white hover:font-semibold">Reset</button>
+                    <button type="submit" class="bg-green-500 text-white hover:font-semibold">Filter</button>
                 </form>
                 
                 <div id="resultAPI"></div>
@@ -67,6 +68,7 @@
             <a href="#testAPI" class="hover:font-semibold">API Test</a>
             <a href="/docs" class="hover:font-semibold">Documentation</a>
         </div>
+        <p class="text-center">Copyright (c) 2026 Júlio César</p>
     </footer>
 
     <script type="module" src="../JS/mainScript.js"></script>

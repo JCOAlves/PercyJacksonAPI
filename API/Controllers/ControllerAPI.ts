@@ -12,7 +12,7 @@ import { type Character } from '../Types/Character.ts';
 import { type Artifact } from '../Types/Artifact.ts';
 import { type Cabin } from '../Types/Cabin.ts';
 import { type Place } from '../Types/Place.ts';
-import { type Saga } from '../Types/Book.ts';
+import { type Book } from '../Types/Book.ts';
 
 import { type Data } from '../ResponseHTTP.ts';
 import ResponseHTTP from '../ResponseHTTP.ts';
@@ -45,7 +45,7 @@ const GET_allData = (req: Request, res: Response): Response | void => {
             artifacts: artifacts as Artifact[],
             cabins: cabins as Cabin[],
             places: places as Place[],
-            books: books as Saga[]
+            books: books as Book[]
         };
 
         const responseAPI = new ResponseHTTP(true, "Data successfully listed", Data);

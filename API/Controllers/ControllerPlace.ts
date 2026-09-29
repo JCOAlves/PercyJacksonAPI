@@ -19,7 +19,7 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No place matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, "No place matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
@@ -52,7 +52,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No place matching the specified name was found", null);
+            const responseAPI = new ResponseHTTP(false, "No place matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };

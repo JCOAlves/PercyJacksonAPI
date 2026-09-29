@@ -2,17 +2,17 @@ const formsAPI = {
     characters: `
         <input type="number" placeholder="Cabin number" class="min-w-35"
             name="cabin" id="cabin" min="1" max="20" step="1">
-        <select name="camp" id="camp" value="">
+        <select name="camp" id="camp">
             <option value="">Select the camp</option>
             <option value="Camp Half-Blood">Camp Half-Blood</option>
             <option value="Camp Jupiter">Camp Jupiter</option>
         </select>
-        <select name="pantheon" id="pantheon" value="">
+        <select name="pantheon" id="pantheon">
             <option value="">Select the pantheon</option>
             <option value="Greek">Greek</option>
             <option value="Roman">Roman</option>
         </select>
-        <select name="category" id="category" value="">
+        <select name="category" id="category">
             <option value="">Select the character category</option>
             <option value="Demigod">Demigod</option>
             <option value="Divinity">Divinity</option>
@@ -24,7 +24,7 @@ const formsAPI = {
         </select>`,
     
     artifacts: `
-        <select name="" id="" value="">
+        <select name="category" id="category">
             <option value="">Select the artifact category</option>
             <option value="weapon">Weapon</option>
             <option value="food">Food</option>
@@ -35,20 +35,20 @@ const formsAPI = {
             <option value="attack">Attack</option>
             <option value="defense">Defense</option>
         </select>
-        <input type="text" name="name" id="name" placeholder="Artifact name" maxlength="100" value="">
+        <input type="text" name="name" id="name" placeholder="Artifact name" maxlength="100">
         <input type="text" name="description" id="description" class="min-w-65"
-            placeholder="Search by the artifact description" maxlength="100" value="">`,
+            placeholder="Search by the artifact description" maxlength="100">`,
     
     cabins: `<input type="number" placeholder="Cabin number" class="min-w-35"
-        name="cabinNumber" id="cabinNumber" min="1" max="20" step="1" value="">`,
+        name="cabinNumber" id="cabinNumber" min="1" max="20" step="1">`,
     
     places: `
-        <input type="text" name="location" id="location" placeholder="Place name" maxlength="100" value="">
+        <input type="text" name="location" id="location" placeholder="Place name" maxlength="100">
         <input type="text" name="description" id="description" class="min-w-65"
-            placeholder="Search by the place description" maxlength="100" value="">`,
+            placeholder="Search by the place description" maxlength="100">`,
     
     books: `
-    <select name="saga" id="saga" value="">
+    <select name="saga" id="saga">
         <option value="">Select the serie books</option>
         <option value="Percy Jackson & the Olympians">Percy Jackson & the Olympians</option>
         <option value="The Heroes of Olympus">The Heroes of Olympus</option>

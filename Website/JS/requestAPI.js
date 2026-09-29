@@ -1,4 +1,5 @@
 import formattingData from "./formattingData.js";
+import check_formData from "./validateData.js";
 
 async function GetData(nameRoute, data = {}) {
     try {
@@ -28,16 +29,25 @@ export default async function RequestingData(event) {
         </div>`;
 
         const nameRoute = document.getElementById("typeRoute").value;
-        const ResponseServer = await GetData(nameRoute);
+        const Form = document.querySelector("form");
+        const dataForm = check_formData(new FormData(Form));
+        const ResponseServer = await GetData(nameRoute, dataForm);
         if (ResponseServer.success) {
-            console.log(ResponseServer.data)
             let listData = ResponseServer.data;
             listData = formattingData(listData, nameRoute);
             document.getElementById("resultAPI").innerHTML = `<div class="grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 
                 sm:grid-cols-2 gap-4 justify-center items-start w-full mx-auto">${listData.join("")}</div>`;
 
         } else {
-            document.getElementById("resultAPI").innerHTML = `<div class="text-center text-lg font-semibold">${ResponseServer.message}</div>`
+            document.getElementById("resultAPI").innerHTML = `<div class="my-8">
+                    <svg class="mb-3 mx-auto w-45 h-45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" 
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ghost preview-icon"><path d="M15 10v1"/>
+                        <path d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 
+                            1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z"/>
+                        <path d="M9 10v1"/>
+                    </svg>
+                    <p class="text-center text-lg font-semibold">${ResponseServer.message}</p>
+                </div>`
         };
         return;
 

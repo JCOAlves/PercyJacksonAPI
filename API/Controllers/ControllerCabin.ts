@@ -39,7 +39,7 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No cabin matching the specified number was found", null);
+            const responseAPI = new ResponseHTTP(false, "No cabin matching the specified number was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };

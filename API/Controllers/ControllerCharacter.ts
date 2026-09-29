@@ -23,7 +23,7 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No character matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, "No character matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
@@ -57,7 +57,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No character matching the specified name was found", null);
+            const responseAPI = new ResponseHTTP(false, "No character matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };

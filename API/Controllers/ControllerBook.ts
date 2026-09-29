@@ -20,7 +20,7 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No saga matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, "No saga matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
@@ -46,7 +46,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No book matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, "No book matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
@@ -80,7 +80,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No saga matching the specified name was found", null);
+            const responseAPI = new ResponseHTTP(false, "No saga matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
@@ -113,7 +113,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(true, "No book matching the specified title was found", null);
+            const responseAPI = new ResponseHTTP(false, "No book matching the specified title was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
