@@ -8,8 +8,13 @@
     background-position: center;
 }
 
-input{
+input, select{
     border: solid 1px;
     padding: 7px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 7px 14px;
     border-radius: 5px;
 }

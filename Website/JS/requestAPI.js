@@ -33,7 +33,8 @@ export default async function RequestingData(event) {
             console.log(ResponseServer.data)
             let listData = ResponseServer.data;
             listData = formattingData(listData, nameRoute);
-            document.getElementById("resultAPI").innerHTML = listData.join("");
+            document.getElementById("resultAPI").innerHTML = `<div class="grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 
+                sm:grid-cols-2 gap-4 justify-center items-start w-full mx-auto">${listData.join("")}</div>`;
 
         } else {
             document.getElementById("resultAPI").innerHTML = `<div class="text-center text-lg font-semibold">${ResponseServer.message}</div>`

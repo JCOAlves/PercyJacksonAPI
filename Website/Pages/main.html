@@ -45,14 +45,15 @@
                     <li class="border py-1 px-2 rounded-xl list_typeRoutes">Books</li>
                 </ul>
 
-                <form method="get">
-                    <div id="inputsForm"></div>
+                <form method="get" class="flex flex-wrap gap-2 justify-start items-center">
+                    <div id="inputsForm" class="flex flex-wrap gap-2"></div>
+
                     <input type="hidden" name="typeRoute" id="typeRoute">
-                    <button type="reset" class="py-2 px-4 bg-red-500 rounded text-white">Reset</button>
-                    <button type="submit" class="py-2 px-4 bg-green-500 rounded text-white">Filter</button>
+                    <button type="reset" class="bg-red-500 text-white">Reset</button>
+                    <button type="submit" class="bg-green-500 text-white">Filter</button>
                 </form>
                 
-                <div id="resultAPI" class="grid grid-cols-1 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-center items-start w-full mx-auto"></div>
+                <div id="resultAPI"></div>
             </div>
         </section>
 
