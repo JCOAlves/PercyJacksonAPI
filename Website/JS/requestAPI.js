@@ -39,8 +39,8 @@ export default async function RequestingData(event) {
 
         } else {
             document.getElementById("resultAPI").innerHTML = `<div class="my-8">
-                    <svg class="mb-3 mx-auto w-45 h-45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" 
-                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ghost preview-icon"><path d="M15 10v1"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" 
+                        stroke-linecap="round" stroke-linejoin="round" class="mb-3 mx-auto w-45 h-45 lucide lucide-ghost preview-icon"><path d="M15 10v1"/>
                         <path d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 
                             1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z"/>
                         <path d="M9 10v1"/>
@@ -51,7 +51,15 @@ export default async function RequestingData(event) {
         return;
 
     } catch (error) {
-        document.getElementById("resultAPI").innerHTML = `<div class="text-center text-lg font-semibold">Error in the formatting of data from the server in this page</div>`;
+        document.getElementById("resultAPI").innerHTML = `<div class="text-center text-lg font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="mb-3 mx-auto w-45 h-45 lucide lucide-shield-alert preview-icon">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 
+                    4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                    <path d="M12 8v4"/><path d="M12 16h.01"/>
+            </svg>
+            <p class="text-center text-lg font-semibold">Error in the formatting of data from the server in this page</p>
+        </div>`;
         console.error(`Error in the formatting of data from the server in this page: `, error.message || error);
         return;
     };

@@ -3,20 +3,19 @@ import { type Artifact } from "./Artifact.ts";
 type Character = {
     name: string,
     description: string,
-    category: "Mortal" | "Demigod" | "Divinity" | "Titan" | "Giant" | "Creature" | "Monster",
+    category: "Mortal" | "Demigod" | "Legacy" | "Divinity" | "Titan" | "Giant" | "Creature" | "Monster",
     photoLink?: string
 };
 
 type Divinity = Character & {
-    pantheon: "Greek" | "Roman",
-    ally?: boolean,
+    pantheon: "Greek" | "Roman" | "Greco-Roman",
     parents?: (Divinity | Character | string)[],
 };
 
 type Demigod = Character & {
     birthday: string | Date | null,
     camp: "Camp Half-Blood" | "Camp Jupiter",
-    cabin: number,
+    cabin: number | "There is not cabin to this demigod in Camp Half-Blood",
     parents: (Divinity | Character | string)[],
     skills: string[],
     artifacts: Artifact[]
@@ -26,7 +25,6 @@ type Creature = Character & {
     pantheon: "Greek" | "Roman",
     cabin?: number,
     camp?: "Camp Half-Blood" | "Camp Jupiter",
-    ally?: boolean,
     parents?: (Divinity | Character | string)[],
 };
 

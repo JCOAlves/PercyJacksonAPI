@@ -11,10 +11,12 @@ const formsAPI = {
             <option value="">Select the pantheon</option>
             <option value="Greek">Greek</option>
             <option value="Roman">Roman</option>
+            <option value="Greco-Roman">Greco-Roman</option>
         </select>
         <select name="category" id="category" title="Select the character category" class="grow-2 ">
             <option value="">Select the character category</option>
             <option value="Demigod">Demigod</option>
+            <option value="Legacy">Legacy</option>
             <option value="Divinity">Divinity</option>
             <option value="Titan">Titan</option>
             <option value="Giant">Giant</option>
@@ -66,10 +68,10 @@ export default function select_typeRoute(nameRoute) {
             document.getElementById("typeRoute").value = `${nameRoute.trim().toLowerCase()}`;
             document.getElementById("inputsForm").innerHTML = `${formsAPI[`${nameRoute.trim().toLowerCase()}`]}
             <div class="flex justify-center sm:justify-start grow-2 gap-2">
-                <button type="reset" class="text-center bg-red-500 text-white grow-1 sm:grow-0 hover:font-semibold 
-                    py-2 px-4 rounded w-18" title="Reset form" id="buttonReset">Reset</button>
-                <button type="submit" class="text-center bg-green-500 text-white grow-1 sm:grow-0 hover:font-semibold 
-                    py-2 px-4 rounded w-18" title="Filter data" id="buttonSubmit">Filter</button>
+                <button type="reset" class="text-center bg-red-500 text-white grow-1 hover:font-semibold 
+                    py-2 px-4 rounded max-w-none md:max-w-30" title="Reset form" id="buttonReset">Reset</button>
+                <button type="submit" class="text-center bg-green-500 text-white grow-1 hover:font-semibold 
+                    py-2 px-4 rounded max-w-none md:max-w-30" title="Filter data" id="buttonSubmit">Filter</button>
             </div>`;
             localStorage.setItem("nameRoute", nameRoute.trim().toLowerCase());
 
