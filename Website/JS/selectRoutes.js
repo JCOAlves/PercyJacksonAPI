@@ -1,6 +1,6 @@
 const formsAPI = {
     characters: `
-        <input type="number" placeholder="Cabin number" title="Cabin number" class="grow-2  min-w-60 "
+        <input type="number" placeholder="Text the cabin number" title="Cabin number" class="grow-2  min-w-60 "
             name="cabin" id="cabin" min="1" max="20" step="1">
         <select name="camp" id="camp" title="Select the camp" class="grow-2 ">
             <option value="">Select the camp</option>
@@ -21,13 +21,7 @@ const formsAPI = {
             <option value="Creature">Creature</option>
             <option value="Monster">Monster</option>
             <option value="Mortal">Mortal</option>
-        </select>
-        <div class="flex justify-start grow-2 gap-2">
-            <button type="reset" class="bg-red-500 text-white hover:font-semibold"
-                title="Reset form">Reset</button>
-            <button type="submit" class="bg-green-500 text-white hover:font-semibold"
-                title="Filter data">Filter</button>
-        </div>`,
+        </select>`,
     
     artifacts: `
         <select name="category" id="category" title="Select the artifact category" class="grow-2">
@@ -41,37 +35,19 @@ const formsAPI = {
             <option value="attack">Attack</option>
             <option value="defense">Defense</option>
         </select>
-        <input type="search" name="name" id="name" title="Artifact name" placeholder="Artifact name" 
+        <input type="search" name="name" id="name" title="Name of artifact" placeholder="Text the name of artifact" 
             maxlength="100" class="grow-2 ">
         <input type="search" name="description" id="description" title="Search by the artifact description" class="grow-2 min-w-40 "
-            placeholder="Search by the artifact description" maxlength="100">
-        <div class="flex justify-start grow-2 gap-2">
-            <button type="reset" class="bg-red-500 text-white hover:font-semibold"
-                title="Reset form">Reset</button>
-            <button type="submit" class="bg-green-500 text-white hover:font-semibold"
-                title="Filter data">Filter</button>
-        </div>`,
+            placeholder="Search by the artifact description" maxlength="100">`,
     
-    cabins: `<input type="number" placeholder="Cabin number" title="Cabin number" class="grow-2  min-w-40 md:max-w-80 w-full"
-        name="cabinNumber" id="cabinNumber" min="1" max="20" step="1">
-        <div class="flex justify-start grow-2 gap-2">
-            <button type="reset" class="bg-red-500 text-white hover:font-semibold"
-                title="Reset form">Reset</button>
-            <button type="submit" class="bg-green-500 text-white hover:font-semibold"
-                title="Filter data">Filter</button>
-        </div>`,
+    cabins: `<input type="number" placeholder="Text the Cabin number" title="Cabin number" class="grow-2  min-w-40 md:max-w-80 w-full"
+        name="cabinNumber" id="cabinNumber" min="1" max="20" step="1">`,
     
     places: `
-        <input type="search" name="location" id="location" title="Place name" 
+        <input type="search" name="location" id="location" title="Name of place" 
             placeholder="Place name" maxlength="100" class="grow-2 min-w-40 md:max-w-90 w-full">
         <input type="search" name="description" id="description" title="Search by the place description" class="grow-2 min-w-40 md:max-w-90 w-full"
-            placeholder="Search by the place description" maxlength="100">
-        <div class="flex justify-start grow-2 gap-2">
-            <button type="reset" class="bg-red-500 text-white hover:font-semibold"
-                title="Reset form">Reset</button>
-            <button type="submit" class="bg-green-500 text-white hover:font-semibold"
-                title="Filter data">Filter</button>
-        </div>`,
+            placeholder="Search by the place description" maxlength="100">`,
 
     books: `
         <select name="saga" id="saga" title="Select the serie books" class="grow-2 md:max-w-90 w-full">
@@ -79,13 +55,7 @@ const formsAPI = {
             <option value="Percy Jackson & the Olympians">Percy Jackson & the Olympians</option>
             <option value="The Heroes of Olympus">The Heroes of Olympus</option>
             <option value="The Trials of Apollo">The Trials of Apollo</option>
-        </select>
-        <div class="flex justify-start grow-2 gap-2">
-            <button type="reset" class="bg-red-500 text-white hover:font-semibold"
-                title="Reset form">Reset</button>
-            <button type="submit" class="bg-green-500 text-white hover:font-semibold"
-                title="Filter data">Filter</button>
-        </div>`
+        </select>`
 };
 
 export default function select_typeRoute(nameRoute) {
@@ -94,7 +64,13 @@ export default function select_typeRoute(nameRoute) {
         if (element.textContent.trim().toLowerCase() === nameRoute.trim().toLowerCase()) {
             element.style.backgroundColor = "#8cd5f0";
             document.getElementById("typeRoute").value = `${nameRoute.trim().toLowerCase()}`;
-            document.getElementById("inputsForm").innerHTML = formsAPI[`${nameRoute.trim().toLowerCase()}`];
+            document.getElementById("inputsForm").innerHTML = `${formsAPI[`${nameRoute.trim().toLowerCase()}`]}
+            <div class="flex justify-center sm:justify-start grow-2 gap-2">
+                <button type="reset" class="text-center bg-red-500 text-white grow-1 sm:grow-0 hover:font-semibold 
+                    py-2 px-4 rounded w-18" title="Reset form" id="buttonReset">Reset</button>
+                <button type="submit" class="text-center bg-green-500 text-white grow-1 sm:grow-0 hover:font-semibold 
+                    py-2 px-4 rounded w-18" title="Filter data" id="buttonSubmit">Filter</button>
+            </div>`;
             localStorage.setItem("nameRoute", nameRoute.trim().toLowerCase());
 
         } else {
@@ -102,5 +78,17 @@ export default function select_typeRoute(nameRoute) {
 
         }
     });
+};
+
+export function hiddenForm() {
+    if(document.getElementById("formFilters").className === "hidden"){
+        document.getElementById("formFilters").className = `flex flex-col md:flex-row 
+            flex-wrap gap-2 justify-start w-full`;
+        document.getElementById("buttonFilters").className = "flex gap-1 bg-gray-300 py-1 px-2 rounded-xl";
+
+    } else{
+        document.getElementById("formFilters").className = "hidden";
+        document.getElementById("buttonFilters").className = "flex gap-1 bg-gray-200 py-1 px-2 rounded-xl";
+    };
 };
 

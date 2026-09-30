@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../Style/mainStyle.css">
-    <link rel="icon" href="" type="image/svg+xml">
+    <link rel="icon" href="../Imgs/iconWebsite.png" type="image/svg+xml">
     <title>Percy Jackson API</title>
 </head>
 
 <body>
-    <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#22396F] text-white shadow">
-        <img src="" alt="Icon">
+    <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#22396F] text-white shadow min-w-[360px]">
+        <div class="flex flex-row gap-5 justify-center items-center">
+            <img src="../Imgs/iconWebsite.png" alt="Icon website" class="w-12">
+            <p class="hidden sm:flex text-2xl font-semibold">Percy Jackson API</p>
+        </div>
         <div class="flex gap-5 justify-center items-center">
-            <a href="#testAPI" class="hover:font-semibold">API Test</a>
+            <a href="#testAPI" class="hover:font-semibold">Test the REST API</a>
             <a href="/documentation" class="hover:font-semibold">Documentation</a>
-            <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu preview-icon">
+                class="w-7 h-7 lucide lucide-menu preview-icon">
                 <path d="M4 5h16" />
                 <path d="M4 12h16" />
                 <path d="M4 19h16" />
@@ -26,7 +29,7 @@
         </div>
     </nav>
 
-    <main class="flex flex-col w-full">
+    <main class="flex flex-col w-full min-w-[360px]">
         <section class="flex flex-col justify-center w-full min-h-90 text-white text-shadow-lg/30 p-6" id="head">
             <h1 class="text-center text-6xl font-semibold text-white">Percy Jackson API</h1>
             <p class="text-center text-[18px] my-6">A REST API system providing data on characters, creatures,
@@ -35,19 +38,60 @@
             </p>
         </section>
 
-        <section class="flex flex-col justify-center items-center p-10 w-full p-6 bg-gray-200" id="testAPI">
+        <section class="flex flex-col p-10 w-full p-6 bg-gray-200" id="testAPI">
             <div class="flex flex-col gap-5 bg-white shadow w-full p-5 rounded-[15px]">
-                <h2 class="text-center text-3xl">Test API</h2>
-                <ul class="flex flex-wrap gap-2 items-center">
-                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Characters route">Characters</li>
-                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Artifacts route">Artifacts</li>
-                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Cabins route">Cabins</li>
-                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Places route">Places</li>
-                    <li class="py-1 px-2 rounded-xl list_typeRoutes" title="Books route">Books</li>
-                </ul>
+                <h2 class="text-center text-3xl">Test the REST API</h2>
+                <div class="flex flex-row flex-wrap gap-2 items-center">
+                    <ul class="flex flex-wrap gap-2 justify-center md:justify-start items-center w-full sm:w-200">
+                        <li class="flex gap-1 py-1 px-2 rounded-xl list_typeRoutes" title="Characters route">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-user-round preview-icon">
+                                <circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
+                            </svg>
+                            Characters
+                        </li>
+                        <li class="flex gap-1 py-1 px-2 rounded-xl list_typeRoutes" title="Artifacts route">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-amphora preview-icon">
+                                <path d="M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8"/>
+                                <path d="M10 5H8a2 2 0 0 0 0 4h.68"/><path d="M14 2v5.632c0 .424.272.795.652.982A6 6 0 0 1 18 14c0 4-3 7-5 8"/>
+                                <path d="M14 5h2a2 2 0 0 1 0 4h-.68"/><path d="M18 22H6"/><path d="M9 2h6"/>
+                            </svg>
+                            Artifacts
+                        </li>
+                        <li class="flex gap-1 py-1 px-2 rounded-xl list_typeRoutes" title="Cabins route">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-landmark preview-icon">
+                                <path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/>
+                                <path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/>
+                            </svg>
+                            Cabins
+                        </li>
+                        <li class="flex gap-1 py-1 px-2 rounded-xl list_typeRoutes" title="Places route">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-map-pin preview-icon">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Places
+                        </li>
+                        <li class="flex gap-1 py-1 px-2 rounded-xl list_typeRoutes" title="Books route">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-book preview-icon">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+                            </svg>
+                            Books
+                        </li>
+                        <button id="buttonFilters" class="flex gap-1 bg-gray-200 py-1 px-2 rounded-xl" title="Data filters">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 lucide lucide-funnel preview-icon"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg>
+                            Filters
+                        </button>
+                    </ul>
+                </div>
 
-                <form class="flex flex-col md:flex-row flex-wrap gap-2 justify-start w-full">
-                    <div id="inputsForm" class="flex flex-row flex-wrap gap-2 w-full"></div>
+                <form class="hidden" id="formFilters">
+                    <div id="inputsForm" class="flex flex-col flex-wrap gap-2 w-full md:flex-row"></div>
                     <input type="hidden" name="typeRoute" id="typeRoute">
                 </form>
 
@@ -57,7 +101,7 @@
 
     </main>
 
-    <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 bg-[#22396F] text-center text-white">
+    <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 min-w-[360px] bg-[#22396F] text-center text-white">
         <div class="mb-3 font-semibold text-lg">
             <a href="#head">Back to the top of the page</a>
         </div>

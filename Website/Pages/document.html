@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../Style/docStyle.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../Imgs/iconWebsite.png" type="image/svg+xml">
     <title>Percy Jackson API</title>
 </head>
 
 <body>
-    <nav class="flex justify-between items-center w-full p-5 h-20 bg-[#22396F] text-white shadow">
-        <img src="" alt="Icon">
+    <nav class="flex justify-between items-center w-full min-w-[360px] p-5 h-20 bg-[#22396F] text-white shadow">
+        <div class="flex flex-row gap-5 justify-center items-center">
+            <img src="../Imgs/iconWebsite.png" alt="Icon website" class="w-12">
+            <p class="hidden sm:flex text-2xl font-semibold">Percy Jackson API</p>
+        </div>
         <div class="flex flex-wrap gap-5 justify-center items-center">
-            <a href="#characters" class="hover:font-semibold">Characters</a>
-            <a href="#artifacts" class="hover:font-semibold">Artifacts</a>
-            <a href="#cabins" class="hover:font-semibold">Cabins</a>
-            <a href="#places" class="hover:font-semibold">Places</a>
-            <a href="#books" class="hover:font-semibold">Books</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <ul class="hidden md:flex flex-wrap gap-5">
+                <a href="#characters" class="hover:font-semibold">Characters</a>
+                <a href="#artifacts" class="hover:font-semibold">Artifacts</a>
+                <a href="#cabins" class="hover:font-semibold">Cabins</a>
+                <a href="#places" class="hover:font-semibold">Places</a>
+                <a href="#books" class="hover:font-semibold">Books</a>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu preview-icon">
+                class="w-7 h-7 lucide lucide-menu preview-icon">
                 <path d="M4 5h16" />
                 <path d="M4 12h16" />
                 <path d="M4 19h16" />
             </svg>
         </div>
     </nav>
-    <main class="flex flex-col p-10">
+    <main class="flex flex-col p-10 min-w-[360px] max-w-320 mx-auto">
         <h1 class="text-center text-4xl" id="headDoc">Documentation of Percy Jackson API</h1>
         <p class="text-justify my-4">
             A REST API system providing data on characters, creatures, artifacts, and themes from the <span
@@ -130,7 +135,7 @@
         <h3 class="text-2xl" id="cabins">Cabin route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/cabins</code> list of all cabins in Camp Half-Blood.
+                <code>/api/cabins</code>: list of all cabins in Camp Half-Blood.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{
     success: boolean,
@@ -140,7 +145,7 @@
 }</code></pre>
             </li>
             <li>
-                <code>/api/cabins/:cabinNumber</code> returns a specific cabin by cabin number, which is a number.
+                <code>/api/cabins/:cabinNumber</code>: returns a specific cabin by cabin number, which is a number.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{
     success: boolean,
@@ -224,7 +229,7 @@
 
         </ul>
     </main>
-    <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 bg-[#22396F] text-center text-white">
+    <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 min-w-[360px] bg-[#22396F] text-center text-white">
         <div class="mb-3 font-semibold text-lg">
             <a href="#headDoc">Back to the top of the page</a>
         </div>

@@ -1,4 +1,4 @@
-import select_typeRoute from "./selectRoutes.js";
+import select_typeRoute, { hiddenForm } from "./selectRoutes.js";
 import RequestingData from "./requestAPI.js";
 
 document.querySelectorAll(".list_typeRoutes").forEach(element => {
@@ -7,6 +7,8 @@ document.querySelectorAll(".list_typeRoutes").forEach(element => {
         await RequestingData(event);
     });
 });
+
+document.getElementById("buttonFilters").addEventListener("click", hiddenForm);
 
 document.querySelector("form").addEventListener("submit", RequestingData);
 
