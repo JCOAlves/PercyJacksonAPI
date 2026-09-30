@@ -11,7 +11,6 @@ async function GetData(nameRoute, data = {}) {
 
         let Response = await fetch(`http://localhost:3000/api/${nameRoute}${filters}`);
         let Data = await Response.json();
-        console.log(Data);
         return Data;
 
     } catch (error) {
