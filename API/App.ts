@@ -31,7 +31,7 @@ app.get("/documentation", GET_docsPage);
 
 app.get("/api", GET_allData);
 app.use("/api/artifacts", RoutersArtifact);
-app.use("/api/books", RoutersBook);
+app.use("/api/sagas", RoutersBook);
 app.use("/api/cabins", RoutersCabin);
 app.use("/api/characters", RoutersCharacter);
 app.use("/api/places", RoutersPlace);

@@ -3,7 +3,7 @@ import RequestingData from "./requestAPI.js";
 
 document.querySelectorAll(".list_typeRoutes").forEach(element => {
     element.addEventListener('click', async (event) => {
-        select_typeRoute(event.target.textContent);
+        select_typeRoute(event.target.closest('li').dataset.route);
         await RequestingData(event);
     });
 });

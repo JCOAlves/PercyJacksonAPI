@@ -7,10 +7,7 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.query;
 
-        const listBooks: Book[] = dataBooks as Book[];
-        let listSagas: Saga[] = [];
-
-        listBooks.forEach(b => !listSagas.some(s => s.name === b.saga.name) ? listSagas.push(b.saga) : null);
+        let listSagas: Saga[] = dataBooks as Saga[];
 
         if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -36,9 +33,17 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
 
-        let listBooks: Book[] = dataBooks as Book[];
+        const listSagas: Saga[] = dataBooks as Saga[];
+        let listBooks: Book[] = [];
 
-        if (saga) listBooks = listBooks.filter(s => s.saga.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()));
+        if (saga){ 
+            listSagas.forEach(s => s.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()) ?
+                listBooks = [...listBooks, ...s.books] : listBooks = [...listBooks]
+            );
+
+        } else{
+            listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
+        };
             
         if (listBooks.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Books successfully listed", listBooks);
@@ -62,8 +67,8 @@ const GET_saga = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listBooks: Book[] = dataBooks as Book[];
-        let sagaFound: Book | Saga | undefined | null = null;
+        const listSagas: Saga[] = dataBooks as Saga[];
+        let sagaFound: Saga | undefined | null = null;
 
         if (!name) {
             const responseAPI = new ResponseHTTP(false, "Saga name parameter not provided");
@@ -71,8 +76,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        sagaFound = listBooks.find(s => s.saga.name.toLowerCase() === (String(name).toLowerCase()));
-        sagaFound = sagaFound?.saga;
+        sagaFound = listSagas.find(s => s.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (sagaFound) {
             const responseAPI = new ResponseHTTP(true, "Saga successfully listed", sagaFound);
@@ -96,7 +100,8 @@ const GET_book = (req: Request, res: Response): Response | void => {
     try {
         const { title = "" } = req.params;
 
-        const listBooks: Book[] = dataBooks as Book[];
+        const listSagas: Saga[] = dataBooks as Saga[];
+        let listBooks: Book[] = [];
         let bookFound: Book | undefined | null = null;
 
         if (!title) {
@@ -105,6 +110,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
+        listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
         bookFound = listBooks.find(b => b.title.toLowerCase() === (String(title).toLowerCase()));
 
         if (bookFound) {

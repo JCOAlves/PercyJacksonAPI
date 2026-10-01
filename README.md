@@ -133,7 +133,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     ```
 
 ### Book route
-- ``/api/books``: list of all Percy Jackson universe books. It can be filtered by `saga`.
+- ``/api/sagas/books``: list of all Percy Jackson universe books. It can be filtered by `saga`.
   
     **Response body**:
     ```typescript
@@ -145,7 +145,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/books/sagas``: list of Percy Jackson book series. It can be filtered by `name`.
+- ``/api/sagas``: list of Percy Jackson book series. It can be filtered by `name`.
   
     **Response body**:
     ```typescript
@@ -157,7 +157,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
   
-- ``/api/books/:title``: returns a specific book by title, which is a string.
+- ``/api/sagas/books/:title``: returns a specific book by title, which is a string.
   
     **Response body**:
     ```typescript
@@ -169,7 +169,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     }
     ```
 
-- ``/api/books/sagas/:name``: returns a specific Percy Jackson book series by name, which is a string.
+- ``/api/sagas/:name``: returns a specific Percy Jackson book series by name, which is a string.
   
     **Response body**:
     ```typescript

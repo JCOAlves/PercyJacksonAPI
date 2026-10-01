@@ -184,7 +184,7 @@
         <h3 class="text-2xl" id="books">Book route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/books</code>: list of all Percy Jackson universe books. It can be filtered by
+                <code>/api/sagas/books</code>: list of all Percy Jackson universe books. It can be filtered by
                 <code>saga</code>.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{
@@ -195,7 +195,7 @@
 }</code></pre>
             </li>
             <li>
-                <code>/api/books/sagas</code>: list of Percy Jackson book series. It can be filtered by
+                <code>/api/sagas</code>: list of Percy Jackson book series. It can be filtered by
                 <code>name</code>.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{
@@ -206,7 +206,7 @@
 }</code></pre>
             </li>
             <li>
-                <code>/api/books/:title</code>: returns a specific book by title, which is a string.
+                <code>/api/sagas/books/:title</code>: returns a specific book by title, which is a string.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{
     success: boolean,
@@ -216,7 +216,7 @@
 }</code></pre>
             </li>
             <li>
-                <code>/api/books/sagas/:name</code>: returns a specific Percy Jackson book series by name, which is a
+                <code>/api/sagas/:name</code>: returns a specific Percy Jackson book series by name, which is a
                 string.
                 <br><strong>Response body</strong>:
                 <pre><code class="language-typescript">{

@@ -1,5 +1,5 @@
 const formsAPI = {
-    characters: `
+    "characters": `
         <input type="number" placeholder="Text the cabin number" title="Cabin number" class="grow-2  min-w-60 "
             name="cabin" id="cabin" min="1" max="20" step="1">
         <select name="camp" id="camp" title="Select the camp" class="grow-2 ">
@@ -25,7 +25,7 @@ const formsAPI = {
             <option value="Mortal">Mortal</option>
         </select>`,
     
-    artifacts: `
+    "artifacts": `
         <select name="category" id="category" title="Select the artifact category" class="grow-2">
             <option value="">Select the artifact category</option>
             <option value="weapon">Weapon</option>
@@ -42,16 +42,16 @@ const formsAPI = {
         <input type="search" name="description" id="description" title="Search by the artifact description" class="grow-2 min-w-40 "
             placeholder="Search by the artifact description" maxlength="100">`,
     
-    cabins: `<input type="number" placeholder="Text the Cabin number" title="Cabin number" class="grow-2  min-w-40 md:max-w-80 w-full"
+    "cabins": `<input type="number" placeholder="Text the Cabin number" title="Cabin number" class="grow-2  min-w-40 md:max-w-80 w-full"
         name="cabinNumber" id="cabinNumber" min="1" max="20" step="1">`,
     
-    places: `
+    "places": `
         <input type="search" name="location" id="location" title="Name of place" 
             placeholder="Place name" maxlength="100" class="grow-2 min-w-40 md:max-w-90 w-full">
         <input type="search" name="description" id="description" title="Search by the place description" class="grow-2 min-w-40 md:max-w-90 w-full"
             placeholder="Search by the place description" maxlength="100">`,
 
-    books: `
+    "sagas/books": `
         <select name="saga" id="saga" title="Select the serie books" class="grow-2 md:max-w-90 w-full">
             <option value="">Select the serie books</option>
             <option value="Percy Jackson & the Olympians">Percy Jackson & the Olympians</option>
@@ -63,7 +63,7 @@ const formsAPI = {
 export default function select_typeRoute(nameRoute) {
     const list_typeRoutes = document.querySelectorAll(".list_typeRoutes");
     list_typeRoutes.forEach(element => {
-        if (element.textContent.trim().toLowerCase() === nameRoute.trim().toLowerCase()) {
+        if (element.dataset.route.trim().toLowerCase() === nameRoute.trim().toLowerCase()) {
             element.style.backgroundColor = "#8cd5f0";
             document.getElementById("typeRoute").value = `${nameRoute.trim().toLowerCase()}`;
             document.getElementById("inputsForm").innerHTML = `${formsAPI[`${nameRoute.trim().toLowerCase()}`]}
