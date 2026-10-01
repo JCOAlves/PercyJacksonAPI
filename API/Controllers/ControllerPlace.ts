@@ -9,7 +9,7 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
 
         let listPlaces: Place[] = dataPlaces as Place[];
 
-        if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().startsWith(String(location).toLowerCase()));
+        if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().includes(String(location).toLowerCase()));
 
         if (description) listPlaces = listPlaces.filter(p => p.description.toLowerCase().includes(String(description).toLowerCase()));
 

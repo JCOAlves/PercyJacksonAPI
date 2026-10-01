@@ -14,8 +14,15 @@ pre {
 
 li code {
     background-color: #F3F4F4;
-    padding: 1px 4px;
-    border-radius: 2px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+p code {
+    background-color: #F3F4F4;
+    padding: 1px 6px;
+    border-radius: 4px;
     font-style: italic;
 }
 
