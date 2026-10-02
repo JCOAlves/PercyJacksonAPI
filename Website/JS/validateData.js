@@ -26,7 +26,7 @@ function check_formData(form) {
             form.get('location') ? dataQuery.location = form.get('location').toLowerCase().trim() : null;
             break;
 
-        case "books":
+        case "sagas/books":
             form.get('saga') ? dataQuery.saga = form.get('saga').toLowerCase().trim() : null;
             break;
     };

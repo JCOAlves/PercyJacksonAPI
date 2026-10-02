@@ -33,17 +33,12 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
 
-        const listSagas: Saga[] = dataBooks as Saga[];
+        let listSagas: Saga[] = dataBooks as Saga[];
         let listBooks: Book[] = [];
 
-        if (saga){ 
-            listSagas.forEach(s => s.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()) ?
-                listBooks = [...listBooks, ...s.books] : listBooks = [...listBooks]
-            );
-
-        } else{
-            listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
-        };
+        if (saga) listSagas = listSagas.filter(s => s.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()));
+        
+        listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
             
         if (listBooks.length > 0) {
             const responseAPI = new ResponseHTTP(true, "Books successfully listed", listBooks);

@@ -34,7 +34,7 @@ export default async function RequestingData(event) {
         if (ResponseServer.success) {
             let listData = ResponseServer.data;
             listData = formattingData(listData, nameRoute);
-            document.getElementById("resultAPI").innerHTML = `<div class="grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 
+            document.getElementById("resultAPI").innerHTML = `<div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 
                 sm:grid-cols-2 gap-4 justify-center items-start w-full mx-auto">${listData.join("")}</div>`;
 
         } else {
