@@ -31,6 +31,7 @@ export default async function RequestingData(event) {
         const Form = document.querySelector("form");
         const dataForm = check_formData(new FormData(Form));
         const ResponseServer = await GetData(nameRoute, dataForm);
+        console.log(ResponseServer)
         if (ResponseServer.success) {
             let listData = ResponseServer.data;
             listData = formattingData(listData, nameRoute);

@@ -54,7 +54,7 @@ const formsAPI = {
     "sagas/books": `
         <select name="saga" id="saga" title="Select the serie books" class="grow-2 md:max-w-90 w-full">
             <option value="">Select the serie books</option>
-            <option value="Percy Jackson & the Olympians">Percy Jackson & the Olympians</option>
+            <option value="Percy Jackson and the Olympians">Percy Jackson and the Olympians</option>
             <option value="The Heroes of Olympus">The Heroes of Olympus</option>
             <option value="The Trials of Apollo">The Trials of Apollo</option>
         </select>`
