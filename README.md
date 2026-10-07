@@ -180,3 +180,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
       error?: Error | any | undefined
     }
     ```
+
+## Developers and contributors of the project
+- [**Júlio César**](https://github.com/JCOAlves): Creator and main fullstack dev of the application.
+- [**Breno Gusmão**](https://github.com/BrennoGithub): Contributor responsible for the release of part of the API data.
