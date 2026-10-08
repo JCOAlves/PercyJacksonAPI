@@ -3,23 +3,306 @@
         "name": "Grover Underwood",
         "description": "Grover Underwood is a satyr and a Lord of Nature, along with Silenus and Maron. He is also a Chosen of Pan and carries the soul of Pan. He is the tritagonist of the Percy Jackson and the Olympians series and a secondary character in The Heroes of Olympus and The Trials of Apollo. Grover is the satyr who encountered the demigods Thalia Grace, Nico and Bianca di Angelo, Percy Jackson, Annabeth Chase, and Luke Castellan. Currently, Grover is in a relationship with the dryad Juniper.",
         "category": "Creature",
+        "photoLink": "",
         "camp": "Camp Half-Blood",
-        "pantheon": "Greek",
-        "photoLink": ""
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Chiron",
+        "description": "Chiron is the activities director at Camp Half-Blood. He is a centaur and is the son of Kronos. Chiron is also known as Mr. Brunner.",
+        "category": "Creature",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "pantheon": "Greek"
     },
     {
         "name": "Tyson",
-        "description": "Tyson is a Cyclops, son of Poseidon and a nymph, and Percy Jackson 's paternal half-brother. He is currently transcribing the Sibylline Books with his girlfriend, Ella, the harpy.",
+        "description": "Tyson is a Cyclops, a son of Poseidon, and Percy Jackson’s half brother. He is the current general of the Cyclopes army.",
         "category": "Creature",
+        "photoLink": "",
+        "cabin": "3",
         "camp": "Camp Half-Blood",
-        "cabin": 3,
-        "birthday": "Unknown",
-        "parents": [
-            "Poseidon",
-            "A nymph"
-        ],
-        "skills": [],
-        "artifacts": [],
-        "photoLink": ""
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Ella",
+        "description": "Ella is a small, red-feathered, and skinny harpy. Her eidetic memory gives her the ability to memorize almost anything she reads. She read parts of the sacred Sibylline Books of Rome before they were destroyed and can recite the prophecies from the books, making her a very valuable person, especially to the Romans. The first full prophecy she recited in the series was about the third book, The Mark of Athena. She is currently in a relationship with Tyson, the Cyclops.",
+        "category": "Creature",
+        "photoLink": "",
+        "camp": "Camp Jupiter",
+        "pantheon": "Roman"
+    },
+    {
+        "name": "Juniper",
+        "description": "Juniper the dryad lives in the woods at Camp Half-Blood, where she is the nature spirit of a juniper bush. (Duh.) She is currently dating Grover Underwood, satyr extraordinaire.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Zoë Nightshade",
+        "description": "Zoë Nightshade is a lieutenant in the Artemis Hunters. She was originally a member of the Hesperides, the nymphs of the sunset, and the daughter of the Titan Atlas and the Oceanid Pleione.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Calipso",
+        "description": "Calypso is the daughter of Atlas. She appears briefly in The Battle of the Labyrinth where she meets Percy Jackson and then in The House of Hades and in The Blood of Olympus when she meets and escapes with Leo Valdez.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Coach Gleeson Hedge",
+        "description": "Gleeson Hedge is a middle-aged satyr that was formerly filling in as a coach at the Wilderness School. He was the protector of Piper McLean, Jason Grace, Leo Valdez, and Clarisse La Rue. He is also the husband of Mellie and the father of their unborn child.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Agamethus",
+        "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+        "category": "Mortal",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Mellie",
+        "description": "Cloud nymph Mellie, the wonderful and courageous wife of Gleeson Hedge, has her hands full keeping the Coach out of trouble and helping to care for their little baby satyr boy Chuck. Fortunately, Millie is very organized and smart, so she’s the right cloud for the job!",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Arachne",
+        "description": "Arachne was a great mortal weaver. She once challenged Athena to a contest to see who really was the best weaver. She was turned into a spider by the goddess Athena because her tapestry was a great insult to the gods. Arachne’s name simply means “spider” in Greek.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greco-Roman"
+    },
+    {
+        "name": "Centaur",
+        "description": "A being with a human torso and the body of a horse, often associated with the wilderness and warfare.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Minotaur",
+        "description": "A bull-headed creature imprisoned in the Labyrinth of Crete.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Medusa",
+        "description": "A Gorgon capable of turning anyone who looked directly at her into stone.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Cyclops",
+        "description": "A giant one-eyed being. Some Cyclopes were divine blacksmiths who aided the gods.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Cerberus",
+        "description": "A multi-headed dog that guards the entrance to the Underworld.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Lernaean Hydra",
+        "description": "A many-headed serpent whose heads could regenerate when cut off.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Chimera",
+        "description": "A fire-breathing monster combining features of a lion, goat, and serpent.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Sphinx",
+        "description": "A lion-bodied creature with a human head, famous for the riddle of Oedipus.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Harpy",
+        "description": "A winged creature associated with storms, punishment, and torment.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Siren",
+        "description": "A dangerous creature that lured sailors to their deaths with enchanting songs.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Griffin",
+        "description": "A lion-eagle creature associated with protection, guardianship, and treasure.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Pegasus",
+        "description": "A divine winged horse associated with heroes and the heavens.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Echidna",
+        "description": "A half-woman, half-serpent monster and mother of many famous monsters.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Scylla",
+        "description": "A deadly sea monster that attacked sailors passing through a dangerous strait.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Charybdis",
+        "description": "A monstrous sea entity that created a massive whirlpool capable of destroying ships.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Ladon",
+        "description": "A giant serpent or dragon that guarded the Golden Apples of the Hesperides.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Erinyes (Furies)",
+        "description": "Three supernatural beings who hunted and punished those guilty of terrible crimes.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greco-Roman"
+    },
+    {
+        "name": "Nymphs",
+        "description": "Nature spirits associated with forests, rivers, mountains, springs, and other natural places.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greco-Roman"
+    },
+    {
+        "name": "Satyr",
+        "description": "Nature spirits associated with wilderness, wine, music, and pleasure.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Faun",
+        "description": "Roman nature spirits associated with forests, nature, and rural life.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Roman"
+    },
+    {
+        "name": "Silenus",
+        "description": "Nature spirits associated with Dionysus, often depicted with equine features.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Lemures",
+        "description": "Restless spirits of the dead believed to haunt and disturb the living.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Roman"
+    },
+    {
+        "name": "Lares",
+        "description": "Protective household spirits that watched over families and homes.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Roman"
+    },
+    {
+        "name": "Penates",
+        "description": "Household spirits that protected a family's resources and prosperity.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Roman"
+    },
+    {
+        "name": "Gorgons",
+        "description": "A trio of monstrous sisters, including the famous Medusa.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Telchines",
+        "description": "Mysterious beings associated with magic, metalworking, and the island of Rhodes.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Giants",
+        "description": "Powerful beings who fought against the Olympian gods during the Gigantomachy.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Cabeiri",
+        "description": "Mysterious protective deities associated with secret rites and the sea.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Drakons",
+        "description": "Giant serpent or dragon-like creatures appearing in numerous Greek myths.",
+        "category": "Monster",
+        "photoLink": "",
+        "pantheon": "Greek"
+    },
+    {
+        "name": "Onocentaur",
+        "description": "A hybrid creature with a human upper body and the body of a donkey.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greco-Roman"
+    },
+    {
+        "name": "Hippocampus",
+        "description": "A horse-fish creature associated with Poseidon and the sea.",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Greco-Roman"
+    },
+    {
+        "name": "The Germani",
+        "description": "Bodyguards for the Roman emperors, these fine fellows come from the Gaulish and Germanic tribes outside the empire. They speak very little, but they are great at killing, maiming, and making a hole in crowds. If you ever play chess against these guys, one rule: “Let the Germani win.”",
+        "category": "Creature",
+        "photoLink": "",
+        "pantheon": "Roman"
     }
 ]

@@ -1,3 +1,338 @@
 [
+  {
+    "name": "Zeus",
+    "description": "Zeus is the Greek supreme god of the sky and thunder, and his Roman equivalent is Jupiter, also known as Jove.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Cronus", "Rhea"]
+  },
+  {
+    "name": "Hera",
+    "description": "Hera is the Greek goddess of familial love, marriage, motherhood, and women. She is the elder sister and wife of Zeus, therefore making her Queen of Olympus. She is one of the daughters of Rhea and Kronos. Her Roman counterpart is Juno.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Cronus", "Rhea"]
+  },
+  {
+    "name": "Poseidon",
+    "description": "Poseidon, Greek god of the seas, earthquakes, storms, and horses. He also has a great passion for tropical shirts. His Roman equivalent is Neptune.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Cronus", "Rhea"]
+  },
+  {
+    "name": "Demeter",
+    "description": "The Greek goddess of agriculture, grains, harvest, and the fertility of the earth. Demeter is a fan of flowers, plants, and cereal. Lots of cereal. Her Roman counterpart is Ceres.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Cronus", "Rhea"]
+  },
+  {
+    "name": "Ares",
+    "description": "Ares is the Greek god of war. His symbols include the boar, dog, wolf, spear, sword, and vulture. His Roman counterpart is Mars.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Hera"]
+  },
+  {
+    "name": "Athena",
+    "description": "Athena is the Greek goddess of wisdom, war and useful arts. Her Roman counterpart is Minerva.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Metis"]
+  },
+  {
+    "name": "Apollo",
+    "description": "The Greek god of poetry, music, archery, healing, prophecy, and all that’s awesome. In the Roman pantheon, Apollo kept the same name, being the only one of the great gods of Rome who did not change his name in relation to Greek mythology.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Leto"]
+  },
+  {
+    "name": "Artemis",
+    "description": "Artemis is the ancient Greek goddess of hunting, the wilderness, wild animals, childbirth, and virginity. She is the leader and founder of the Huntresses of Artemis. Her Roman equivalent is Diana.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Leto"]
+  },
+  {
+    "name": "Aphrodite",
+    "description": "Aphrodite is the Greek goddess of beauty, love, lust, desire, sexuality, and pleasure. Her Roman counterpart is Venus.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Dione"]
+  },
+  {
+    "name": "Hephaestus",
+    "description": "The Greek God of fire and blacksmiths, the crippled god Hephaestus is not great with people, but if you need your steam-powered chariot fixed, he’s your guy. His Roman counterpart is Vulcan.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Hera"]
+  },
+  {
+    "name": "Hermes",
+    "description": "Hermes is the Greek god of trade, travelers, thieves, athletes, and the official messenger of the gods, His Roman mythological equivalent is Mercury",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Maia"]
+  },
+  {
+    "name": "Dionysus ",
+    "description": "Dionysus is the Greek god of wine, grape-harvest, fertility, theater, religious ecstasy, and ritual madness. His equivalent in Roman mythology is Bacchus, also associated with the ancient Roman deity Liber Pater.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Semele"]
+  },
+  {
+    "name": "Hades",
+    "description": "Hades is the Greek god of the underworld and the ruler of the dead. His equivalent in Roman is Pluto, also associated with Dis Pater or Orcus.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Cronus", "Rhea"]
+  },
+  {
+    "name": "Cronus",
+    "description": "Cronos was the King of the Titans and the god of time, harvest, and agriculture. He was defeated and dismembered by his sons: Poseidon, Zeus, and Hades, with his parts thrown into Tartarus. Eras later, with the help of Luke Castellan, he recovered his body and built an army to take Olympus again. His equivalent in Roman mythology is Saturn.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Uranus, Gaia"]
+  },
+  {
+    "name": "Gaia",
+    "description": "Gaia is the primordial Greek goddess who personifies the Earth. After the defeat of her son Cronos in the Battle of Manhattan against the demigods of Camp Half-Blood, she created a new civil war between the Greek and Roman camps in order to be able to emerge from the earth. Her Roman equivalent is Terra Mater or Tellus.",
+    "category": "Giant",
+    "photoLink": "",
+    "pantheon": "Greek"
     
+  },
+  {
+    "name": "Iris",
+    "description": "Iris is the Greek goddess of the rainbow. After the Battle of Manhattan, she received a cabin for her children at Half-Blood Camp. Her Roman counterpart is Iris or Arcus.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Thaumas", "Electra"]
+  },
+  {
+    "name": "Hypnos",
+    "description": "The Greek god of sleep. After the Battle of Manhattan, he received a cabin for his children at Camp Half-Blood. His Roman counterpart is Somnus.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Nyx"]
+  },
+  {
+    "name": "Nemesis",
+    "description": "Nemesis is the Greek goddess of vengeance and balance. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Nemesis or Invidia.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Nyx", "Erebus"]
+  },
+  {
+    "name": "Nike",
+    "description": "Nike is the Greek goddess of victory. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Victoria.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Pallas", "Styx"]
+  },
+  {
+    "name": "Hebe",
+    "description": "The Greek goddess of youth. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Juventas.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Zeus", "Hera"]
+  },
+  {
+    "name": "Tyche",
+    "description": "The Greek goddess of fortune and luck. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Fortuna.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Oceanus", "Tethys"]
+  },
+  {
+    "name": "Hecate",
+    "description": "The Greek goddess of magic. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Trivia.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek",
+    "parents": ["Perses", "Asteria"]
+  },
+  {
+    "name": "Rhea",
+    "description": "Titaness of fertility and motherhood, queen of the Titans, and mother of the principal Olympian gods.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Metis",
+    "description": "Titaness of wisdom and counsel, considered part of the second generation of Titans and the first wife of Zeus.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Leto",
+    "description": "Titaness of motherhood and daylight, mother of the twin gods Apollo and Artemis.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Dione",
+    "description": "Titaness often associated with water or earth, described in some traditions as the mother of Aphrodite.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Maia",
+    "description": "The eldest of the Pleiades, mountain nymphs, and mother of the god Hermes.",
+    "category": "Creature",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Semele",
+    "description": "A mortal princess of Thebes, lover of Zeus and mother of the god Dionysus, who was later deified under the name Thyone.",
+    "category": "Mortal",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Nyx",
+    "description": "The personification of deep night, one of the first forces to emerge in the universe",
+    "category": "Primordial",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Erebus",
+    "description": "The personification of darkness and gloom, brother and consort of Nyx.",
+    "category": "Primordial",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Oceanus",
+    "description": "The Titan who personifies the immense river that encircled the entire world.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Tethys",
+    "description": "Titaness of fresh water, sister and wife of Oceanus.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Perses",
+    "description": "Titan of destruction and ruin, belonging to the second generation.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Asteria",
+    "description": "Asteria is a second-generation Titan goddess. She is primarily recognized as the goddess of falling stars, astrology, and nighttime divinations, such as prophetic dreams.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Styx",
+    "description": "Styx is a highly revered figure who holds a unique dual nature: she is both a Titan goddess and the personification of the main river of the Underworld.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Atlas",
+    "description": "Atlas, also called \"\"The General\"\", is the Titan of endurance and the main antagonist of The Titan's Curse. As punishment for leading the armies of Kronos against the gods in the first Titanomachy, Zeus forced him to hold up the sky for all eternity. He is Kronos' second-in-command and is in charge of recruiting monsters for the Titans' cause. While Kronos was regenerating inside of his sarcophagus, Atlas seemed to be in charge of the army.",
+    "category": "Titan",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Uranus",
+    "description": "Uranus is the primordial god and personification of the sky and heavens. Known as Caelus in Roman mythology, he was one of the earliest elemental deities, born from Gaia, the Earth, whom he also took as his wife.",
+    "category": "Primordial",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Nero ",
+    "description": "Evil emperor number one, come on down! Nero, one of the Triumvirate, enjoys wearing purple suits, twisting the minds of young demigods, and building gigantic McMansions by bulldozing over human civilization. An all-around nice guy!",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Roman"
+    
+  },
+  {
+    "name": "Commodus",
+    "description": "That Emperor Commodus. What a guy! He’s all about fun spectacles and killing his enemies in new and interesting ways. Wanna hang out? Come on over for pizza, demigod slaughter and chill!",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Roman"
+    
+  },
+  {
+    "name": "Caligula",
+    "description": "Gaius Julius Caesar Augustus Germanicus, better known as Caligula, was a Roman Emperor who was made a god-emperor by his followers. He was the main antagonist in The Burning Maze and a supporting antagonist in The Tyrant's Tomb. He was a Triumvirate Holdings leader alongside Nero and Commodus. He was killed in an explosion caused by Frank Zhang during the Battle of San Francisco Bay.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Roman"
+    
+  },
+  {
+    "name": "Emmie",
+    "description": "Emmie (Hemethea) was once a Greek princess who was turned into a minor goddess who then became a Hunter of Artemis and then gave up immortality to grow old with the love of her life, Jo. She now runs the Waystation in Indianapolis with a combination of kind hospitality, organic gardening and killer archery skills. She enjoys spending time with her daughter Georgie, taking long walks along the river in her adopted home town, and slaying monsters.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  },
+  {
+    "name": "Jo",
+    "description": "Jo (Josephine) is a former Hunter of Artemis, a child of Hecate and a master at constructing magical gadgets. With her wife Emmie and their daughter Georgina, she runs the Waystation, a sanctuary for demigods in Indianapolis. Jo is a sweetheart, but don’t threaten her family or you might meet her Celestial bronze Tommy gun, left over from her days as a 1920s Chicago gangster. (Hey, we all make bad choices when we’re young.)",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Greek"
+    
+  }
 ]

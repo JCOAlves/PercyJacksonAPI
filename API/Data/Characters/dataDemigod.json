@@ -1,77 +1,295 @@
 [
     {
         "name": "Percy Jackson",
-        "description": "Perseus 'Percy' Jackson is a Greek demigod, son of Poseidon and Sally Jackson. He is the main protagonist and narrator of the Percy Jackson and the Olympians saga and one of the central characters in the Heroes of Olympus series. Percy is the head counselor of the Poseidon Cabin at Camp Half-Blood and former praetor of the 12th Legion at Camp Jupiter, having previously belonged to the 5th Cohort of the legion. He was also the temporary host of the Egyptian goddess Nekhbet. He is currently dating Annabeth Chase.",
+        "description": "Perseus \"Percy\" Jackson is the main protagonist and the narrator of the Percy Jackson and the Olympians series as well as one of the main characters in The Heroes of Olympus series. He is a Greek demigod son of Poseidon and Sally Jackson. He is the counselor of Poseidon’s Cabin and is a former Praetor of the Twelfth Legion at Camp Jupiter. He is currently in a relationship with Annabeth Chase.",
         "category": "Demigod",
+        "photoLink": "",
+        "birthday": "August 18th",
         "camp": "Camp Half-Blood",
         "cabin": 3,
-        "birthday": "August 18th",
-        "parents": [
-            "Poseidon",
-            "Sally Jackson"
-        ],
+        "parents": ["Poseidon", "Sally Jackson"],
         "skills": [],
-        "artifacts": [],
-        "photoLink": ""
+        "artifacts": []
     },
     {
         "name": "Annabeth Chase",
-        "description": "Annabeth Chase is the Greek demigoddess daughter of Athena and Professor Frederick Chase, half-sister of Bobby and Matthew Chase, and paternal cousin of the Norse demigod Magnus Chase. She is the deuteragonist of the Percy Jackson and the Olympians series and a main character in the Heroes of Olympus series, as she is one of the Seven demigods of the Prophecy of Seven. Annabeth is the architect of Olympus and the former head counselor of the Athena Cabin. She is currently Percy Jackson's girlfriend.",
+        "description": "Annabeth Chase is a demigod daughter of the Greek goddess Athena and girlfriend of Percy Jackson. She is one of the main protagonists in Percy Jackson and the Olympians and The Heroes of Olympus. She appears in The Staff of Serapis and meets Sadie Kane.",
         "category": "Demigod",
+        "photoLink": "",
+        "birthday": "July 12th",
         "camp": "Camp Half-Blood",
         "cabin": 6,
-        "birthday": "July 12th",
-        "parents": [
-            "Athena",
-            "Professor Frederick Chase"
-        ],
+        "parents": ["Athena", "Frederick Chase"],
         "skills": [],
-        "artifacts": [],
-        "photoLink": ""
+        "artifacts": []
     },
     {
         "name": "Luke Castellan",
-        "description": "Luke Castellan was a Greek demigod, son of Hermes and May Castellan. He was one of the main antagonists in the Percy Jackson and the Olympians series. He was the Head Counselor of the Hermes Cabin. Although he allowed the Lord of the Titans, Kronos, to possess his body, Luke died as the hero of the Great Prophecy. Before dying, Luke stated his intention to go through rebirth instead of going to Elysium, despite his heroic death, hoping to eventually reach the Isles of the Blessed.",
+        "description": "Luke Castellan is a Greek demigod son of Hermes and May Castellan. He was one of the main antagonists of the Percy Jackson and the Olympians series. He was tricked by the Titan Kronos into hosting his spirit. Although he is considered as the series’ main human antagonist, he died at age twenty-three as the hero of the Great Prophecy.",
         "category": "Demigod",
+        "photoLink": "",
         "camp": "Camp Half-Blood",
         "cabin": 11,
-        "birthday": "Unknown",
-        "parents": [
-            "Hermes",
-            "May Castellan"
-        ],
+        "parents": ["Hermes", "May Castellan"],
         "skills": [],
-        "artifacts": [],
-        "photoLink": ""
-    },
-    {
-        "name": "Nico di Angelo",
-        "description": "Niccolo 'Nico' di Angelo is a Greek demigod born in Italy, son of Hades and the late Maria di Angelo, and younger brother of the late Bianca di Angelo and paternal half-brother of the Roman demigoddess Hazel Levesque. He is a main character in the Percy Jackson and the Olympians, The Heroes of Olympus, and The Trials of Apollo book series, and the protagonist and title character of The Adventures of Nico di Angelo book series. He is known in the Underworld as the 'Phantom King' after taking the title from Minos in The Battle of the Labyrinth. He is openly gay and the boyfriend of Will Solace.",
-        "category": "Demigod",
-        "camp": "Camp Half-Blood",
-        "cabin": 13,
-        "birthday": "January 28th",
-        "parents": [
-            "Hades",
-            "Maria di Angelo"
-        ],
-        "skills": [],
-        "artifacts": [],
-        "photoLink": ""
+        "artifacts": []
     },
     {
         "name": "Thalia Grace",
-        "description": "Thalia Grace is the Greek demigoddess daughter of Zeus and the mortal Beryl Grace, and the older sister of the Roman demigod Jason. After being mortally wounded by monsters, she was transformed into a pine tree on Half-Blood Hill, which still stands as the official boundary of Camp Half-Blood to this day. She was later resurrected by the Golden Fleece under the manipulations of Kronos in an attempt to control the Great Prophecy. She is currently the lieutenant of the Hunters of Artemis, leading them in the goddess 's absence after accepting Artemis's offer following a failed attempt by Kronos to use Thalia to destroy the gods.",
+        "description": "Thalia Grace is the daughter of Zeus, sister of Jason Grace. After several years as a pine tree on Half-Blood Hill, she got a new job leading the Hunters of Artemis.",
         "category": "Demigod",
+        "photoLink": "",
+        "birthday": "December 22th",
         "camp": "Camp Half-Blood",
         "cabin": 1,
-        "birthday": "December 22th",
-        "parents": [
-            "Zeus",
-            "Beryl Grace"
-        ],
+        "parents": ["Zeus", "Beryl Grace"],
         "skills": [],
-        "artifacts": [],
-        "photoLink": ""
+        "artifacts": []
+    },
+    {
+        "name": "Clarisse La Rue",
+        "description": "Clarisse is the daughter of Ares and longtime head of the Ares cabin at Camp Half-Blood. Recently she went back to her home state of Arizona to attend college at ASU and terrorize all the lucky mortals there.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 5,
+        "parents": ["Ares"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Nico Di Angelo",
+        "description": "Niccolo \"Nico\" di Angelo is a fourteen-year-old Greek demigod son of Hades and the mortal Maria di Angelo. He is also the younger brother of the late Bianca di Angelo and the half brother of Hazel Levesque. He is known in the Underworld as the “Ghost King” after taking the title from King Minos. He is openly gay and the boyfriend of Will Solace.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "January 28th",
+        "camp": "Camp Half-Blood",
+        "cabin": 13,
+        "parents": ["Hades", "Maria Di Angelo"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Bianca Di Angelo",
+        "description": "Bianca di Angelo was a Greek demigoddess, daughter of Hades and the mortal Maria di Angelo , and older sister of Nico di Angelo . Bianca became a Hunter of Artemis in The Titan's Curse, after she and her younger brother were saved by Percy Jackson , Grover Underwood , Thalia Grace , Annabeth Chase , and the Hunters . Bianca later died on her first mission, went to Elysium, and at some point chose rebirth.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 13,
+        "parents": ["Hades", "Maria Di Angelo"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Charles Beckendorf",
+        "description": "Charles \"Charlie\" Beckendorf was a Greek demigod, a son of Hephaestus. He was the head counselor of Cabin 9 at Camp Half-Blood and the boyfriend of Silena Beauregard before his death, which occurred when the Princess Andromeda blew up during a mission with Percy Jackson, shortly before the Battle of Manhattan. Beckendorf sacrificed himself in the ensuing explosion which delayed Kronos' forces and allowed Percy to escape. He was succeeded by Jake Mason, and later, Leo Valdez.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 10,
+        "parents": ["Hephaestus"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Silena Beauregard",
+        "description": "Silena Beauregard was a Greek demigod daughter of Aphrodite and Mr. Beauregard, the girlfriend of Charles Beckendorf, the former head counselor of the Aphrodite Cabin at Camp Half-Blood, and a spy for Kronos. She was ultimately killed by the Lydian Drakon in the Battle of Manhattan.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 9,
+        "parents": ["Aphrodite"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Travis Stoll",
+        "description": "Travis Stoll is a Greek demigod son of Hermes and the former co-Head Counselor of Hermes' Cabin. He is currently attending college. Travis is Connor Stoll's brother.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 11,
+        "parents": ["Hermes"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Connor Stoll",
+        "description": "Connor Stoll is a Greek demigod son of Hermes and the Head Counselor of Hermes' Cabin as his older brother Travis Stoll has left to attend college. ",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 11,
+        "parents": ["Hermes"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Will Solace",
+        "description": "William \"Will\" Andrew Solace is a sixteen-year-old Greek demigod, the son of Apollo. He is a minor character in Percy Jackson and the Olympians and a recurring character in The Heroes of Olympus and The Trials of Apollo, and the deuteragonist of The Nico di Angelo Adventures. Will is the current head counselor of Apollo's Cabin and a prominent healer at Camp Half-Blood. He is openly bisexual and the boyfriend of Nico di Angelo.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "August 23th",
+        "camp": "Camp Half-Blood",
+        "cabin": 7,
+        "parents": ["Apollo", "Naomi Solace"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Jason Grace",
+        "description": "Jason Grace is one of the main protagonists of the second Camp Half-Blood series, The Heroes of Olympus. He is the son of Jupiter and Ms. Grace and the younger brother of Thalia Grace. He was a praetor at Camp Jupiter until he gave his rank to Frank Zhang; he is the current counselor of Cabin One at Camp Half-Blood.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "July 1th",
+        "camp": "Camp Jupiter",
+        "cabin": 1,
+        "parents": ["Jupiter", "Beryl Grace"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Leo Valdez",
+        "description": "Leo Valdez is the Greek demigod son of Hephaestus and the late Esperanza Valdez. He is one of the seven heroes of the Prophecy of Seven. After sacrificing himself and being resurrected using the Physician's Cure, he rescued Calypso out of Ogygia. He is currently living with Josephine and Hemithea, while going to high school with his girlfriend Calypso.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "July 7th",
+        "camp": "Camp Half-Blood",
+        "cabin": 10,
+        "parents": ["Hephaestus", "Esperanza Valdez"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Pipe McLean",
+        "description": "Piper McLean is the Greek demigod daughter of Aphrodite and Tristan McLean. She is the Head Counselor of Aphrodite's Cabin and one of the demigods of the Prophecy of Seven. She is the ex-girlfriend of the late Jason Grace and is currently in a relationship with Shel.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "June 3th",
+        "camp": "Camp Half-Blood",
+        "cabin": 9,
+        "parents": ["Aphrodite", "Tristan McLean"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Hazel Levesque",
+        "description": "Hazel Levesque is the Roman demigod daughter of Pluto and the late Marie Levesque, and the paternal half-sister of Greek demigods Bianca and Nico di Angelo. She is one of the seven heroes of the Prophecy of Seven. She is the current Praetor of Camp Jupiter following the retirement of Reyna Ramírez-Arellano, and the former Centurion of the Fifth Cohort. She is currently in a relationship with her co-praetor Frank Zhang.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "December 17th",
+        "camp": "Camp Jupiter",
+        "cabin": 13,
+        "parents": ["Pluto", "Marie Levesque"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Frank Zhang",
+        "description": "Frank Zhang, also known as Fai Zhang by his Grandmother, is the Roman demigod son of Mars and Emily Zhang, as well as a legacy of Poseidon. Frank is one of the seven demigods mentioned in the Prophecy of Seven and is a Praetor of the Twelfth Legion Fulminata. He is currently in a relationship with fellow Praetor Hazel Levesque.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "June 5th",
+        "camp": "Camp Jupiter",
+        "cabin": 5,
+        "parents": ["Mars", "Emily Zhang"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Reyna Ávila Ramírez-Arellano",
+        "description": "Reyna Avila Ramírez-Arellano is a Roman demigod, the daughter of Bellona, and the younger sister of the current Queen of the Amazons, Hylla. She is a former praetor of Camp Jupiter, and is currently a Hunter of Artemis.",
+        "category": "Demigod",
+        "photoLink": "",
+        "birthday": "July 4th",
+        "camp": "Camp Jupiter",
+       
+        "parents": ["Bellona", "Julian Ramírez-Arellano"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Octavian",
+        "description": "Octavian was a Roman legacy of Apollo and the Augur of Camp Jupiter. He was one out of several people to have the gift of prophecy. Octavian was also a centurion in the First Cohort. During the Siege of Camp Half-Blood, he dies after accidentally shooting himself out of an onager aimed towards Leo Valdez, who was making sure Gaea was destroyed, therefore helping to defeat her.",
+        "category": "Legacy",
+        "photoLink": "",
+        "camp": "Camp Jupiter",
+       
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Meg McCaffrey",
+        "description": "Meg McCaffrey is a pint-size twelve-year-old demigod who looks like a colorfully dressed street urchin. She is fierce and bossy, and tight-lipped about her past. She may smell faintly of apple pie, but she can take down enemies with just a few pieces of rotten fruit. Also, she has a fearsome protector named Peaches.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 4,
+        "parents": ["Demeter", "Phillip McCaffrey"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Kayla Knowles",
+        "description": "Daughter of Apollo and the Canadian archery instructor Darren Knowles, Kayla is one of the year-round campers at Camp Half-Blood, where she teaches archery classes and hopes to one day compete in the Olympics. She is a veteran of the Battle of Manhattan.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 7,
+        "parents": ["Apollo"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Paolo",
+        "description": "Son of Hebe, Paolo hails from Brazil. He is known for his dashing good looks, his general friendliness, and his tendency to lose his limbs during combat, but don’t worry! Hebe’s children are incredibly hearty, and the Apollo cabin has some good healers.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 18,
+        "parents": "Hebe",
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Lavinia Asimov ",
+        "description": "Lavinia Asimov is a Roman demigod daughter of Terpsichore and Sergei Asimov. After the Battle of San Francisco Bay, she became the centurion of the Fifth Cohort. She is currently in a relationship with Poison Oak, a dryad.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Jupiter",
+        "parents": ["Terpsichore", "Sergei Asimov"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Austin Lake",
+        "description": "Austin Lake is a Greek demigod son of Apollo. He and his siblings, along with the rest of the campers, fought in the Battle of Manhattan.",
+        "category": "Demigod",
+        "photoLink": "",
+        "camp": "Camp Half-Blood",
+        "cabin": 7,
+        "parents": ["Apollo"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Georgina",
+        "description": "Daughter of Jo and Emmie from The Dark Prophecy, Georgina enjoys prophecies, coloring, making figurines out of pipe cleaners, and trying to ignore the fact that Apollo might be her dad.",
+        "category": "Demigod",
+        "photoLink": "",
+        "cabin": 4,
+        "parents": ["Jo", "Emmie"],
+        "skills": [],
+        "artifacts": []
+    },
+    {
+        "name": "Lityerses",
+        "description": "The son of King Midas and Demeter, Lityerses was known as the “Reaper of Men” for his skillful sword work. He has a sharp blade and a bad attitude. Then again, his dad turns him into a gold statue every time he pats Lityerses on the back, which can make someone a little cranky.",
+        "category": "Demigod",
+        "photoLink": "",
+        "cabin": 4,
+        "parents": ["Demeter", "King Midas"],
+        "skills": [],
+        "artifacts": []
     }
 ]

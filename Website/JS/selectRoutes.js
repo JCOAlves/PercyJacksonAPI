@@ -19,6 +19,7 @@ const formsAPI = {
             <option value="Legacy">Legacy</option>
             <option value="Divinity">Divinity</option>
             <option value="Titan">Titan</option>
+            <option value="Primordial">Primordial</option>
             <option value="Giant">Giant</option>
             <option value="Creature">Creature</option>
             <option value="Monster">Monster</option>
