@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Grover Underwood",
+        "description": "Grover Underwood is a satyr and a Lord of Nature, along with Silenus and Maron. He is also a Chosen of Pan and carries the soul of Pan. He is the tritagonist of the Percy Jackson and the Olympians series and a secondary character in The Heroes of Olympus and The Trials of Apollo. Grover is the satyr who encountered the demigods Thalia Grace, Nico and Bianca di Angelo, Percy Jackson, Annabeth Chase, and Luke Castellan. Currently, Grover is in a relationship with the dryad Juniper.",
+        "category": "Creature",
+        "camp": "Camp Half-Blood",
+        "pantheon": "Greek",
+        "photoLink": ""
+    },
+    {
+        "name": "Tyson",
+        "description": "Tyson is a Cyclops, son of Poseidon and a nymph, and Percy Jackson 's paternal half-brother. He is currently transcribing the Sibylline Books with his girlfriend, Ella, the harpy.",
+        "category": "Creature",
+        "camp": "Camp Half-Blood",
+        "cabin": 3,
+        "birthday": "Unknown",
+        "parents": [
+            "Poseidon",
+            "A nymph"
+        ],
+        "skills": [],
+        "artifacts": [],
+        "photoLink": ""
+    }
+]

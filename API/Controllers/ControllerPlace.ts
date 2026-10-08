@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { type Place } from "../Types/Place.ts";
-import dataPlaces from '../DataPJ/dataPlaces.json' with { type: 'json' };
+import dataPlaces from '../Data/Places/dataPlaces.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_placesList = (req: Request, res: Response): Response | void => {

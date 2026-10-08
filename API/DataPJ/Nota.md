@@ -1,1 +1,0 @@
-Separar os tipos de personagens em arquivos .JSON na pasta Characters.

@@ -2,17 +2,20 @@ import { type Request, type Response } from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
-import artifacts from '../DataPJ/dataArtifacts.json' with { type: 'json' };
-import books from '../DataPJ/dataBooks.json' with { type: 'json' };
-import cabins from '../DataPJ/dataCabins.json' with { type: 'json' };
-import characters from '../DataPJ/dataCharacters.json' with { type: 'json' };
-import places from '../DataPJ/dataPlaces.json' with { type: 'json' };
+import dataArtifacts from '../Data/Artifacts/dataArtifacts.json' with { type: 'json' };
+import dataBooks from '../Data/Books/dataBooks.json' with { type: 'json' };
+import dataCabins from '../Data/Cabins/dataCabins.json' with { type: 'json' };
+import dataDemigod from '../Data/Characters/dataDemigod.json' with { type: 'json' };
+import dataCreature from '../Data/Characters/dataCreature.json' with { type: 'json' };
+import dataDivinity from '../Data/Characters/dataDivinity.json' with { type: 'json' };
+import dataMortal from '../Data/Characters/dataMortal.json' with { type: 'json' };
+import dataPlaces from '../Data/Places/dataPlaces.json' with { type: 'json' };
 
-import { type Character } from '../Types/Character.ts';
+import { type Character, type Divinity, type Demigod, type Creature } from "../Types/Character.ts";
 import { type Artifact } from '../Types/Artifact.ts';
 import { type Cabin } from '../Types/Cabin.ts';
 import { type Place } from '../Types/Place.ts';
-import { type Book } from '../Types/Book.ts';
+import { type Saga } from '../Types/Book.ts';
 
 import { type Data } from '../ResponseHTTP.ts';
 import ResponseHTTP from '../ResponseHTTP.ts';
@@ -41,11 +44,14 @@ const GET_docsPage = (req: Request, res: Response): Response | void => {
 const GET_allData = (req: Request, res: Response): Response | void => {
     try {
         const Data: Data = {
-            characters: characters as Character[],
-            artifacts: artifacts as Artifact[],
-            cabins: cabins as Cabin[],
-            places: places as Place[],
-            books: books as Book[]
+            characters: [
+                ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
+                ...dataDivinity as Divinity[], ...dataMortal as Character[]
+            ],
+            artifacts: dataArtifacts as Artifact[],
+            cabins: dataCabins as Cabin[],
+            places: dataPlaces as Place[],
+            books: dataBooks as Saga[]
         };
 
         const responseAPI = new ResponseHTTP(true, "Data successfully listed", Data);

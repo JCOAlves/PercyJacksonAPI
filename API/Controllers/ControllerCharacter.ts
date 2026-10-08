@@ -1,13 +1,21 @@
 import { type Request, type Response } from "express";
 import { type Character, type Divinity, type Demigod, type Creature } from "../Types/Character.ts";
-import dataCharacters from '../DataPJ/dataCharacters.json' with { type: 'json' };
+import dataDemigod from '../Data/Characters/dataDemigod.json' with { type: 'json' };
+import dataCreature from '../Data/Characters/dataCreature.json' with { type: 'json' };
+import dataDivinity from '../Data/Characters/dataDivinity.json' with { type: 'json' };
+import dataMortal from '../Data/Characters/dataMortal.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
+
+const AllCharacters = [
+    ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
+    ...dataDivinity as Divinity[], ...dataMortal as Character[]
+];
 
 const GET_charactersList = (req: Request, res: Response): Response | void => {
     try {
         const { camp = "", pantheon = "", cabin = "", category = "" } = req.query;
 
-        let listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters as (Character | Divinity | Demigod | Creature)[];
+        let listCharacters: (Character | Divinity | Demigod | Creature)[] = AllCharacters;
 
         if (category) listCharacters = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
 
@@ -40,7 +48,6 @@ const GET_character = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listCharacters: (Character | Divinity | Demigod | Creature)[] = dataCharacters as (Character | Divinity | Demigod | Creature)[];
         let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
 
         if (!name) {
@@ -49,7 +56,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
             return res.status(400).json(responseAPI.returnJSON());
         };
 
-        characterFound = listCharacters.find(c => c.name.toLowerCase() === (String(name).toLowerCase()));
+        characterFound = AllCharacters.find(c => c.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (characterFound) {
             const responseAPI = new ResponseHTTP(true, "Character successfully listed", characterFound);

@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { type Artifact } from "../Types/Artifact.ts";
-import dataArtifacts from '../DataPJ/dataArtifacts.json' with { type: 'json' };
+import dataArtifacts from '../Data/Artifacts/dataArtifacts.json' with { type: 'json' };
 import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_artifactsList = (req: Request, res: Response): Response | void => {
