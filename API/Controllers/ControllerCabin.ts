@@ -5,11 +5,22 @@ import ResponseHTTP from "../ResponseHTTP.ts";
 
 const GET_cabinsList = (req: Request, res: Response): Response | void => {
     try {
-        const listCabins: Cabin[] = dataCabins as Cabin[];
+        const { cabinNumber } = req.query;
 
-        const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", listCabins);
-        responseAPI.showMessage();
-        return res.status(200).json(responseAPI.returnJSON());
+        let listCabins: Cabin[] = dataCabins as Cabin[];
+
+        if(cabinNumber) listCabins = listCabins.filter(c => Number(cabinNumber) && c.cabinNumber === Number(cabinNumber));
+
+        if(listCabins.length > 0){
+            const responseAPI = new ResponseHTTP(true, "Cabins successfully listed", listCabins);
+            responseAPI.showMessage();
+            return res.status(200).json(responseAPI.returnJSON());
+
+        } else{
+            const responseAPI = new ResponseHTTP(false, "No cabin matching the specified number was found", []);
+            responseAPI.showMessage();
+            return res.status(404).json(responseAPI.returnJSON());
+        };
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, "Error in the list of cabins", null, error);

@@ -7,6 +7,25 @@ The REST API was built with the framework **Express** using **TypeScript**. The 
 
 [![Project tools](https://skillicons.dev/icons?i=express,ts)](https://skillicons.dev)
 
+## How to run the Application locally
+1. Clone the application repository to your local machine: 
+  ```bash
+  git clone https://github.com/JCOAlves/PercyJacksonAPI.git
+  ```
+2. Go to the *API* folder:
+  ```bash
+  cd API
+  ```
+3. Inside the *API* folder, install the project's dependencies:
+  ```bash
+  npm install
+  ```
+4. Create a `.env` file with the environment variables in *API*, based on `env.example`. 
+5. Finally, run the application using the API:
+  ```bash
+  npm run dev
+  ```
+
 ## Routes of API
 Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, cabins, locations, and books.
  
@@ -83,7 +102,7 @@ In the event of errors, the ``error`` attribute is returned in the response, and
     ```
 
 ### Cabin route
-- ``/api/cabins``: list of all cabins in Camp Half-Blood.
+- ``/api/cabins``: list of all cabins in Camp Half-Blood. It can be filtered by `cabinNumber`.
   
     **Response body**:
     ```typescript
@@ -184,3 +203,5 @@ In the event of errors, the ``error`` attribute is returned in the response, and
 ## Developers and contributors of the project
 - [**Júlio César**](https://github.com/JCOAlves): Creator and main fullstack dev of the application.
 - [**Breno Gusmão**](https://github.com/BrennoGithub): Contributor responsible for the release of part of the API data.
+
+If you'd like to contribute to the project, create a *Pull Request*.

@@ -1,114 +1,142 @@
 [
-    {
-        "cabinNumber": 1,
-        "divinity": "Zeus",
-        "members": [
-            ""
-        ],
-        "description": "The cabin is described as a large white marble box with heavy columns in front. It has polished bronze doors that, depending on the angle, appear to be pierced by lightning bolts. It features beds suspended from the walls, a mosaic on the ceiling depicting overcast clouds with golden lightning bolts cutting through them, and a large telescope (described by Jason in The Blood of Olympus)."
-    },
-    {
-        "cabinNumber": 2,
-        "divinity": "Ivy",
-        "members": [
-            ""
-        ],
-        "description": "The large chalet, made of white marble and adorned with delicate columns topped with pomegranates and flowers. The walls are carved with peacock designs. (It is an honorary chalet, because if Hera didn't have one, she would be angry, and because she is the goddess of marriage, having no children with humans, only with Zeus , her husband)."
-    },
-    {
-        "cabinNumber": 3,
-        "divinity": "Poseidon",
-        "members": [
-            ""
-        ],
-        "description": "The cabin is long, low, and solid. The exterior walls are of rustic gray stone, speckled with pieces of shells and coral. The interior walls are made of mother-of-pearl. It has a water fountain with gold drachmas inside (taken from the book The Titan's Curse)."
-    },
-    {
-        "cabinNumber": 4,
-        "divinity": "Demeter",
-        "members": [
-            ""
-        ],
-        "description": "The chalet is made of dark, brownish marble, has tomato plants growing on the walls, and a roof made of real grass. Trees bearing a variety of fruits surround the chalet, their branches reaching through the almost always open windows. There is a large oak tree in the middle of the chalet, supporting the roof."
-    },
-    {
-        "cabinNumber": 5,
-        "divinity": "Ares",
-        "members": [
-            ""
-        ],
-        "description": "The chalet is a poorly painted bright red, its roof lined with barbed wire, and a stuffed boar's head above the central door. Swords and machetes carved into the dark marble decorate the walls. Rock music can almost always be heard inside the chalet."
-    },
-    {
-        "cabinNumber": 6,
-        "divinity": "Athena",
-        "members": [
-            ""
-        ],
-        "description": "The chalet is made of pale white marble, adorned with thick columns twisted into braids and several branches from the enormous olive tree that stands to the west of the place. It has a dim glow at any time of day, and its interior walls are crammed with books. There is an owl carved on the front, with onyx eyes."
-    },
-    {
-        "cabinNumber": 7,
-        "divinity": "Apollo",
-        "members": [
-            ""
-        ],
-        "description": "The chalet appears to be made of solid gold; there's a golden arch at the front, and the place shines so brightly during the day it almost hurts the eyes. The walls are carved with thousands of musical notes, with the treble clef standing out. It has flowers from the island of Delos , which only grow in this chalet."
-    },
-    {
-        "cabinNumber": 8,
-        "divinity": "Artemis",
-        "members": [
-            ""
-        ],
-        "description": "A seemingly ordinary camp cabin during the day, but with a silvery glow in the dark. Images of animals and spears adorn the walls. The cabin is used when the Huntresses need a safe place to stay while Artemis goes on dangerous hunts."
-    },
-    {
-        "cabinNumber": 9,
-        "divinity": "Hephaestus",
-        "members": [
-            ""
-        ],
-        "description": "A black chalet, with chimneys on the roof. The sound of iron against stone is frequently heard inside. It appears to have only one floor from the outside, but inside it was fully equipped, with knowledge of two floors, several tunnels, and a huge forge."
-    },
-    {
-        "cabinNumber": 10,
-        "divinity": "Aphrodite",
-        "members": [
-            ""
-        ],
-        "description": "A pastel pink chalet, with crystals hanging from the windows. There are several rose bushes nearby—thornless roses—of various colors, nestled against the walls. A soft, sweet fragrance is everywhere, and there are many mirrors."
-    },
-    {
-        "cabinNumber": 11,
-        "divinity": "Hermes",
-        "members": [
-            ""
-        ],
-        "description": ""
-    },
-    {
-        "cabinNumber": 12,
-        "divinity": "Dionysus",
-        "members": [
-            ""
-        ],
-        "description": "A typical, old camp cabin, with peeling paint and a caduceus—often confused with the symbol of medicine, although this one has only one snake, while Hermes ' has two—above the door. It's the most crowded, because in addition to the children of Hermes , undetermined demigods also sleep there."
-    },
-    {
-        "cabinNumber": 13,
-        "divinity": "Hades",
-        "members": [
-            ""
-        ],
-        "description": "Hades ' cabin is made of obsidian, with heavy columns and no windows. Each step is adorned with skulls. In front of the cabin is a torch where Greek fire burns 24 hours a day. Inside, everything is dark and cold; there is also an altar for communicating with Hades or with spirits."
-    },
-    {
-        "cabinNumber": 0,
-        "divinity": "",
-        "members": [
-            ""
-        ],
-        "description": ""
-    }
+  {
+    "cabinNumber": 1,
+    "description": "In the old days, Zeus had lots of demigod kids, but since the pact of the Big Three, children of Zeus have been rare. Thalia Grace is the most famous modern child of Zeus, though she joined the Hunters of Artemis and rarely visits camp. Children of Zeus can sometimes control wind and lightning. They are natural leaders, and many, like Heracles, are known for their tremendous strength and bravery. On the other hand, they tend to attract a lot of monsters. It´s a majestic marble structure with columns and a peaked roof. Lightning rod on top, with blue and white decorations throughout.",
+    "divinity": "Zeus",
+    "photoLink": "",
+    "members": "Thalia Grace, Jason Grace"
+  },
+  {
+    "cabinNumber": 2,
+    "description": "As the goddess of marriage, Hera never has children with anyone but her husband, Zeus. Her cabin at Camp Half-Blood is thus never occupied, and serves only as a tribute to the goddess. Most demigods steer clear of Hera, though occasionally she takes interest in mortal heroes, like Jason who quested for the Golden Fleece. It's a elegant and regal with peacock feathers, golden accents, and marriage symbols. Always pristine but usually unoccupied.",
+    "divinity": "Hera",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 3,
+    "description": "Children of Poseidon are rare since the pact of the Big Three. The Sea God's most famous child in ancient times was Theseus, who was known for his cleverness and fighting skill. In modern times, the most famous child of Poseidon is Percy Jackson, who can breathe underwater and sometimes even control water. Poseidon is also the father of many lesser Cyclopes, like Tyson, those Cyclopes are not considered demigods and normally do not attend camp (unless peanut butter sandwiches are being served). It's a built to resemble an underwater grotto with coral decorations, seashells, and the constant sound of waves.",
+    "divinity": "Poseidon",
+    "photoLink": "",
+    "members": "Percy Jackson, Tyson"
+  },
+  {
+    "cabinNumber": 4,
+    "description": "The goddess of agriculture, Demeter tends to have kids with real green thumbs! Her most famous child is Persephone, goddess of springtime, but her demigod children also tend to be good-looking, good-natured, and good with plants. Just don't them mad, or you may find poison ivy growing in your sleeping bag. It's a rustic cabin covered in vines and flowers, with a living roof of grass and a vegetable garden surrounding it.",
+    "divinity": "Demeter",
+    "photoLink": "",
+    "members": "Meg "
+  },
+  {
+    "cabinNumber": 5,
+    "description": "It's hard to miss the Ares cabin, with its barbed wire perimeter, angry red walls, and rock music blaring from inside. Go anywhere near the Ares cabin, and you're asking for a fight. The children of Ares are proud of their reputation as warriors. Their head counselor, Clarisse La Rue, is a well-known bully. On the bright side, the Ares campers are brave, and have often defended the camp from its enemies. It´s a fortress-like structure painted in camouflage with barbed wire, weapons displays, and a general military aesthetic.",
+    "divinity": "Ares",
+    "photoLink": "",
+    "members": "Clarrise La Rue, Frank Zhang"
+  },
+  {
+    "cabinNumber": 6,
+    "description": "Athena's children have always been the camp's 'think tank.' They tend to plan the best strategies and give the best advice. Under the leadership of Annabeth Chase, Cabin Six has become the most respected cabin at camp, but they aren't without their fault. The children of Athena can sometimes get too wrapped up in their own plans, and they aren't above trickery to get what they want. If you're on the opposite side during capture-the-flag, watch out. It's a sophisticated cabin with owl decorations, bookshelves, drafting tables.",
+    "divinity": "Athena",
+    "photoLink": "",
+    "members": "Annabeth Chase"
+  },
+  {
+    "cabinNumber": 7,
+    "description": "The children of Apollo are some of the best archers in the world (though the Hunters of Artemis would contest this). Cabin Seven is also famous for their musical talents, and often take the lead at the camp sing-along. If you get on their bad side, the campers can call down Apollo's curse and make you speak in bad rhymes, so watch what you say. It's a bright golden cabin with large windows and musical note decorations.",
+    "divinity": "Apollo",
+    "photoLink": "",
+    "members": "Will Solace, Kayla Knowles, Austin Lake"
+  },
+  {
+    "cabinNumber": 8,
+    "description": "Artemis swore to be an eternal maiden, so she has no children. Normally, her cabin at camp is empty. However, the goddess does have an immortal band of followers known as the Hunters of Artemis, and these young ladies do sometimes visit Camp Half-Blood. Usually, this leads to a great deal of trouble. The Hunters are currently 47-0 beating the campers at capture-the-flag. It's a silver cabin with moon and deer decorations, hunting trophies.",
+    "divinity": "Artemis",
+    "photoLink": "",
+    "members": "The Hunter of Artemis."
+  },
+  {
+    "cabinNumber": 9,
+    "description": "The god of fire and blacksmiths, Hephaestus was demigod children who are great craftsmen. Want a magic sword forged or a new set of armor? Cabin Nine is the place to go. Like their father, the campers of Hephaestus tend to be strong and gruff. They may not be pretty, and they may not be the flashiest warriors on the battlefield, but you do not want to get in an arm-wrestling contest with these guys. Charles Beckendorf was well-loved and respected as the head counselor of Hephaestus, and his fate was a great shock to the whole camp. It's an industrial-looking cabin with smokestacks, bronze decorations, gears.",
+    "divinity": "Hephaestus",
+    "photoLink": "",
+    "members": "Charles Beckendorf, Leo Valdez"
+  },
+  {
+    "cabinNumber": 10,
+    "description": "These kids make the Gossip Girls look like introverts. The children of the love goddess are all about socializing. They are sometimes dismissed as shallow, because they are very concerned with appearances, and like nothing better than to dish about who is dating whom at camp, but some of the Aphrodite children also have valuable skills. Silena Beauregard, for instance, was one of the best Pegasus riders at camp. You should never dismiss a child of Aphrodite as just a pretty face. After all, Aphrodite started the Trojan War! It's an elegant cabin with pink and white colors, heart decorations, mirrors.",
+    "divinity": "Aphrodite",
+    "photoLink": "",
+    "members": "Silena Beauregard, Pipe McLean"
+  },
+  {
+    "cabinNumber": 11,
+    "description": "Formerly, this cabin was the \"catchall\" place for any campers who weren't claimed by their godly parents. As the god of travelers, Hermes welcomes anyone to be his guest. These days, the cabin is less crowded, but it is still a busy, hectic, and fun place to hang out. The Hermes kids are notorious pranksters, but like their father they are clever and love to adventure. Many children of Hermes have become successful businessmen, or thieves, or both. Just keep your wallet close when you visit Cabin Nine. It´s a busy cabin with bunk beds everywhere, travel posters, maps.",
+    "divinity": "Hermes",
+    "photoLink": "",
+    "members": "Luke Castellan, Connor Stoll, Travis Stoll"
+  },
+  {
+    "cabinNumber": 12,
+    "description": "The god of wine doesn't have many demigod children, but Cabin Twelve is certainly the place to go if you want to plan a party. The children of Dionysus have a natural ability to grow vine plants, especially grapes, and they always know how to have fun. Note: Zeus has forbidden Dionysus to drink alcohol for the next fifty years as a punishment, and Dionysus makes sure that his own children don't even think about drinking until they are over twenty-one. After all, why should they be allowed to do something he can't? It´s a cabin covered in grape vines with purple decorations, theater masks.",
+    "divinity": "Dionysus",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 13,
+    "description": "Like the other \"Big Three\" gods, Hades promised not to have children after the Second World War, but he did hide away two siblings, Nico and Bianca di Angelo, who only recently made their appearance at camp. Nico di Angelo is now the only known child of Hades, and although he doesn't often stay at camp, he has many powers over the dead, and can travel through shadows. Children of Hades weren't commonly mentioned in Greek mythology. Then again, it's not really something most demigods would brag about as it tends to scare people off. It's a dark cabin made of black stone with skull decorations, dim lighting. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Hades",
+    "photoLink": "",
+    "members": "Nico Di Angelo, Bianca Di Angelo, Hazel Levesque"
+  },
+  {
+    "cabinNumber": 14,
+    "description": "The goddess of the rainbow and one of the messengers of Olympus (along with Hermes) Iris is a friendly helpful goddess. Her children don't tend to have flashy powers, though they have great communication skills and make great artists. Color coordination? No problem if you're a child of the rainbow goddess. It´s a vibrant cabin with rainbow colors, crystal prisms, bright decorations. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Iris",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 15,
+    "description": "The god of sleep has several demigod children, but not much is known about them because they spend most of their time snoring in their bunks. If you could wake them up, however, they would probably be great at interpreting dreams. Spend too long in Cabin Fifteen, and you might find yourself taking a Rip Van Winkle nap. It's a cozy cabin with soft colors, comfortable furniture, dream catchers. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Hypnos",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 16,
+    "description": "The most well known modern son of Nemesis was Ethan Nakamura, who fought on the wrong side in the Titan war. Despite this, Ethan tried to make amends at the end, and his sacrifice inspired Percy Jackson to insist on new cabins for the minor gods. The children of Nemesis believe in revenge, but also balance. No one should get too full of themselves, or they deserve to be brought down, and the children of Nemesis are happy to make that happen! They can make good allies, but they never ever forget an insult. It's a balanced cabin with scales, justice symbols, atmosphere of fairness. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Nemesis",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 17,
+    "description": "The goddess of victory was a popular figure to worship in ancient times, so it's no surprise a lot of demigod children having been appearing at camp recently. Talk about super-competitive, the children of Nike live for contests, and never settle for second best. They can be pretty intense and driven, but they are hard workers and tough opponents. They never turn down a challenge. It´s a dynamic cabin with gold decorations, trophy displays, victory banners. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Nike",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 18,
+    "description": "Hebe, the goddess of youth, is best known as the cupbearer to the gods. She is also Aphrodite's personal assistant. Because of this, her children are the ultimate \"people people.\" They love to do community service and make others happy. They delight in parties and feasts, and love to serve their friends. Some of the greatest chefs, hotel managers, fashion designers, and plastic surgeons have been children of Hebe. They also tend to maintain a youthful appearance no matter how old they are. It's a fresh, youthful cabin with bright colors, flower decorations. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Hebe",
+    "photoLink": "",
+    "members": "Paolo"
+  },
+  {
+    "cabinNumber": 19,
+    "description": "Tyche is the goddess of fortune and luck, and her cabin looks like a miniature Las Vegas casino. Her children love games of chance, but whatever you do, don't bet against them, because they have an uncanny ability of winning when it seems least likely. Their behavior often seems random (probably because they decide things by tossing a coin or drawing straws) but somehow they always seem to come out ahead. It's a cabin decorated with dice, coins, fortune wheels, symbols of luck. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Tyche",
+    "photoLink": "",
+    "members": ""
+  },
+  {
+    "cabinNumber": 20,
+    "description": "Hecate's children are the only demigods who can truly cast magic. They are the original sorcerers. The goddess of magic can be a tough parent, however, and her children must prove their worth and study hard to master their skills. Magic also has a way of twisting around on the user, so if the child of Hecate isn't careful, their spells can do more harm than good. It's a mystical cabin with magical symbols, spell components, torches. The cabin was built after the Battle of Manhattan.",
+    "divinity": "Hecate",
+    "photoLink": "",
+    "members": ""
+  }
 ]

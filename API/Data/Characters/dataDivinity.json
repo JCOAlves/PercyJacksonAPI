@@ -334,5 +334,13 @@
     "photoLink": "",
     "pantheon": "Greek"
     
+  },
+  {
+    "name": "Bellona",
+    "description": "Bellona is an ancient Roman goddess of war. She is generally characterized as embodying the destructive and brutal side of warfare. Her main attribute is the military helmet worn on her head; she often holds a sword, spear, or shield, and brandishes a torch or whip as she rides into battle in a four-horse chariot.",
+    "category": "Divinity",
+    "photoLink": "",
+    "pantheon": "Roman"
+    
   }
 ]
