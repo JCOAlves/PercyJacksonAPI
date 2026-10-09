@@ -9,22 +9,22 @@ The REST API was built with the framework **Express** using **TypeScript**. The 
 
 ## How to run the Application locally
 1. Clone the application repository to your local machine: 
-  ```bash
-  git clone https://github.com/JCOAlves/PercyJacksonAPI.git
-  ```
+    ```bash
+    git clone https://github.com/JCOAlves/PercyJacksonAPI.git
+    ```
 2. Go to the *API* folder:
-  ```bash
-  cd API
-  ```
+    ```bash
+    cd API
+    ```
 3. Inside the *API* folder, install the project's dependencies:
-  ```bash
-  npm install
-  ```
+    ```bash
+    npm install
+    ```
 4. Create a `.env` file with the environment variables in *API*, based on `env.example`. 
 5. Finally, run the application using the API:
-  ```bash
-  npm run dev
-  ```
+    ```bash
+    npm run dev
+    ```
 
 ## Routes of API
 Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, cabins, locations, and books.
