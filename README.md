@@ -20,7 +20,10 @@ The REST API was built with the framework **Express** using **TypeScript**. The 
     ```bash
     npm install
     ```
-4. Create a `.env` file with the environment variables in *API*, based on `env.example`. 
+4. Create a `.env` file with the environment variables in *API*, based on `env.example`:
+    ```bash
+    npm run setup
+    ```    
 5. Finally, run the application using the API:
     ```bash
     npm run dev

@@ -1,15 +1,17 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Percy Jackson API, where users can request Percy Jackson and The Olympians universe data to server.",
   "main": "./App.ts",
   "scripts": {
-    "dev": "node --watch App.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx --watch App.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "cp .env.example .env",
+    "build": "tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Júlio César",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "cors": "^2.8.6",
@@ -21,6 +23,10 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }

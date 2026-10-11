@@ -1,13 +1,13 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Percy Jackson API website, where the test API and API documentation are available.",
   "main": "./Pages/main.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Júlio César",
+  "license": "MIT",
   "type": "module"
 }
