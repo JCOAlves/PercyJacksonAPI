@@ -1,27 +1,510 @@
 [
-    {
-        "name": "Artefato1",
-        "description": "string1",
-        "category": [
-            "weapon",
-            "food"
-        ],
-        "photoLink": ""
-    },
-    {
-        "name": "Artefato2",
-        "description": "string",
-        "category": [
-            "food"
-        ],
-        "photoLink": ""
-    },
-    {
-        "name": "Artefato3",
-        "description": "string2",
-        "category": [
-            "weapon"
-        ],
-        "photoLink": ""
-    }
+	{
+		"name": "Aegis",
+		"description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense",
+			"protection"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Ambrosia",
+		"description": "Ambrosia is a solid food, often described as looking like a square of light-brown cake or a wafer. Just like nectar, it is used to cure critical injuries and restore a demigod's strength after exhaustion or heavy battles. Similar to the liquid version, its flavor adapts to the individual's favorite memory, tasting like chocolate brownie, homemade cookies, or specific sweets.",
+		"category": [
+			"food",
+			"magic",
+			"curing"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Archimedes Sphere",
+		"description": "An advanced, intricate ancient device capable of restructuring into various complex mechanical constructs.",
+		"category": [
+			"magic",
+			"repair",
+			"tool"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Ares-Blessed Chariot",
+		"description": "A terrifying, iron-clad war chariot used during camp games and battles. It is heavily armored and designed to run over opponents, radiating an aura of aggression.",
+		"category": [
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Athena Parthenos",
+		"description": "The Athena Parthenos is one of the most powerful and critical magical artifacts in Rick Riordan’s The Heroes of Olympus series. It is a colossal, forty-foot-tall statue made of gold and ivory, originally sculpted by Phidias to stand as the centerpiece of the Parthenon in ancient Athens. The statue represents the peak of Greek civilization and Athena's pride. When the Romans conquered Greece, Roman demigods stole the Athena Parthenos to break the spirit of the Greeks and humble the goddess.",
+		"category": [
+			"statue"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Aurum and Argentum",
+		"description": "Though they are living automaton companions rather than inanimate objects, these two metallic greyhounds (one gold, one silver) act as extensions of her power. They can smell lies instantly and shred her enemies on command.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Backbiter",
+		"description": "Also known as Mordecostas, it's Luke’s signature weapon. It is a unique sword forged with one side made of Celestial Bronze and the other side made of tempered steel. This design allows the blade to harm both immortals/monsters and mortal humans alike, which violates ancient laws of combat. Luke later uses its power to slice through the fabric of space to create travel portals.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Boar-Headed Shield",
+		"description": "A heavy battle shield engraved with the snarling face of a wild boar — the sacred animal of Ares. It serves both as a solid defense and an intimidating psychological weapon on the battlefield.",
+		"category": [
+			"weapon",
+			"psychic",
+			"defense",
+			"protection"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Bone Dragon Dagger",
+		"description": "A dagger carved from a dragon's tooth, which she received from Ares' son, Phineas. She began using it after losing her original Celestial Bronze dagger in Tartarus.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Camp Necklace",
+		"description": "The Camp Necklace is given to each camper at Camp Half-Blood at the end of each summer. The head counselors vote on the biggest event of the year and paint it on a bead.",
+		"category": [
+			"item"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Camp Tattoo",
+		"description": "At Camp Jupiter, the campers get permanent tattoos for every year they've been at camp or for quests they've completed, similar to the Camp Necklace beads at Camp Half-Blood. The tattoos have lines on them that are similar to a bar code which symbolizes the marks of honor given to Roman soldiers after every battle. The tattoos do not wear off because they are burned on the legion member's skin on the forearm. Along with the lines, the symbol of the legionnaire's parent, or ancestor in case of legacies, and SPQR is also present in the tattoo.",
+		"category": [
+			"item"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Celestial Bronze Bow and Arrows",
+		"description": "When he goes into battle, such as in the Battle of Manhattan, Chiron uses a longbow and arrows perfectly forged from celestial bronze, demonstrating his legendary accuracy as an archer.",
+		"category": [
+			"weapon",
+			"attack"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Celestial Bronze Dagger",
+		"description": "Given to her by Luke Castellan when she was only seven years old. Despite its short range, it is her preferred weapon for years and holds immense sentimental value. It is capable of vaporizing monsters upon contact.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Cornucopia",
+		"description": "The horn of the river god Achelous, which Piper uses to summon a torrent of fresh food, meat, or water on command.",
+		"category": [
+			"magic",
+			"food"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Daedalus’s Laptop",
+		"description": "A highly advanced, silver silver-cased laptop packed with the brilliant inventor Daedalus's lifework, blueprints, and mathematical theories. Annabeth uses it to solve complex architectural problems and decode ancient structures.",
+		"category": [
+			"strategy"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Dragon's Tooth Spear",
+		"description": "A magical spear given to him by Mars that can summon a grey skeletal warrior to fight by his side.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Golden Fleece",
+		"description": "A magical sheep's wool kept at Camp Half-Blood. It has the power to heal any living creature and purify poisoned lands, and it is responsible for maintaining the camp's protective magical barrier through Thalia's pine tree.",
+		"category": [
+			"curing",
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Hazel's Spatha",
+		"description": "Her primary weapon is an Imperial Gold Roman cavalry sword. Because a spatha is meant for mounted combat, it is much longer and heavier than a standard infantry gladius, reaching all the way to her ankle when sheared on her belt. While other legionnaires originally criticized her for using it on foot, it is the optimal length when she fights atop her immortal horse, Arion.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Hermes' Multivitamins",
+		"description": "A bottle of chewable vitamins given to him by the messenger god. They render the user immune to hostile magic, undo harmful transmutations, and instantly restore strength.",
+		"category": [
+			"food",
+			"curing"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Hunting Knives",
+		"description": "A pair of matched silver hunting knives that she keeps at her waist, used for swift close-quarters combat after she became a Hunter.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Imperial Gold Gladius",
+		"description": "Her standard-issue, beautifully crafted Roman short sword. Made of Imperial Gold, it is incredibly lethal to monsters, demigods, and deities alike. It can also transform into a pilum (javelin) for throwing.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Ivlivs",
+		"description": "A unique Imperial Gold coin that turns into a double-edged gladius when flipped to heads, or a long javelin lance when flipped to tails. It was later destroyed and replaced by a static gladius from Juno.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Katoptris",
+		"description": "A ceremonial dagger once owned by Helen of Troy. It does not just cut monsters; it shows its wielder brief, often ominous visions of the immediate future.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense",
+			"clairvoyance"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Life-Line Piece of Wood",
+		"description": "While not a weapon, his most critical artifact is a small piece of charred wood closely bound to his life force; if it burns away completely, he dies.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Magical Spear",
+		"description": "Her primary offensive weapon, disguised as an ordinary silver canister of mace. When twisted, it transforms into an incredibly long, electric Celestial Bronze spear that she can use to channel and blast lightning bolts at her enemies.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Magical Toolbelt",
+		"description": "An endless utility belt found in Bunker 9. It allows him to pull out virtually any standard tool or machine part weightlessly, and it even supplies snacks.",
+		"category": [
+			"magic",
+			"repair"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Maimer",
+		"description": "Also known as Lame, it's Clarisse's most famous weapon. It is a highly dangerous, electric spear gifted to her by her father, Ares. It channels thousands of volts of electricity, allowing her to shock and paralyze enemies upon contact. Percy Jackson famously broke the first version of this spear, but her father later replaced it with an even more powerful model she nicknamed Maimer.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Minotaur's Horn",
+		"description": "The very first monster trophy Percy ever claims. He snaps it off the Minotaur's head before killing it at the boundary of Camp Half-Blood.",
+		"category": [
+			"trophy"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Mist",
+		"description": "The Mist is a supernatural force controlled by the goddess Hecate that acts as a veil distorting the vision of mortals so they are unable to see monsters, gods, titans, and other supernatural occurrences, replacing everything with things the mortal mind knows and can see. Still, some mortals like Rachel Elizabeth Dare , Sally Jackson , and May Castellan are able to see through the Mist.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Nectar",
+		"description": "Nectar is a golden liquid that serves as the drink of the gods. It heals almost any injury, infection, or wound instantly and purges physical poison from a demigod's system. To demigods, it tastes exactly like their favorite mortal comfort food or drink.",
+		"category": [
+			"drink",
+			"magic",
+			"curing"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Nemean Lion's Skin",
+		"description": "A completely bulletproof fur coat obtained by defeating the Nemean Lion. It shields him from damage until he ultimately sacrifices it as an offering to Poseidon.",
+		"category": [
+			"defense",
+			"protection"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Pan's Scream",
+		"description": "Also known as The Panic Cry, it's a rare, sonic ability Grover inherits directly from the lost god of the wild, Pan. Though it is an innate power rather than a physical item, it behaves like an artifact of raw magic—when Grover releases the scream, it fills his enemies with absolute, uncontrollable terror, completely scattering armies.",
+		"category": [
+			"skill"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Plant Seeds",
+		"description": "Meg McCaffrey carries an assortment of ordinary and magical seeds. Using her powerful Demeter magic, she can instantly turn these seeds into rapidly growing weaponized vines, giant pumpkins, or defensive plant walls.",
+		"category": [
+			"item"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Poseidon’s Pearls",
+		"description": "Three magical pearls given to Percy via a Nereid. Smashing them on the ground transports the user — and anyone holding on — directly back into the nearest ocean water, serving as an emergency escape from the Underworld.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Praetor's Badge and Cloak",
+		"description": "After proving her incredible leadership in the battle against the emperors and the undead, Hazel is elevated to the rank of Praetor of the Twelfth Legion. With this title, she inherits Reyna Ramírez-Arellano's purple praetor cloak and official badge of office.",
+		"category": [
+			"item"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Purple Praetor Cloak",
+		"description": "Also known as Aegis Cloak, it's Reyna's heavy purple cloak that symbolizes her rank. Gifted by her mother Bellona, it is lined with a thin layer of magical chainmail capable of deflecting blades and arrows.",
+		"category": [
+			"item"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Reed Pipes",
+		"description": "Grover's most essential tool. These wooden pipes allow him to channel Woodland Magic, controlling plant life and manipulating nature. While he plays terribly at the beginning of the series, he eventually masters them, using songs like \"YMCA\" to grow fast-moving strawberry vines or specific melodies to trap enemies in maple trees.",
+		"category": [
+			"magic",
+			"tool"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Riptide",
+		"description": "Also known as Anaklusmos, it's Percy's primary weapon. It is a Celestial Bronze sword disguised as a standard disposable ballpoint pen. When uncapped, it transforms into a deadly blade that vaporizes monsters but passes harmlessly through mortals. If lost, it automatically returns to Percy's pocket after a short time.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Sacrificial Dagger",
+		"description": "A ritual blade made of Imperial Gold used for reading the future. Instead of animal sacrifices, Octavian notoriously uses it to slice open stuffed animals and plush toys to inspect their cotton fluff \"innards\" for prophecies.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Sand Dollar",
+		"description": "A magical sand dollar given to Percy by Poseidon for his 15th birthday. He later uses it to purify a poisoned river during the Battle of Manhattan.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Silver Bow",
+		"description": "After joining the Hunters of Artemis and pledging her loyalty to the goddess of the hunt, Thalia received a beautifully crafted silver bow. It fires arrows made of hard light or silver that are lethal to monsters and can be summoned out of thin air.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Silver Pocketknife",
+		"description": "A small silver blade given to her by her sister, Hylla (Queen of the Amazons). She uses it effectively in close-quarters combat.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Stygian Ice Whistle",
+		"description": "A special whistle crafted from magical Stygian ice. When blown, it summons Mrs. O'Leary, Percy’s loyal pet hellhound, though the whistle shatters into water after a single use.",
+		"category": [
+			"magic",
+			"tool"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Stygian Iron Sword",
+		"description": "A pitch-black blade forged from iron cooled in the River Styx. It has the unique ability to absorb the souls of monsters or the dead it strikes, preventing them from reforming easily.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Thalia's Pine Tree",
+		"description": "Thalia's Pine Tree is the pine tree on the very tip of the camp. As Thalia Grace laid dying after her wound from her fight to save her friends, her father Zeus, God of the skies, Ruler of the Gods, created Thalia's pine tree to not only save his daughter but to stop that from happening again. He created a barrier to protect lost demigods and to keep Camp Half-Blood a safe place from the monsters trying to kill them. After Thalia's resurrection, it still maintains the barrier, now powered by the Golden Fleece instead of Thalia's life force.",
+		"category": [
+			"magic",
+			"protection"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Drakon Skin",
+		"description": "During the Battle of Manhattan, Clarisse single-handedly slew the formidable Lydian Drakon after her close friend Silena Beauregard was killed. By dragging its carcass, she earned immense glory, and the hide itself represents her ultimate triumph as a warrior.",
+		"category": [
+			"trophy"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Empathy Link",
+		"description": "A rare psychic bond Grover establishes with Percy Jackson. This link allows them to share emotions, see glimpses of each other's dreams, and track one another across vast distances. However, it comes with a major risk: if one of them dies, the other could potentially drop into a permanent coma or die as well.",
+		"category": [
+			"psychic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Magic Ball of Yarn",
+		"description": "A magical tracking string reminiscent of Ariadne's thread that Luke uses to easily navigate the dangers of the Labyrinth.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Magic Wheelchair",
+		"description": "To blend in among mortals under the guise of “Mr. Brunner,” Chiron uses a magic wheelchair designed especially for him. When he sits in it, the rear half of his horse’s body (his equine half) is magically compressed and hidden within an illusion of compressed space inside the wheelchair itself.",
+		"category": [
+			"item",
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Onager",
+		"description": "Also known as Siege Engine, it's a massive, powerful Roman catapult that Octavian spent legion funds to construct. He views it as his ultimate masterpiece, though it ironically leads to his own demise when his clothes get caught in its firing mechanism during the Battle of Camp Half-Blood.",
+		"category": [
+			"weapon"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Ring Blades",
+		"description": "Meg wears two ordinary-looking brass rings on her middle fingers, which were given to her by Nero. When she activates them, they transform into two matched Imperial Gold sicas (curved Roman daggers). Because they are made of Imperial Gold, they are rare for a Greek demigod, making her exceptionally dangerous.",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Sibylline Books",
+		"description": "Although it is not an object she physically carries, Ella studied and memorized all the original Roman prophecy books before they were burned. Since the actual books were destroyed in ancient history, Ella’s mind has become the only “artifact” that holds the fate of Rome and Camp Jupiter.",
+		"category": [
+			"item",
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "The Winged Shoes",
+		"description": "A pair of magical sneakers given to Luke by his father, Hermes. They sprout wings at the heels whenever the user speaks the command word \"Maia\". Luke tricks Percy by gifting them to him before his quest to the Underworld, having secretly cursed the shoes to drag whoever wore them directly into Tartarus.",
+		"category": [
+			"magic"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Tyson's Clubs",
+		"description": "As his personal weapon, Tyson often uses simple wooden clubs or heavy pieces of log that he affectionately refers to simply as “Stick.”",
+		"category": [
+			"weapon",
+			"attack",
+			"defense"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Wristwatch Shield",
+		"description": "A gift from his cyclops half-brother, Tyson. It looks like an ordinary wristwatch but expands into a heavy, beautifully engraved bronze battle shield at the press of a button.",
+		"category": [
+			"defense",
+			"protection"
+		],
+		"photoLink": ""
+	},
+	{
+		"name": "Yankees Cap of Invisibility",
+		"description": "A gift from her mother, Athena, for her 12th birthday. This navy blue baseball cap grants absolute invisibility to whoever wears it. It temporarily lost its magic after Annabeth had a falling out with her mother but was eventually restored.",
+		"category": [
+			"futility",
+			"magic"
+		],
+		"photoLink": ""
+	}
 ]

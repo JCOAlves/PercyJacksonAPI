@@ -17,8 +17,7 @@ import { type Cabin } from '../Types/Cabin.ts';
 import { type Place } from '../Types/Place.ts';
 import { type Saga } from '../Types/Book.ts';
 
-import { type Data } from '../ResponseHTTP.ts';
-import ResponseHTTP from '../ResponseHTTP.ts';
+import ResponseHTTP, { type Data } from '../Config/ResponseHTTP.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,11 +42,14 @@ const GET_docsPage = (req: Request, res: Response): Response | void => {
 
 const GET_allData = (req: Request, res: Response): Response | void => {
     try {
-        const Data: Data = {
-            characters: [
+        let AllCharacters: (Character | Demigod | Divinity | Creature)[] = [
                 ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
                 ...dataDivinity as Divinity[], ...dataMortal as Character[]
-            ],
+            ];
+        AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
+        
+        const Data: Data = {
+            characters: AllCharacters,
             artifacts: dataArtifacts as Artifact[],
             cabins: dataCabins as Cabin[],
             places: dataPlaces as Place[],

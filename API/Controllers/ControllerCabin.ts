@@ -1,7 +1,7 @@
 import { type Request, type Response } from "express";
 import { type Cabin } from "../Types/Cabin.ts";
 import dataCabins from '../Data/Cabins/dataCabins.json' with { type: 'json' };
-import ResponseHTTP from "../ResponseHTTP.ts";
+import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
 const GET_cabinsList = (req: Request, res: Response): Response | void => {
     try {

@@ -1,7 +1,7 @@
 import { type Request, type Response } from "express";
 import { type Book, type Saga } from "../Types/Book.ts";
 import dataBooks from '../Data/Books/dataBooks.json' with { type: 'json' };
-import ResponseHTTP from "../ResponseHTTP.ts";
+import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
 const GET_sagasList = (req: Request, res: Response): Response | void => {
     try {

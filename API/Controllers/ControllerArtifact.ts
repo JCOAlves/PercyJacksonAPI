@@ -1,7 +1,7 @@
 import { type Request, type Response } from "express";
-import { type Artifact } from "../Types/Artifact.ts";
+import { type categoryArtifact, type Artifact } from "../Types/Artifact.ts";
 import dataArtifacts from '../Data/Artifacts/dataArtifacts.json' with { type: 'json' };
-import ResponseHTTP from "../ResponseHTTP.ts";
+import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
 const GET_artifactsList = (req: Request, res: Response): Response | void => {
     try {
@@ -11,7 +11,7 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
 
         if (name) listArtifacts = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
-        if (category) listArtifacts = listArtifacts.filter(a => a.category?.includes(String(category) as "weapon" | "food" | "drink" | "protection" | "curing" | "futility" | "attack" | "defense"));
+        if (category) listArtifacts = listArtifacts.filter(a => a.category?.includes(String(category).toLowerCase() as categoryArtifact));
 
         if (description) listArtifacts = listArtifacts.filter(a => a.description.toLowerCase().includes(String(description).toLowerCase()));
 

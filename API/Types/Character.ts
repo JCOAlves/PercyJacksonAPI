@@ -1,9 +1,12 @@
 import { type Artifact } from "./Artifact.ts";
 
+type categoryCharacter = "Mortal" | "Demigod" | "Legacy" | "Divinity" | 
+    "Titan" | "Primordial" | "Giant" | "Creature" | "Monster"
+
 type Character = {
     name: string,
     description: string,
-    category: "Mortal" | "Demigod" | "Legacy" | "Divinity" | "Titan" | "Primordial" | "Giant" | "Creature" | "Monster",
+    category: categoryCharacter,
     birthday?: string | Date | null,
     photoLink?: string
 };
@@ -26,6 +29,7 @@ type Creature = Character & {
     cabin?: number,
     camp?: "Camp Half-Blood" | "Camp Jupiter",
     parents?: (Divinity | Character | string)[],
+    artifacts?: Artifact[]
 };
 
 export { type Character, type Divinity, type Demigod, type Creature };

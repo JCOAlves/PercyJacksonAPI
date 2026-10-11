@@ -4,18 +4,19 @@ import dataDemigod from '../Data/Characters/dataDemigod.json' with { type: 'json
 import dataCreature from '../Data/Characters/dataCreature.json' with { type: 'json' };
 import dataDivinity from '../Data/Characters/dataDivinity.json' with { type: 'json' };
 import dataMortal from '../Data/Characters/dataMortal.json' with { type: 'json' };
-import ResponseHTTP from "../ResponseHTTP.ts";
+import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
-const AllCharacters = [
+let AllCharacters: (Character | Demigod | Divinity | Creature)[] = [
     ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
     ...dataDivinity as Divinity[], ...dataMortal as Character[]
 ];
+AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
 
 const GET_charactersList = (req: Request, res: Response): Response | void => {
     try {
         const { camp = "", pantheon = "", cabin = "", category = "" } = req.query;
 
-        let listCharacters: (Character | Divinity | Demigod | Creature)[] = AllCharacters;
+        let listCharacters: (Character | Demigod | Divinity | Creature)[] = AllCharacters;
 
         if (category) listCharacters = listCharacters.filter(c => c.category.toLowerCase() === String(category).toLowerCase());
 
@@ -48,7 +49,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        let characterFound: Character | Divinity | Demigod | Creature | undefined | null = null;
+        let characterFound: Character | Demigod | Divinity | Creature | undefined | null = null;
 
         if (!name) {
             const responseAPI = new ResponseHTTP(false, "Character name parameter not provided");
