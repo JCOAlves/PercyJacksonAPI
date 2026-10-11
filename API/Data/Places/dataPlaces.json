@@ -1,26 +1,110 @@
 [
     {
-        "name": "Lugar1",
-        "description": "string",
-        "location": "string",
+        "name": "Camp Half-Blood",
+        "description": "Camp Half-Blood is a Greek demigod training facility located on the north shore of Long Island. The camp is directed by the god Dionysus, who the campers call \"Mr. D,\" and Chiron, a Centaur who is the activities director. ",
+        "location": "Long Island, New York",
         "photoLink": ""
     },
     {
-        "name": "Lugar2",
-        "description": "string2",
-        "location": "string",
+        "name": "Camp Jupiter",
+        "description": "Camp Jupiter is a camp designated to protect and train the children of the Roman gods and their descendants. Its entrance is a service tunnel near the main Caldecott Tunnel in the Oakland Hills, near San Francisco. The current praetors are Hazel Levesque and Frank Zhang. ",
+        "location": "Oakland Hills, California",
         "photoLink": ""
     },
     {
-        "name": "Lugar3",
-        "description": "string",
-        "location": "string",
+        "name": "Sea of Monsters",
+        "description": "The Sea of Monsters, also known as the Bermuda Triangle to humans, is a sea in which Polyphemus, Scylla and Charybdis, the Sirens, and other monsters and godly things, like Circe, the sorceress, live in. Much like Olympus and the Underworld, the Sea tends to move around following the light of the Western World. It was originally in the Mediterranean Sea in the ancient times. Because of its large triangular size, the Mist hasn't been able to hide it completely and the area has become famous among mortals because of the planes and ships that disappear there. The Sea of Monsters is known to mortals as the Bermuda Triangle.",
+        "location": "The Bermuda Triangle, Atlantic Ocean.",
         "photoLink": ""
     },
     {
-        "name": "Lugar4",
-        "description": "string",
-        "location": "string",
+        "name": "Waystation",
+        "description": "The Waystation, also referred to by Nero as the House of Nets, is a magical safe house in Indianapolis, Indiana, located within the historic Indianapolis Union Station complex. It serves as a refuge for demigods, Hunters of Artemis, monsters, spirits, and others in need of sanctuary. It is operated by the former Hunters of Artemis, Emmie and Josephine while Britomartis, the Greek goddess of hunting nets and traps, is its divine proprietor.",
+        "location": "Indianapolis Union Station complex, Indianapolis, Indiana",
+        "photoLink": ""
+    },
+    {
+        "name": "Underworld",
+        "description": "The Underworld is the realm of the dead, the final resting place of all deceased people and creatures. The Underworld is divided into various sections, and the Judgment Pavilion decide where a soul should go based upon their life's accomplishments. In Ancient Greece, a man named King Rhadamanthus judged the dead and was later joined by King Aeacus and Minos. It is located beneath DOA Recording Studios in Los Angeles, California.",
+        "location": "DOA Recording Studios, Los Angeles, California",
+        "photoLink": ""
+    },
+    {
+        "name": "Tartarus",
+        "description": "Tartarus is the darkest and deepest area of Hades' realm, known as the Underworld, where the gods imprison their enemies. Tartarus is also the primordial Greek god of the abyss.",
+        "location": "Underworld",
+        "photoLink": ""
+    },
+    {
+        "name": "Mount Tamalpais",
+        "description": "Mount Tamalpais is the fateful site of the Titans’ ancient stronghold, Mount Otris. Known to the demigods as the “Mountain of Despair,” the place is shrouded in dense fog and static storms, serving as the headquarters of Cronus and his army during the Second Titan War. It is at the summit of this mountain that the Titans’ black marble palace stands and where the Titan Atlas endures his eternal punishment, forced to bear the weight of the physical sky on his back.",
+        "location": "San Francisco, California ",
+        "photoLink": ""
+    },
+    {
+        "name": "Daedalus’s Labyrinth",
+        "description": "The Labyrinth of Daedalus is a vast, sentient underground network that extends beneath the entire American continent. Originally created by the Greek inventor Daedalus, the Labyrinth is not merely a fixed stone structure, but rather a living organism that grows, changes shape, and moves constantly of its own accord, capable of distorting time and space to disorient anyone who enters it.",
+        "location": "Beneath the Earth",
+        "photoLink": ""
+    },
+    {
+        "name": "Mount Olympus",
+        "description": "Mount Olympus is the majestic home of the Twelve Olympian Gods, hidden from mortal eyes directly above the Empire State Building in New York City. Accessible only via a special key card in the building's elevator that takes demigods to the secret 600th floor, it exists as a floating mountain in the sky, anchored to the heart of Western Civilization. The mountain features breathtaking ancient Greek architecture, featuring white marble palaces, bustling marketplaces, and beautiful gardens built along its slopes.",
+        "location": "Empire State Building, New York",
+        "photoLink": ""
+    },
+    {
+        "name": "Empire State Building",
+        "description": "The Empire State Building in New York City serves as the secret gateway to Mount Olympus. While mortals see it as just a regular skyscraper, Greek demigods and mythological creatures know that it anchors the heart of Western Civilization. To reach the home of the gods, visitors must approach the security desk in the lobby and request a key card for the mythical 600th floor.",
+        "location": "20 West 34th Street, New York, NY",
+        "photoLink": ""
+    },
+    {
+        "name": "Aeithales",
+        "description": "Aeithales — meaning \"evergreen\" in Ancient Greek — is a hidden estate and botany research facility located in Palm Springs, California. Built by Phillip McCaffrey, it serves as the childhood home of the young demigod Meg McCaffrey before it was largely burned down by the Roman Emperor Caligula.",
+        "location": "Palm Springs, California",
+        "photoLink": ""
+    },
+    {
+        "name": "The Lotus Hotel and Casino",
+        "description": "The Lotus Hotel and Casino is located in Las Vegas, Nevada, United States of America. While inside, it seems like time never passes, and nobody wants to leave.",
+        "location": "Las Vegas, Nevada",
+        "photoLink": ""
+    },
+    {
+        "name": "C.C.'s Spa and Resort",
+        "description": "C.C.'s Spa and Resort was a luxurious spa and resort run by the sorceress Circe, the immortal daughter of Hecate. In Greek mythology, it was a place where she lured men onto her island and turned them into pigs. After Annabeth and Percy released the pirates, the pirates burned down and destroyed the spa.",
+        "location": "Circe's Island, The Sea of Monsters, The Bermuda Triangle",
+        "photoLink": ""
+    },
+    {
+        "name": "Poseidon's Kingdom",
+        "description": "A massive, glowing underwater city and palace where Percy's father rules. The kingdom is centered around Atlantis. It features heavily in battles against the sea Titan Oceanus.",
+        "location": "Ocean",
+        "photoLink": ""
+    },
+    {
+        "name": "The Wolf House ",
+        "description": "The Wolf House is located in Sonoma, California. The ruins of Jack London's mansion serve as a sacred Roman site where Lupa, the wolf goddess, tests and trains Roman demigods before allowing them to find Camp Jupiter.",
+        "location": "Sonoma, California",
+        "photoLink": ""
+    },
+    {
+        "name": "Ogygia",
+        "description": "The phantom island paradise where the Titaness Calypso was imprisoned by the gods. It is magically hidden from the world, and only heroes who are cursed to break Calypso's heart can wash ashore.",
+        "location": "Unknown",
+        "photoLink": ""
+    },
+    {
+        "name": "The Parthenon",
+        "description": "The ancient temple that served as the final battlefield of the Giant War in The Blood of Olympus, where the Greek and Roman demigods united to prevent Gaea from fully waking up.",
+        "location": "Athens, Greece",
+        "photoLink": ""
+    },
+    {
+        "name": "San Francisco Bay Area",
+        "description": "The entire region is known as the \"Old Lands\" to Roman demigods. Because of its proximity to Mount Tamalpais, it is a highly volatile area overflowing with concentrated mythical energy and ancient monsters.",
+        "location": "San Francisco, California",
         "photoLink": ""
     }
 ]
