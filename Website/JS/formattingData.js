@@ -6,7 +6,7 @@ export default function formattingData(listData, nameRoute) {
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
                         alt="Picture of ${i.name}" class="rounded-t-lg border-1 min-h-50">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
-                        <p class="font-semibold text-[20px] text-center">${i.name}</p>
+                        <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p><strong>Character type:</strong> ${i.category}</p>
 
                         ${i.pantheon ? `<p><strong>Pantheon:</strong> ${i.pantheon}</p>` : ""}
@@ -27,8 +27,8 @@ export default function formattingData(listData, nameRoute) {
                 <div class="flex flex-col min-w-40">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
                         alt="Picture of ${i.name}" class="rounded-t-lg border-1 min-h-50">
-                    <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
-                        <p class="font-semibold text-[20px] text-center">${i.name}</p>
+                    <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3">
+                        <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p class="text-justify">${i.description}</p>
                         <p class="flex flex-wrap gap-2 w-auto">${(i.category.map(a => a = `<span class="w-auto border rounded-lg py-1 px-2">
                             ${a.charAt(0).toUpperCase()+a.slice(1)}</span>`)).join("")}</p>
@@ -42,7 +42,7 @@ export default function formattingData(listData, nameRoute) {
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
                         alt="Picture of cabin ${i.cabinNumber}" class="rounded-t-lg border-1 min-h-50">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
-                        <p class="font-semibold text-[20px] text-center">Cabin ${i.cabinNumber}</p>
+                        <p class="font-semibold text-[20px] text-center title">Cabin ${i.cabinNumber}</p>
                         <p><strong>Divinity:</strong> ${i.divinity}</p>
                         <p class="text-justify">${i.description}</p>
                     </div>
@@ -55,7 +55,7 @@ export default function formattingData(listData, nameRoute) {
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
                         alt="Picture of ${i.name}" class="rounded-t-lg border-1 min-h-50">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
-                        <p class="font-semibold text-[20px] text-center">${i.name}</p>
+                        <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p><strong>Location:</strong> ${i.location}</p>
                         <p class="text-justify">${i.description}</p>
                     </div>
@@ -68,7 +68,7 @@ export default function formattingData(listData, nameRoute) {
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
                         alt="Picture of ${i.title}" class="rounded-t-lg border-1 min-h-50">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
-                        <p class="font-semibold text-[20px] text-center">${i.title}</p>
+                        <p class="font-semibold text-[20px] text-center title">${i.title}</p>
                         <p><strong>Author:</strong> ${i.author}</p>
                         <p><strong>Publication Date:</strong> ${i.publicationDate}</p>
                         <p><strong>Page Number:</strong> ${i.pagesNumber}</p>

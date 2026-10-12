@@ -46,7 +46,8 @@ class ResponseHTTP {
 
         } : {
             success: this.success,
-            message: this.message
+            message: this.message,
+            error: this.#error
         };
         return JSON;
     };

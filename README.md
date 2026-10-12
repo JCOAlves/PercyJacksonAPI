@@ -1,5 +1,5 @@
 # Percy Jackson API
-A REST API system providing data on characters, creatures, artifacts, and themes from the Percy Jackson &amp; the Olympians universe (Riordanverse).
+A REST API system providing data on characters, creatures, artifacts, and themes from the Percy Jackson and the Olympians universe (Riordanverse).
 
 The project aims to make data from the Percy Jackson universe available for programming studies using the REST API and for the development of applications for fans of the series, like websites featuring character profiles, a glossary of terms and words from Greco-Roman mythology, and Camp Half-Blood RPG games. 
 
@@ -30,176 +30,287 @@ The REST API was built with the framework **Express** using **TypeScript**. The 
     ```
 
 ## Routes of API
-Five routes were created for the API, all of which are based on ``/api``, the application's main route, which returns all data about characters, artifacts, cabins, locations, and books.
+Five routes were created for the API, all of which are based on **GET** `/api``, the application's main route, which returns all data about characters, artifacts, cabins, locations, and books.
  
 **Request route**:
 ```
 /api
 ```
 
-**Response body**:
-```typescript
+**Example response body**:
+```json
 {
-  success: boolean,
-  message: string,
-  data?: {
-    characters: (Character | Demigod | Divinity | Creature)[],
-    artifacts: Artifact[],
-    cabins: Cabin[],
-    places: Place[],
-    books: Book[]
-  } | null,
-  error?: Error | any | undefined
+  "success": true,
+  "message": "Data successfully listed",
+  "data": {
+    "characters": ["..."], //list of JSON objects of type “characters”
+    "artifacts": ["..."], //list of JSON objects of type “artifacts”
+    "cabins": ["..."], //list of JSON objects of type “cabins”
+    "places": ["..."], //list of JSON objects of type “places”
+    "books": ["..."] //list of JSON objects of type “books”
+  }
 }
 ```
-In the event of errors, the ``error`` attribute is returned in the response, and the ``data`` attribute is omitted.
+In the event of errors, the `error` attribute is returned in the response, and the `data` attribute is omitted:
+```json
+{
+  "success": false,
+  "message": "Error in the list of data",
+  "error": "ROUTE_NOT_FOUND"
+}
+```
 
 ### Character route
-- ``/api/characters``: list of all saga characters. It can be filtered by `camp`, `pantheon`, `cabin` or `category`.
+- **GET** `/api/characters`: list of all saga characters. It can be filtered by `camp`, `pantheon`, `cabin` or `category`.
 
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: (Character | Demigod | Divinity | Creature)[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Characters successfully listed",
+        "data": [
+            {
+                "name": "Agamethus",
+                "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked 
+                    around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+                "category": "Mortal",
+                "photoLink": "",
+                "pantheon": "Greek"
+            }, 
+            // ...
+        ]
     }
     ``` 
 
-- ``/api/characters/:name``: returns a specific character by name, which is a string.
+- **GET** `/api/characters/:name`: returns a specific character by name, which is a string.
 
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Character | Demigod | Divinity | Creature | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "No character matching the specified criteria was found",
+        "data": {
+            "name": "Agamethus",
+            "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+            "category": "Mortal",
+            "photoLink": "",
+            "pantheon": "Greek"
+        }
     }
     ```
 
 ### Artifact route
-- ``/api/artifacts``: list of all saga artifacts. It can be filtered by `name`, `category` or `description` .
+- **GET** `/api/artifacts`: list of all saga artifacts. It can be filtered by `name`, `category` or `description` .
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Artifact[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Artifacts successfully listed",
+        "data": [
+            {
+                "name": "Aegis",
+                "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's      original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+                "category": [
+                    "weapon",
+                    "attack",
+                    "defense",
+                    "protection"
+                ],
+                "photoLink": ""
+            },
+            // ...        
+        ]
     }
     ```
   
-- ``/api/artifacts/:name``: returns a specific artifact by name, which is a string.
+- **GET** `/api/artifacts/:name`: returns a specific artifact by name, which is a string.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Artifact | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Artifact name parameter not provided",
+        "data": {
+            "name": "Aegis",
+            "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+            "category": [
+                "weapon",
+                "attack",
+                "defense",
+                "protection"
+            ],
+            "photoLink": ""
+        }
     }
     ```
 
 ### Cabin route
-- ``/api/cabins``: list of all cabins in Camp Half-Blood. It can be filtered by `cabinNumber`.
+- **GET** `/api/cabins`: list of all cabins in Camp Half-Blood. It can be filtered by `cabinNumber`.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Cabin[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Cabins successfully listed",
+        "data": [
+            {
+                "cabinNumber": 1,
+                "description": "In the old days, Zeus had lots of demigod kids, but since the pact of the Big Three, children of Zeus have been rare. Thalia Grace is the most famous modern child of Zeus, though she joined the Hunters of Artemis and rarely visits camp. Children of Zeus can sometimes control wind and lightning. They are natural leaders, and many, like Heracles, are known for their tremendous strength and bravery. On the other hand, they tend to attract a lot of monsters. It´s a majestic marble structure with columns and a peaked roof. Lightning rod on top, with blue and white decorations throughout.",
+                "divinity": "Zeus",
+                "photoLink": "",
+                "members": "Thalia Grace, Jason Grace"
+            },
+            // ...
+        ]
     }
     ```
 
-- ``/api/cabins/:cabinNumber``: returns a specific cabin by cabin number, which is a number.
+- **GET** `/api/cabins/:cabinNumber`: returns a specific cabin by cabin number, which is a number.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Cabin | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Cabin number parameter not provided",
+        "data": {
+            "cabinNumber": 1,
+            "description": "In the old days, Zeus had lots of demigod kids, but since the pact of the Big Three, children of Zeus have been rare. Thalia Grace is the most famous modern child of Zeus, though she joined the Hunters of Artemis and rarely visits camp. Children of Zeus can sometimes control wind and lightning. They are natural leaders, and many, like Heracles, are known for their tremendous strength and bravery. On the other hand, they tend to attract a lot of monsters. It´s a majestic marble structure with columns and a peaked roof. Lightning rod on top, with blue and white decorations throughout.",
+            "divinity": "Zeus",
+            "photoLink": "",
+            "members": "Thalia Grace, Jason Grace"
+        }
     }
     ```
 
 ### Place route
-- ``/api/places``: list of all places in the Percy Jackson &amp; the Olympians universe. It can be filtered by `location` or `description`.
+- **GET** `/api/places`: list of all places in the Percy Jackson and the Olympians universe. It can be filtered by `location` or `description`.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Place[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Place successfully listed",
+        "data": [
+            {
+                "name": "Aeithales",
+                "description": "Aeithales — meaning \"evergreen\" in Ancient Greek — is a hidden estate and botany research facility located in Palm Springs, California. Built by Phillip McCaffrey, it serves as the childhood home of the young demigod Meg McCaffrey before it was largely burned down by the Roman Emperor Caligula.",
+                "location": "Palm Springs, California",
+                "photoLink": ""
+            },
+            // ...
+        ]
     }
     ```
 
-- ``/api/places/:name``: returns a specific place by name, which is a string.
+- **GET** `/api/places/:name`: returns a specific place by name, which is a string.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Place | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Place name parameter not provided",
+        "data": {
+            "name": "Aeithales",
+            "description": "Aeithales — meaning \"evergreen\" in Ancient Greek — is a hidden estate and botany research facility located in Palm Springs, California. Built by Phillip McCaffrey, it serves as the childhood home of the young demigod Meg McCaffrey before it was largely burned down by the Roman Emperor Caligula.",
+            "location": "Palm Springs, California",
+            "photoLink": ""
+        }
     }
     ```
 
 ### Book route
-- ``/api/sagas``: list of Percy Jackson book series. It can be filtered by `name`.
+- **GET** `/api/sagas`: list of Percy Jackson book series. It can be filtered by `name`.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Saga[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Sagas successfully listed",
+        "data": [
+            {
+                "name": "Percy Jackson and the Olympians",
+                "description": "",
+                "booksNumber": 5,
+                "books": [
+                    {
+                        "title": "The Lightning Thief",
+                        "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+                        "publicationDate": "July 1th, 2005",
+                        "photoLink": "",
+                        "author": "Rick Riordan",
+                        "pagesNumber": 377
+                    },
+                    // ...
+                ]
+            },
+            // ...
+        ]
     }
     ```
   
-- ``/api/sagas/books``: list of all Percy Jackson universe books. It can be filtered by `saga`.
+- **GET** `/api/sagas/books`: list of all Percy Jackson universe books. It can be filtered by `saga`.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Book[] | [],
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Books successfully listed",
+        "data": [
+            {
+                "title": "The Lightning Thief",
+                "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+                "publicationDate": "July 1th, 2005",
+                "photoLink": "",
+                "author": "Rick Riordan",
+                "pagesNumber": 377
+            },
+            // ...
+        ]
     }
     ```
 
-- ``/api/sagas/books/:title``: returns a specific book by title, which is a string.
+- **GET** `/api/sagas/books/:title`: returns a specific book by title, which is a string.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Book | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Saga successfully listed",
+        "data": {
+            "name": "Percy Jackson and the Olympians",
+            "description": "",
+            "booksNumber": 5,
+            "books": [
+                {
+                    "title": "The Lightning Thief",
+                    "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+                    "publicationDate": "July 1th, 2005",
+                    "photoLink": "",
+                    "author": "Rick Riordan",
+                    "pagesNumber": 377
+                },
+                // ...
+            ]
+        }
     }
     ```
 
-- ``/api/sagas/:name``: returns a specific Percy Jackson book series by name, which is a string.
+- **GET** `/api/sagas/:name`: returns a specific Percy Jackson book series by name, which is a string.
   
-    **Response body**:
-    ```typescript
+    **Example response body**:
+    ```json
     {
-      success: boolean,
-      message: string,
-      data?: Saga | null,
-      error?: Error | any | undefined
+        "sucess": true,
+        "message": "Book successfully listed",
+        "data": {
+            "title": "The Lightning Thief",
+            "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+            "publicationDate": "July 1th, 2005",
+            "photoLink": "",
+            "author": "Rick Riordan",
+            "pagesNumber": 377
+        }
     }
     ```
 

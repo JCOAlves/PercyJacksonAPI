@@ -1,5 +1,13 @@
 /*Main page style*/
 
+h1, h2, nav{
+    font-family: "Metamorphous", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title{ font-family: "Metamorphous", serif; }
+
 #head {
     background-color: #0D1C42;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../Imgs/photoBooks.webp");
@@ -8,9 +16,38 @@
     background-position: center;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(185, 185, 185) rgba(0, 0, 0, 0);
+}
+
 input, select{
     border: solid 1px;
     padding: 7px;
     border-radius: 5px;
+}
+
+footer{
+    font-family: "Metamorphous", serif;
 }
 

@@ -86,7 +86,7 @@
 		"photoLink": ""
 	},
 	{
-		"name": "Camp Necklace",
+		"name": "Camp Half-Blood Necklace",
 		"description": "The Camp Necklace is given to each camper at Camp Half-Blood at the end of each summer. The head counselors vote on the biggest event of the year and paint it on a bead.",
 		"category": [
 			"item"
@@ -94,7 +94,7 @@
 		"photoLink": ""
 	},
 	{
-		"name": "Camp Tattoo",
+		"name": "Camp Jupiter Tattoo",
 		"description": "At Camp Jupiter, the campers get permanent tattoos for every year they've been at camp or for quests they've completed, similar to the Camp Necklace beads at Camp Half-Blood. The tattoos have lines on them that are similar to a bar code which symbolizes the marks of honor given to Roman soldiers after every battle. The tattoos do not wear off because they are burned on the legion member's skin on the forearm. Along with the lines, the symbol of the legionnaire's parent, or ancestor in case of legacies, and SPQR is also present in the tattoo.",
 		"category": [
 			"item"
