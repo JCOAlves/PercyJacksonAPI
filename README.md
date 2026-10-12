@@ -43,11 +43,11 @@ Five routes were created for the API, all of which are based on **GET** `/api``,
   "success": true,
   "message": "Data successfully listed",
   "data": {
-    "characters": ["..."], //list of JSON objects of type “characters”
-    "artifacts": ["..."], //list of JSON objects of type “artifacts”
-    "cabins": ["..."], //list of JSON objects of type “cabins”
-    "places": ["..."], //list of JSON objects of type “places”
-    "books": ["..."] //list of JSON objects of type “books”
+    "characters": ["..."], 
+    "artifacts": ["..."], 
+    "cabins": ["..."],
+    "places": ["..."],
+    "books": ["..."]
   }
 }
 ```
