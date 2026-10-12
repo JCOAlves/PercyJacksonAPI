@@ -71,13 +71,12 @@ In the event of errors, the `error` attribute is returned in the response, and t
         "data": [
             {
                 "name": "Agamethus",
-                "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked 
-                    around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+                "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
                 "category": "Mortal",
                 "photoLink": "",
                 "pantheon": "Greek"
             }, 
-            // ...
+            "..."
         ]
     }
     ``` 
@@ -110,7 +109,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
         "data": [
             {
                 "name": "Aegis",
-                "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's      original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+                "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
                 "category": [
                     "weapon",
                     "attack",
@@ -119,7 +118,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
                 ],
                 "photoLink": ""
             },
-            // ...        
+            "..."        
         ]
     }
     ```
@@ -161,7 +160,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
                 "photoLink": "",
                 "members": "Thalia Grace, Jason Grace"
             },
-            // ...
+            "..."
         ]
     }
     ```
@@ -198,7 +197,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
                 "location": "Palm Springs, California",
                 "photoLink": ""
             },
-            // ...
+            "..."
         ]
     }
     ```
@@ -241,10 +240,10 @@ In the event of errors, the `error` attribute is returned in the response, and t
                         "author": "Rick Riordan",
                         "pagesNumber": 377
                     },
-                    // ...
+                    "..."
                 ]
             },
-            // ...
+            "..."
         ]
     }
     ```
@@ -265,7 +264,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
                 "author": "Rick Riordan",
                 "pagesNumber": 377
             },
-            // ...
+            "..."
         ]
     }
     ```
@@ -290,7 +289,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
                     "author": "Rick Riordan",
                     "pagesNumber": 377
                 },
-                // ...
+                "..."
             ]
         }
     }
