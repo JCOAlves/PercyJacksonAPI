@@ -24,11 +24,7 @@
         <div class="flex flex-wrap gap-5 justify-center items-center">
             <ul class="hidden lg:flex flex-wrap gap-5">
                 <a href="#how-to-run" class="hover:font-semibold">Run Locally</a>
-                <a href="#characters" class="hover:font-semibold">Characters</a>
-                <a href="#artifacts" class="hover:font-semibold">Artifacts</a>
-                <a href="#cabins" class="hover:font-semibold">Cabins</a>
-                <a href="#places" class="hover:font-semibold">Places</a>
-                <a href="#books" class="hover:font-semibold">Books</a>
+                <a href="#routes" class="hover:font-semibold">Routes of API</a>
             </ul>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -86,7 +82,7 @@
             </li>
         </ol>
 
-        <h2 class="text-3xl mb-2">Routes of API</h2>
+        <h2 class="text-3xl mb-2" id="routes">Routes of API</h2>
         <p class="text-justify my-2">
             Eleven endpoints were created for the API, all of which are based on <strong>GET</strong> <code>/api</code>,
             the application's main route, which returns all data about characters, artifacts, cabins, locations, and
@@ -100,6 +96,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
   "success": true,
+  "status": 200,
   "message": "Data successfully listed",
   "data": {
     "characters": ["..."], 
@@ -121,6 +118,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Data successfully listed",
     "data": {
         "characters": ["/api/characters", "/api/characters/:name"],
@@ -138,10 +136,18 @@
             </p>
             <pre><code class="language-json">{
   "success": false,
+  "status": 404,
   "message": "Error in the list of data",
   "error": "ROUTE_NOT_FOUND"
 }</code></pre>
         </div>
+        <ul class="flex flex-wrap flex-col gap-2">
+            <a href="#characters" class="hover:font-semibold">Characters</a>
+            <a href="#artifacts" class="hover:font-semibold">Artifacts</a>
+            <a href="#cabins" class="hover:font-semibold">Cabins</a>
+            <a href="#places" class="hover:font-semibold">Places</a>
+            <a href="#books" class="hover:font-semibold">Books</a>
+        </ul>
 
         <h3 class="text-2xl mt-4" id="characters">Character route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
@@ -150,6 +156,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Characters successfully listed",
     "data": [
         {
@@ -179,6 +186,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Character successfully listed",
     "data": {
         "name": "Agamethus",
@@ -198,6 +206,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Artifacts successfully listed",
     "data": [
         {
@@ -229,6 +238,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Artifact successfully listed",
     "data": {
         "name": "Aegis",
@@ -252,6 +262,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Cabins successfully listed",
     "data": [
         {
@@ -277,6 +288,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Cabin successfully listed",
     "data": {
         "cabinNumber": 1,
@@ -297,6 +309,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Places successfully listed",
     "data": [
         {
@@ -322,6 +335,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Place successfully listed",
     "data": {
         "name": "Aeithales",
@@ -340,6 +354,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Sagas successfully listed",
     "data": [
         {
@@ -371,6 +386,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Books successfully listed",
     "data": [
         {
@@ -397,6 +413,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Book successfully listed",
     "data": {
         "title": "The Lightning Thief",
@@ -416,6 +433,7 @@
                 <strong>Example response body</strong>:
                 <pre><code class="language-json">{
     "success": true,
+    "status": 200,
     "message": "Saga successfully listed",
     "data": {
         "name": "Percy Jackson and the Olympians",
