@@ -42,6 +42,7 @@ Eleven endpoints were created for the API, all of which are based on **GET** `/a
 ```json
 {
   "success": true,
+  "status": 200,
   "message": "Data successfully listed",
   "data": {
     "characters": ["..."], 
@@ -64,6 +65,7 @@ In addition, there is the **GET** `/api/nameRoutes` route, which lists all route
 ```json
 {
     "success": true,
+    "status": 200,
     "message": "Data successfully listed",
     "data": {
         "characters": ["/api/characters", "/api/characters/:name"],
@@ -79,6 +81,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
 ```json
 {
   "success": false,
+  "status": 404,
   "message": "Error in the list of data",
   "error": "ROUTE_NOT_FOUND"
 }
@@ -91,6 +94,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Characters successfully listed",
         "data": [
             {
@@ -122,6 +126,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Character successfully listed",
         "data": {
             "name": "Agamethus",
@@ -140,6 +145,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Artifacts successfully listed",
         "data": [
             {
@@ -174,6 +180,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Artifact successfully listed",
         "data": {
             "name": "Aegis",
@@ -196,6 +203,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Cabins successfully listed",
         "data": [
             {
@@ -223,6 +231,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Cabin successfully listed",
         "data": {
             "cabinNumber": 1,
@@ -241,6 +250,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Places successfully listed",
         "data": [
             {
@@ -268,6 +278,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Place successfully listed",
         "data": {
             "name": "Aeithales",
@@ -285,6 +296,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Sagas successfully listed",
         "data": [
             {
@@ -316,6 +328,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Books successfully listed",
         "data": [
             {
@@ -344,6 +357,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Book successfully listed",
         "data": {
             "title": "The Lightning Thief",
@@ -367,6 +381,7 @@ In the event of errors, the `error` attribute is returned in the response, and t
     ```json
     {
         "success": true,
+        "status": 200,
         "message": "Saga successfully listed",
         "data": {
             "name": "Percy Jackson and the Olympians",
