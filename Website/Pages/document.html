@@ -11,25 +11,27 @@
     <link href="https://cdnfonts.com" rel="stylesheet">
     <link rel="stylesheet" href="../Style/docStyle.css">
     <link rel="icon" href="../Imgs/iconWebsite.png" type="image/svg+xml">
-    <title>Percy Jackson API</title>
+    <title>Percy Jackson API - Documentation</title>
 </head>
 
 <body>
-    <nav class="flex justify-between items-center w-full min-w-[360px] p-5 h-20 bg-[#22396F] text-white shadow" id="top">
+    <nav class="flex justify-between items-center w-full min-w-[360px] p-5 h-20 bg-[#22396F] text-white shadow"
+        id="top">
         <div class="flex flex-row gap-5 justify-center items-center">
             <img src="../Imgs/iconWebsite.png" alt="Icon website" class="w-12">
             <p class="hidden sm:flex text-2xl font-semibold">Percy Jackson API</p>
         </div>
         <div class="flex flex-wrap gap-5 justify-center items-center">
             <ul class="hidden lg:flex flex-wrap gap-5">
+                <a href="#how-to-run" class="hover:font-semibold">Run Locally</a>
                 <a href="#characters" class="hover:font-semibold">Characters</a>
                 <a href="#artifacts" class="hover:font-semibold">Artifacts</a>
                 <a href="#cabins" class="hover:font-semibold">Cabins</a>
                 <a href="#places" class="hover:font-semibold">Places</a>
                 <a href="#books" class="hover:font-semibold">Books</a>
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="w-7 h-7 lucide lucide-menu preview-icon">
                 <path d="M4 5h16" />
                 <path d="M4 12h16" />
@@ -37,202 +39,416 @@
             </svg>
         </div>
     </nav>
+
     <main class="flex flex-col p-10 min-w-[360px] max-w-320 mx-auto">
-        <h1 class="text-center text-4xl">Documentation of Percy Jackson API</h1>
-        <p class="text-justify my-4">
+        <h1 class="text-center text-4xl font-semibold mb-4">Documentation of Percy Jackson API</h1>
+        <p class="text-justify my-2">
             A REST API system providing data on characters, creatures, artifacts, and themes from the <span
-                class="font-semibold">Percy Jackson and the Olympians</span>
-            universe (Riordanverse).
+                class="font-semibold">Percy Jackson and the Olympians</span> universe (Riordanverse).
             The project aims to make data from the Percy Jackson universe available for programming studies using the
-            REST API and for the development of applications
-            for fans of the series, like websites featuring character profiles,
+            REST API and for the development of applications for fans of the series, like websites featuring character
+            profiles,
             a glossary of terms and words from Greco-Roman mythology, and Camp Half-Blood RPG games.
         </p>
         <p class="text-justify mb-4">
             The REST API was built with the framework <strong>Express</strong> using <strong>TypeScript</strong>.
             The data used in this project comes from the official website of the saga author
-            Rick Riordan <a href="https://rickriordan.com/" class="italic hover:text-blue-900">Rickriordan.com</a>, the
-            publisher of the
-            Percy Jackson books <a href="https://www.readriordan.com/"
-                class="italic hover:text-blue-900">Readriordan.com</a> and the fan website
-            <a height="30" href="https://www.fandom.com/" class="italic hover:text-blue-900">Fandom.com</a>.
+            Rick Riordan <a href="https://rickriordan.com/" target="_blank" rel="noopener noreferrer"
+                class="italic hover:text-blue-900">Rickriordan.com</a>, the
+            publisher of the Percy Jackson books <a href="https://www.readriordan.com/" target="_blank"
+                rel="noopener noreferrer" class="italic hover:text-blue-900">Readriordan.com</a> and the fan website
+            <a href="https://www.fandom.com/" target="_blank" rel="noopener noreferrer"
+                class="italic hover:text-blue-900">Fandom.com</a>.
         </p>
-        <div class="mb-6">
+        <div class="mb-8">
             <img class="h-20" src="https://skillicons.dev/icons?i=express,ts" alt="Project tools">
         </div>
 
-        <h2 class="text-3xl">Routes of API</h2>
-        <p class="text-justify mt-4">
-            Five routes were created for the API, all of which are based on <code>/api</code>, the application's main
-            route, which returns all data about characters, artifacts, cabins, locations, and books.
-            <br><strong>Request route</strong>:
-        <pre><code>/api</code></pre>
-        <span><strong>Response body</strong>:</span>
-        <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: {
-    characters: (Character | Demigod | Divinity | Creature)[],
-        artifacts: Artifact[],
-        cabins: Cabin[],
-        places: Place[],
-        books: Book[]
-    } | null,
-    error?: Error | any | undefined
-}</code></pre>
+        <h2 class="text-3xl mb-4" id="how-to-run">How to run the Application locally</h2>
+        <ol class="list-decimal list-inside flex flex-col gap-2 mb-8">
+            <li>Clone the application repository to your local machine:
+                <pre><code class="language-bash">git clone https://github.com/JCOAlves/PercyJacksonAPI.git</code></pre>
+            </li>
+            <li>Go to the <em>API</em> folder:
+                <pre><code class="language-bash">cd API</code></pre>
+            </li>
+            <li>Inside the <em>API</em> folder, install the project's dependencies:
+                <pre><code class="language-bash">npm install</code></pre>
+            </li>
+            <li>Create a <code>.env</code> file with the environment variables in <em>API</em>, based on
+                <code>env.example</code>:
+                <pre><code class="language-bash">npm run setup</code></pre>
+            </li>
+            <li>Finally, run the application using the API:
+                <pre><code class="language-bash">npm run dev</code></pre>
+                <p class="mt-2">The REST API will run at <code>http://localhost:3000</code> by
+                    default.</p>
+            </li>
+        </ol>
+
+        <h2 class="text-3xl mb-2">Routes of API</h2>
+        <p class="text-justify my-2">
+            Eleven endpoints were created for the API, all of which are based on <strong>GET</strong> <code>/api</code>,
+            the application's main route, which returns all data about characters, artifacts, cabins, locations, and
+            books.
         </p>
-        <p class="text-justify mt-1 mb-6">In the event of errors, the <code>error</code> attribute is returned in the
-            response,
-            and the <code>data</code> attribute is omitted.
-        </p>
 
-        <h3 class="text-2xl" id="characters">Character route</h3>
+        <div class="flex flex-col gap-4 mb-6">
+            <div>
+                <strong>Request route</strong>:
+                <pre><code>/api</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+  "success": true,
+  "message": "Data successfully listed",
+  "data": {
+    "characters": ["..."], 
+    "artifacts": ["..."], 
+    "cabins": ["..."],
+    "places": ["..."],
+    "books": ["..."]
+  }
+}</code></pre>
+            </div>
+
+            <div>
+                <p class="text-justify my-2">
+                    In addition, there is the <strong>GET</strong> <code>/api/nameRoutes</code> route, which lists all
+                    routes for characters, artifacts, cabins, places and books:
+                </p>
+                <strong>Request route</strong>:
+                <pre><code>/api/nameRoutes</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Data successfully listed",
+    "data": {
+        "characters": ["/api/characters", "/api/characters/:name"],
+        "artifacts": ["/api/artifacts", "/api/artifacts/:name"],
+        "cabins": ["/api/cabins", "/api/cabins/:cabinNumber"],
+        "places": ["/api/places", "/api/places/:name"],
+        "books": ["/api/sagas", "/api/sagas/books", "/api/sagas/books/:title", "/api/sagas/:name"]
+    }
+}</code></pre>
+            </div>
+
+            <p class="text-justify mt-1">
+                In the event of errors, the <code>error</code> attribute is returned in the response, and the
+                <code>data</code> attribute is omitted:
+            </p>
+            <pre><code class="language-json">{
+  "success": false,
+  "message": "Error in the list of data",
+  "error": "ROUTE_NOT_FOUND"
+}</code></pre>
+        </div>
+
+        <h3 class="text-2xl mt-4" id="characters">Character route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/characters</code>: list of all saga characters. It can be filtered by <code>camp</code>,
-                <code>pantheon</code>,
-                <code>cabin</code> or <code>category</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: (Character | Demigod | Divinity | Creature)[] | [],
-    error?: Error | any | undefined
+                <strong>GET</strong> <code>/api/characters</code>: list of all saga characters.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Characters successfully listed",
+    "data": [
+        {
+            "name": "Agamethus",
+            "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+            "category": "Mortal",
+            "photoLink": "",
+            "pantheon": "Greek"
+        }, 
+        "..."
+    ]
 }</code></pre>
+                It can be filtered by <code>camp</code>, <code>pantheon</code>, <code>cabin</code> or
+                <code>category</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/characters?camp=Camp%20Half-Blood</code></li>
+                    <li><code>GET /api/characters?pantheon=Greek</code></li>
+                    <li><code>GET /api/characters?cabin=1</code></li>
+                    <li><code>GET /api/characters?category=Demigod</code></li>
+                </ul>
             </li>
             <li>
-                <code>/api/characters/:name</code>: returns a specific character by name, which is a string.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Character | Demigod | Divinity | Creature | null,
-    error?: Error | any | undefined
+                <strong>GET</strong> <code>/api/characters/:name</code>: returns a specific character by name, which is
+                a string.
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/characters/Agamethus</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Character successfully listed",
+    "data": {
+        "name": "Agamethus",
+        "description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
+        "category": "Mortal",
+        "photoLink": "",
+        "pantheon": "Greek"
+    }
 }</code></pre>
             </li>
         </ul>
 
-        <h3 class="text-2xl" id="artifacts">Artifact route</h3>
+        <h3 class="text-2xl mt-4" id="artifacts">Artifact route</h3>
         <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
             <li>
-                <code>/api/artifacts</code>: list of all saga artifacts. It can be filtered by <code>name</code>,
-                <code>category</code> or <code>description</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Artifact[] | [],
-    error?: Error | any | undefined
+                <strong>GET</strong> <code>/api/artifacts</code>: list of all saga artifacts.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Artifacts successfully listed",
+    "data": [
+        {
+            "name": "Aegis",
+            "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+            "category": [
+                "weapon",
+                "attack",
+                "defense",
+                "protection"
+            ],
+            "photoLink": ""
+        },
+        "..."        
+    ]
 }</code></pre>
-            </li>
-            <li><code>/api/artifacts/:name</code>: returns a specific artifact by name, which is a string.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Artifact | null,
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-        </ul>
-
-        <h3 class="text-2xl" id="cabins">Cabin route</h3>
-        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
-            <li>
-                <code>/api/cabins</code>: list of all cabins in Camp Half-Blood. It can be filtered by <code>cabinNumber</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Cabin[] | [],
-    error?: Error | any | undefined
-}</code></pre>
+                It can be filtered by <code>name</code>, <code>category</code> or <code>description</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/artifacts?name=Aegis</code></li>
+                    <li><code>GET /api/artifacts?category=weapon</code></li>
+                    <li><code>GET /api/artifacts?description=primary%20defensive</code></li>
+                </ul>
             </li>
             <li>
-                <code>/api/cabins/:cabinNumber</code>: returns a specific cabin by cabin number, which is a number.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Cabin | null,
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-        </ul>
-
-        <h3 class="text-2xl" id="places">Place route</h3>
-        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
-            <li>
-                <code>/api/places</code>: list of all places in the Percy Jackson and the Olympians universe. It can
-                befiltered by <code>location</code> or <code>description</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Place[] | [],
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-            <li>
-                <code>/api/places/:name</code>: returns a specific place by name, which is a string.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Place | null,
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-        </ul>
-
-        <h3 class="text-2xl" id="books">Book route</h3>
-        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
-            <li>
-                <code>/api/sagas</code>: list of Percy Jackson book series. It can be filtered by
-                <code>name</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Saga[] | [],
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-            <li>
-                <code>/api/sagas/books</code>: list of all Percy Jackson universe books. It can be filtered by
-                <code>saga</code>.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Book[] | [],
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-            <li>
-                <code>/api/sagas/books/:title</code>: returns a specific book by title, which is a string.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Book | null,
-    error?: Error | any | undefined
-}</code></pre>
-            </li>
-            <li>
-                <code>/api/sagas/:name</code>: returns a specific Percy Jackson book series by name, which is a
+                <strong>GET</strong> <code>/api/artifacts/:name</code>: returns a specific artifact by name, which is a
                 string.
-                <br><strong>Response body</strong>:
-                <pre><code class="language-typescript">{
-    success: boolean,
-    message: string,
-    data?: Saga | null,
-    error?: Error | any | undefined
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/artifacts/Aegis</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Artifact successfully listed",
+    "data": {
+        "name": "Aegis",
+        "description": "Thalia's primary defensive artifact. It is a silver bracelet that expands into a terrifying shield modeled after her father Zeus's original Aegis. The shield is engraved with the horrifying face of the Gorgon Medusa; it projects a supernatural aura of absolute terror, causing monsters and mortals alike to panic, freeze, or flee in fear whenever she raises it.",
+        "category": [
+            "weapon",
+            "attack",
+            "defense",
+            "protection"
+        ],
+        "photoLink": ""
+    }
 }</code></pre>
             </li>
-
         </ul>
+
+        <h3 class="text-2xl mt-4" id="cabins">Cabin route</h3>
+        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
+            <li>
+                <strong>GET</strong> <code>/api/cabins</code>: list of all cabins in Camp Half-Blood.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Cabins successfully listed",
+    "data": [
+        {
+            "cabinNumber": 1,
+            "description": "In the old days, Zeus had lots of demigod kids, but since the pact of the Big Three, children of Zeus have been rare. Thalia Grace is the most famous modern child of Zeus, though she joined the Hunters of Artemis and rarely visits camp. Children of Zeus can sometimes control wind and lightning. They are natural leaders, and many, like Heracles, are known for their tremendous strength and bravery. On the other hand, they tend to attract a lot of monsters. It's a majestic marble structure with columns and a peaked roof. Lightning rod on top, with blue and white decorations throughout.",
+            "divinity": "Zeus",
+            "photoLink": "",
+            "members": "Thalia Grace, Jason Grace"
+        },
+        "..."
+    ]
+}</code></pre>
+                It can be filtered by <code>cabinNumber</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/cabins?cabinNumber=1</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>GET</strong> <code>/api/cabins/:cabinNumber</code>: returns a specific cabin by cabin number,
+                which is a number.
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/cabins/1</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Cabin successfully listed",
+    "data": {
+        "cabinNumber": 1,
+        "description": "In the old days, Zeus had lots of demigod kids, but since the pact of the Big Three, children of Zeus have been rare. Thalia Grace is the most famous modern child of Zeus, though she joined the Hunters of Artemis and rarely visits camp. Children of Zeus can sometimes control wind and lightning. They are natural leaders, and many, like Heracles, are known for their tremendous strength and bravery. On the other hand, they tend to attract a lot of monsters. It's a majestic marble structure with columns and a peaked roof. Lightning rod on top, with blue and white decorations throughout.",
+        "divinity": "Zeus",
+        "photoLink": "",
+        "members": "Thalia Grace, Jason Grace"
+    }
+}</code></pre>
+            </li>
+        </ul>
+
+        <h3 class="text-2xl mt-4" id="places">Place route</h3>
+        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
+            <li>
+                <strong>GET</strong> <code>/api/places</code>: list of all places in the Percy Jackson and the Olympians
+                universe.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Places successfully listed",
+    "data": [
+        {
+            "name": "Aeithales",
+            "description": "Aeithales — meaning \"evergreen\" in Ancient Greek — is a hidden estate and botany research facility located in Palm Springs, California. Built by Phillip McCaffrey, it serves as the childhood home of the young demigod Meg McCaffrey before it was largely burned down by the Roman Emperor Caligula.",
+            "location": "Palm Springs, California",
+            "photoLink": ""
+        },
+        "..."
+    ]
+}</code></pre>
+                It can be filtered by <code>location</code> or <code>description</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/places?location=California</code></li>
+                    <li><code>GET /api/places?description=Ancient%20Greek</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>GET</strong> <code>/api/places/:name</code>: returns a specific place by name, which is a
+                string.
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/places/Aeithales</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Place successfully listed",
+    "data": {
+        "name": "Aeithales",
+        "description": "Aeithales — meaning \"evergreen\" in Ancient Greek — is a hidden estate and botany research facility located in Palm Springs, California. Built by Phillip McCaffrey, it serves as the childhood home of the young demigod Meg McCaffrey before it was largely burned down by the Roman Emperor Caligula.",
+        "location": "Palm Springs, California",
+        "photoLink": ""
+    }
+}</code></pre>
+            </li>
+        </ul>
+
+        <h3 class="text-2xl mt-4" id="books">Book route</h3>
+        <ul class="flex flex-col gap-4 ml-5 mb-6 mt-2 list-disc">
+            <li>
+                <strong>GET</strong> <code>/api/sagas</code>: list of Percy Jackson book series.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Sagas successfully listed",
+    "data": [
+        {
+            "name": "Percy Jackson and the Olympians",
+            "description": "",
+            "booksNumber": 5,
+            "books": [
+                {
+                    "title": "The Lightning Thief",
+                    "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+                    "publicationDate": "July 1st, 2005",
+                    "photoLink": "",
+                    "author": "Rick Riordan",
+                    "pagesNumber": 377
+                },
+                "..."
+            ]
+        },
+        "..."
+    ]
+}</code></pre>
+                It can be filtered by <code>name</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/sagas?name=Percy%20Jackson%20and%20the%20Olympians</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>GET</strong> <code>/api/sagas/books</code>: list of all Percy Jackson universe books.
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Books successfully listed",
+    "data": [
+        {
+            "title": "The Lightning Thief",
+            "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+            "publicationDate": "July 1st, 2005",
+            "photoLink": "",
+            "author": "Rick Riordan",
+            "pagesNumber": 377
+        },
+        "..."
+    ]
+}</code></pre>
+                It can be filtered by <code>saga</code>:
+                <ul class="flex flex-col gap-1 list-circle ml-6 my-2 text-sm font-mono">
+                    <li><code>GET /api/sagas/books?saga=Percy%20Jackson%20and%20the%20Olympians</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>GET</strong> <code>/api/sagas/books/:title</code>: returns a specific book by title, which is a
+                string.
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/sagas/books/The%20Lightning%20Thief</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Book successfully listed",
+    "data": {
+        "title": "The Lightning Thief",
+        "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+        "publicationDate": "July 1st, 2005",
+        "photoLink": "",
+        "author": "Rick Riordan",
+        "pagesNumber": 377
+    }
+}</code></pre>
+            </li>
+            <li>
+                <strong>GET</strong> <code>/api/sagas/:name</code>: returns a specific Percy Jackson book series by
+                name, which is a string.
+                <br><strong>Example request route</strong>:
+                <pre><code>GET /api/sagas/Percy%20Jackson%20and%20the%20Olympians</code></pre>
+                <strong>Example response body</strong>:
+                <pre><code class="language-json">{
+    "success": true,
+    "message": "Saga successfully listed",
+    "data": {
+        "name": "Percy Jackson and the Olympians",
+        "description": "",
+        "booksNumber": 5,
+        "books": [
+            {
+                "title": "The Lightning Thief",
+                "synopsis": "Percy Jackson is a 12-year-old boy with ADHD and dyslexia who was leading an ordinary life when he discovers that he is a demigod, the son of a Greek god and a mortal, and must go to Camp Half-Blood, a refuge for young demigods. There, Poseidon claims him as his son, and the gods accuse him of stealing Zeus’s master lightning bolt. Now he must travel across the United States to find the real thief and prevent a war among the gods, alongside the demigoddess Annabeth Chase — daughter of Athena — and his satyr friend Grover Underwood.",
+                "publicationDate": "July 1st, 2005",
+                "photoLink": "",
+                "author": "Rick Riordan",
+                "pagesNumber": 377
+            },
+            "..."
+        ]
+    }
+}</code></pre>
+            </li>
+        </ul>
+
+        <h2 class="text-3xl mt-6 mb-3" id="contributors">Developers and contributors of the project</h2>
+        <ul class="list-disc ml-5 mb-6 flex flex-col gap-2">
+            <li><a href="https://github.com/JCOAlves" target="_blank" rel="noopener noreferrer"
+                    class="font-bold text-blue-900 hover:underline">Júlio César</a>: Creator and main fullstack dev of
+                the application.</li>
+            <li><a href="https://github.com/BrennoGithub" target="_blank" rel="noopener noreferrer"
+                    class="font-bold text-blue-900 hover:underline">Breno Gusmão</a>: Contributor responsible for the
+                release of part of the API data.</li>
+        </ul>
+        <p class="mb-6">If you'd like to contribute to the project, create a <em>Pull Request</em>.</p>
     </main>
+
     <footer class="sticky bottom-0 top-full w-full p-5 min-h-30 min-w-[360px] bg-[#22396F] text-center text-white">
         <div class="mb-3 font-semibold text-lg">
             <a href="#top">Back to the top of the page</a>
@@ -245,7 +461,8 @@
             <a href="#books" class="hover:font-semibold">Books</a>
         </div>
         <p class="mt-5">
-            <a href="https://github.com/JCOAlves" class="text-center text-[12px] text-gray-300 hover:font-semibold">Copyright (c) 2026 Júlio César</a>
+            <a href="https://github.com/JCOAlves" target="_blank" rel="noopener noreferrer"
+                class="text-center text-[12px] text-gray-300 hover:font-semibold">Copyright (c) 2026 Júlio César</a>
         </p>
     </footer>
 </body>

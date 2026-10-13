@@ -5,11 +5,11 @@ import { type Place } from "../Types/Place.ts";
 import { type Book, type Saga } from "../Types/Book.ts";
 
 type Data = {
-    characters?: (Character | Demigod | Divinity | Creature)[],
-    artifacts?: Artifact[],
-    cabins?: Cabin[],
-    places?: Place[],
-    books?: Saga[]
+    characters?: (Character | Demigod | Divinity | Creature)[] | string[],
+    artifacts?: Artifact[] | string[],
+    cabins?: Cabin[] | string[],
+    places?: Place[] | string[],
+    books?: Saga[] | string[]
 };
 type UniqueData = Character | Demigod | Divinity | Creature | Artifact | Cabin | Place | Saga | Book;
 type ListData = (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cabin[] | Place[] | Saga[] | Book[];
@@ -17,12 +17,14 @@ type ListData = (Character | Demigod | Divinity | Creature)[] | Artifact[] | Cab
 // Class Response HTTP
 class ResponseHTTP {
     success: boolean;
+    status: number;
     message: string;
     #data: Data | UniqueData | ListData | null | undefined;
     #error: Error | TypeError | any | unknown;
 
-    constructor(success: boolean, message: string, data?: Data | UniqueData | ListData | null | undefined, error?: Error | TypeError | any | unknown) {
+    constructor(success: boolean, status: number, message: string, data?: Data | UniqueData | ListData | null | undefined, error?: Error | TypeError | any | unknown) {
         this.success = success;
+        this.status = status;
         this.message = message;
         this.#data = data;
         this.#error = error;
@@ -30,10 +32,10 @@ class ResponseHTTP {
 
     showMessage(typeMSG = "") {
         if (typeMSG === "Error" && this.#error) {
-            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}: ${this.#error}`);
+            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.status} ${this.message}: ${this.#error}`);
 
         } else {
-            console.log(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.message}`);
+            console.log(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.status} ${this.message}`);
         };
         return;
     };
@@ -41,11 +43,13 @@ class ResponseHTTP {
     returnJSON() {
         const JSON = this.success ? {
             success: this.success,
+            status: this.status,
             message: this.message,
             data: this.#data
 
         } : {
             success: this.success,
+            status: this.status,
             message: this.message,
             error: this.#error
         };

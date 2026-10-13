@@ -5,7 +5,7 @@ import ReqLimit from './Config/RequestLimit.ts';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
-import { GET_mainPage, GET_docsPage, GET_allData, notFound_API, notFound } from "./Controllers/ControllerAPI.ts";
+import { GET_mainPage, GET_docsPage, GET_allData, GET_nameRoutes, notFound_API, notFound } from "./Controllers/ControllerAPI.ts";
 
 import RoutersArtifact from "./Routers/RoutersArtifact.ts";
 import RoutersBook from "./Routers/RoutersBook.ts";
@@ -30,6 +30,7 @@ app.get("/", GET_mainPage);
 app.get("/documentation", GET_docsPage);
 
 app.get("/api", GET_allData);
+app.get("/api/nameRoutes", GET_nameRoutes);
 app.use("/api/artifacts", RoutersArtifact);
 app.use("/api/sagas", RoutersBook);
 app.use("/api/cabins", RoutersCabin);

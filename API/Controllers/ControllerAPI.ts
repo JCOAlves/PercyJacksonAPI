@@ -56,12 +56,33 @@ const GET_allData = (req: Request, res: Response): Response | void => {
             books: dataBooks as Saga[]
         };
 
-        const responseAPI = new ResponseHTTP(true, "Data successfully listed", Data);
+        const responseAPI = new ResponseHTTP(true, 200, "Data successfully listed", Data);
         responseAPI.showMessage();
         return res.status(200).json(responseAPI.returnJSON());
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of data", null, error);
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of data", null, error);
+        responseAPI.showMessage();
+        return res.status(500).json(responseAPI.returnJSON());
+    };
+};
+
+const GET_nameRoutes = (req: Request, res: Response): Response | void => {
+    try {
+        const Routes: Data ={
+            characters: ["/api/characters", "/api/characters/:name"],
+            artifacts: ["/api/artifacts", "/api/artifacts/:name"],
+            cabins: ["/api/cabins", "/api/cabins/:cabinNumber"],
+            places: ["/api/places", "/api/places/:name"],
+            books: ["/api/sagas", "/api/sagas/books", "/api/sagas/books/:title", "/api/sagas/:name"]
+        };
+
+        const responseAPI = new ResponseHTTP(true, 200, "Name Routes successfully listed", Routes);
+        responseAPI.showMessage();
+        return res.status(200).json(responseAPI.returnJSON());
+        
+    } catch (error) {
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of name routes", null, error);
         responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
@@ -70,12 +91,12 @@ const GET_allData = (req: Request, res: Response): Response | void => {
 const notFound_API = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
-        const responseAPI = new ResponseHTTP(false, `The '/api/${notfound[0]}' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, `The '/api/${notfound[0]}' route was not found or the route does not exist`);
         responseAPI.showMessage();
         return res.status(404).json(responseAPI.returnJSON());
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, `The '/api' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, `The '/api' route was not found or the route does not exist`);
         responseAPI.showMessage();
         return res.status(404).json(responseAPI.returnJSON());
     }
@@ -84,15 +105,15 @@ const notFound_API = (req: Request, res: Response): Response | void => {
 const notFound = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
-        const responseAPI = new ResponseHTTP(false, `The '/${notfound[0]}' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, `The '/${notfound[0]}' route was not found or the route does not exist`);
         responseAPI.showMessage();
         return res.status(404).sendFile(path.join(__dirname, "../../Website/Pages", "not-found.html"));
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "The route was not found or the route does not exist");
+        const responseAPI = new ResponseHTTP(false, 404, "The route was not found or the route does not exist");
         responseAPI.showMessage();
         return res.status(404).send("The route was not found or the route does not exist");
     };
 };
 
-export { GET_mainPage, GET_docsPage, GET_allData, notFound_API, notFound };
+export { GET_mainPage, GET_docsPage, GET_allData, GET_nameRoutes, notFound_API, notFound };

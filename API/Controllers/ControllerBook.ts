@@ -12,18 +12,18 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
         if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
         if (listSagas.length > 0) {
-            const responseAPI = new ResponseHTTP(true, "Sagas successfully listed", listSagas);
+            const responseAPI = new ResponseHTTP(true, 200, "Sagas successfully listed", listSagas);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(false, "No saga matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, 404, "No saga matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of sagas", null, error);
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of sagas", null, error);
         responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI.returnJSON());
     };
@@ -41,18 +41,18 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
         listSagas.forEach(s => listBooks = [...listBooks, ...s.books]);
             
         if (listBooks.length > 0) {
-            const responseAPI = new ResponseHTTP(true, "Books successfully listed", listBooks);
+            const responseAPI = new ResponseHTTP(true, 200, "Books successfully listed", listBooks);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(false, "No book matching the specified criteria was found", []);
+            const responseAPI = new ResponseHTTP(false, 404, "No book matching the specified criteria was found", []);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of books", null, error);
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of books", null, error);
         responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI.returnJSON());
     };
@@ -66,7 +66,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
         let sagaFound: Saga | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, "Saga name parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Saga name parameter not provided");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
@@ -74,18 +74,18 @@ const GET_saga = (req: Request, res: Response): Response | void => {
         sagaFound = listSagas.find(s => s.name.toLowerCase() === (String(name).toLowerCase()));
 
         if (sagaFound) {
-            const responseAPI = new ResponseHTTP(true, "Saga successfully listed", sagaFound);
+            const responseAPI = new ResponseHTTP(true, 200, "Saga successfully listed", sagaFound);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(false, "No saga matching the specified name was found", null);
+            const responseAPI = new ResponseHTTP(false, 404, "No saga matching the specified name was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of saga", null, error);
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of saga", null, error);
         responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI.returnJSON());
     };
@@ -100,7 +100,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
         let bookFound: Book | undefined | null = null;
 
         if (!title) {
-            const responseAPI = new ResponseHTTP(false, "Book title parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Book title parameter not provided");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
@@ -109,18 +109,18 @@ const GET_book = (req: Request, res: Response): Response | void => {
         bookFound = listBooks.find(b => b.title.toLowerCase() === (String(title).toLowerCase()));
 
         if (bookFound) {
-            const responseAPI = new ResponseHTTP(true, "Book successfully listed", bookFound);
+            const responseAPI = new ResponseHTTP(true, 200, "Book successfully listed", bookFound);
             responseAPI.showMessage();
             return res.status(200).json(responseAPI.returnJSON());
 
         } else {
-            const responseAPI = new ResponseHTTP(false, "No book matching the specified title was found", null);
+            const responseAPI = new ResponseHTTP(false, 404, "No book matching the specified title was found", null);
             responseAPI.showMessage();
             return res.status(404).json(responseAPI.returnJSON());
         };
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, "Error in the list of book", null, error);
+        const responseAPI = new ResponseHTTP(false, 500, "Error in the list of book", null, error);
         responseAPI.showMessage("Error");
         return res.status(500).json(responseAPI.returnJSON());
     };
