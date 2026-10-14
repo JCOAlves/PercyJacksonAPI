@@ -4,9 +4,9 @@
   "description": "Percy Jackson API, where users can request Percy Jackson and The Olympians universe data to server.",
   "main": "./App.ts",
   "scripts": {
-    "dev": "tsx --watch App.ts",
+    "dev": "tsx --watch App.ts || node --watch App.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "cp .env.example .env",
+    "setup": "[ -e \".env\" ] && echo \".env file already exists\" || cp .env.example .env && echo \".env file created\"",
     "build": "tsc"
   },
   "keywords": [],

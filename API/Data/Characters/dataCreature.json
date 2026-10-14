@@ -17,7 +17,7 @@
 		"name": "Cabeiri",
 		"description": "Mysterious protective deities associated with secret rites and the sea.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/fantasia/images/4/4a/Cabires03.jpg/revision/latest?cb=20080208232358&path-prefix=pt",
 		"pantheon": "Greek"
 	},
 	{
@@ -31,7 +31,7 @@
 		"name": "Centaur",
 		"description": "A being with a human torso and the body of a horse, often associated with the wilderness and warfare.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Brooklyn_Museum_-_Centauress_-_John_La_Farge_-_overall.jpg/250px-Brooklyn_Museum_-_Centauress_-_John_La_Farge_-_overall.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
 		"pantheon": "Greek"
 	},
 	{
@@ -45,14 +45,14 @@
 		"name": "Charybdis",
 		"description": "A monstrous sea entity that created a massive whirlpool capable of destroying ships.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/olympians/images/d/d1/Charybdis.jpg/revision/latest?cb=20131213095622",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Chimera",
 		"description": "A fire-breathing monster combining features of a lion, goat, and serpent.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBx95vTlgRUSFuwOMEMTqYuLMqMQ-wftQ-EBBREboDmA&s=10",
 		"pantheon": "Greek"
 	},
 	{
@@ -78,14 +78,14 @@
 		"name": "Cyclops",
 		"description": "A giant one-eyed being. Some Cyclopes were divine blacksmiths who aided the gods.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://upload.wikimedia.org/wikipedia/commons/4/47/Polyphemus.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Drakons",
 		"description": "Giant serpent or dragon-like creatures appearing in numerous Greek myths.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcp0LlcQfGsWEQEi0YFYEhEsbALoEBs_4zN28keWz0qw&s=10",
 		"pantheon": "Greek"
 	},
 	{
@@ -117,14 +117,14 @@
 		"name": "Faun",
 		"description": "Roman nature spirits associated with forests, nature, and rural life.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Faun_merse.jpg/250px-Faun_merse.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
 		"pantheon": "Roman"
 	},
 	{
 		"name": "Giants",
 		"description": "Powerful beings who fought against the Olympian gods during the Gigantomachy.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYn61eRW19ZpSQs-ehEKYnYM8oqdgFAsKKqEm3wSGvRnZ0DbTns5hsHh-t&s=10",
 		"pantheon": "Greek"
 	},
 	{
@@ -165,7 +165,7 @@
 		"name": "Hippocampus",
 		"description": "A horse-fish creature associated with Poseidon and the sea.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDorPr5EziYKzPdfu-Yzsg02AqC16kogmCxzZ5AqmWjg&s=10",
 		"pantheon": "Greco-Roman"
 	},
 	{
@@ -186,7 +186,7 @@
 		"name": "Lares",
 		"description": "Protective household spirits that watched over families and homes.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6-_WzlpY8YntqWJLIo4HEv-r8aPGT6m21e83vcR-V5A&s",
 		"pantheon": "Roman"
 	},
 	{
@@ -228,14 +228,14 @@
 		"name": "Nymphs",
 		"description": "Nature spirits associated with forests, rivers, mountains, springs, and other natural places.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Waterhouse_Hylas_and_the_Nymphs_Manchester_Art_Gallery_1896.15.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
 		"pantheon": "Greco-Roman"
 	},
 	{
 		"name": "Onocentaur",
 		"description": "A hybrid creature with a human upper body and the body of a donkey.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://upload.wikimedia.org/wikipedia/commons/1/15/Onocentauros_-_Burney_MS_97.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
 		"pantheon": "Greco-Roman"
 	},
 	{
@@ -249,14 +249,14 @@
 		"name": "Penates",
 		"description": "Household spirits that protected a family's resources and prosperity.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Aeneis_3_147.jpeg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
 		"pantheon": "Roman"
 	},
 	{
 		"name": "Satyr",
 		"description": "Nature spirits associated with wilderness, wine, music, and pleasure.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/o-legado-dos-deuses/images/4/4e/B24c67f98d4cdba04665e5caf15590f5.jpg/revision/latest?cb=20241005190735&path-prefix=pt-br",
 		"pantheon": "Greek"
 	},
 	{
@@ -270,7 +270,7 @@
 		"name": "Silenus",
 		"description": "Nature spirits associated with Dionysus, often depicted with equine features.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Sileno_del_100-150_con_testa_di_et%C3%A0_flavia%2C_da_originali_del_primo_ellenismo_della_cerchia_di_lisisppo.JPG/250px-Sileno_del_100-150_con_testa_di_et%C3%A0_flavia%2C_da_originali_del_primo_ellenismo_della_cerchia_di_lisisppo.JPG?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
 		"pantheon": "Greek"
 	},
 	{
@@ -291,7 +291,7 @@
 		"name": "Telchines",
 		"description": "Mysterious beings associated with magic, metalworking, and the island of Rhodes.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/fantasia/images/d/d3/Telquines_01.jpg/revision/latest?cb=20220811054150&path-prefix=pt",
 		"pantheon": "Greek"
 	},
 	{

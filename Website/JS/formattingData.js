@@ -4,8 +4,8 @@ export default function formattingData(listData, nameRoute) {
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
                     <img src="${i.photoLink}" alt="Picture of ${i.name}" 
-                        class="object-top object-cover rounded-t-lg border-1 h-70 md:h-60">
-                    <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
+                        class="object-top object-cover rounded-t-lg border-1 h-80 md:h-70">
+                    <div class="flex flex-col gap-2 rounded-b-lg border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p><strong>Character type:</strong> ${i.category}</p>
 

@@ -47,7 +47,7 @@
         "name": "Asteria",
         "description": "Asteria is a second-generation Titan goddess. She is primarily recognized as the goddess of falling stars, astrology, and nighttime divinations, such as prophetic dreams.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://upload.wikimedia.org/wikipedia/commons/a/af/Pergamonmuseum_-_Antikensammlung_-_Pergamonaltar_27.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
         "pantheon": "Greek"
     },
     {
@@ -72,7 +72,7 @@
         "name": "Bellona",
         "description": "Bellona is an ancient Roman goddess of war. She is generally characterized as embodying the destructive and brutal side of warfare. Her main attribute is the military helmet worn on her head; she often holds a sword, spear, or shield, and brandishes a torch or whip as she rides into battle in a four-horse chariot.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/BellonaRembrandt.jpg/250px-BellonaRembrandt.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "pantheon": "Roman"
     },
     {
@@ -114,7 +114,7 @@
         "name": "Dione",
         "description": "Titaness often associated with water or earth, described in some traditions as the mother of Aphrodite.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/mitologinha/images/b/b6/Dione.png/revision/latest?cb=20191002223311&path-prefix=pt-br",
         "pantheon": "Greek"
     },
     {
@@ -139,14 +139,14 @@
         "name": "Erebus",
         "description": "The personification of darkness and gloom, brother and consort of Nyx.",
         "category": "Primordial",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-97G30MlgFvHZGzg4JPk2uXiugsCwbrk1puS4ABpA&s=10",
         "pantheon": "Greek"
     },
     {
         "name": "Gaia",
         "description": "Gaia is the primordial Greek goddess who personifies the Earth. After the defeat of her son Cronos in the Battle of Manhattan against the demigods of Camp Half-Blood, she created a new civil war between the Greek and Roman camps in order to be able to emerge from the earth. Her Roman equivalent is Terra Mater or Tellus.",
         "category": "Giant",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn31hfSNXXPiFzRiyY4mFxusRd9DnMqklMfwoHLDq8SRDYuafMjRkA_I4&s=10",
         "pantheon": "Greek"
     },
     {
@@ -164,7 +164,7 @@
         "name": "Hebe",
         "description": "The Greek goddess of youth. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Juventas.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-oqO3-ICZ87cHPJoTO6zUOVqcYDyQu4KJWjWYd38GA&s=10",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -175,7 +175,7 @@
         "name": "Hecate",
         "description": "The Greek goddess of magic. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Trivia.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfz3rfBS8DfZyNfufZzx66KS6BsI9RXTknmB--ftkM9g&s=10",
         "pantheon": "Greek",
         "parents": [
             "Perses",
@@ -219,7 +219,7 @@
         "name": "Hypnos",
         "description": "The Greek god of sleep. After the Battle of Manhattan, he received a cabin for his children at Camp Half-Blood. His Roman counterpart is Somnus.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgiLGudQSbrMbggINcL02qOdcb-MyI2Lg8x78BG_eQbQ&s=10",
         "pantheon": "Greek",
         "parents": [
             "Nyx"
@@ -229,7 +229,7 @@
         "name": "Iris",
         "description": "Iris is the Greek goddess of the rainbow. After the Battle of Manhattan, she received a cabin for her children at Half-Blood Camp. Her Roman counterpart is Iris or Arcus.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_i8ayRk_o3SYY_BzbNszW3E4g7ok3BtrS6v8oRBX1vg&s=10",
         "pantheon": "Greek",
         "parents": [
             "Thaumas",
@@ -247,28 +247,28 @@
         "name": "Leto",
         "description": "Titaness of motherhood and daylight, mother of the twin gods Apollo and Artemis.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/fantasia/images/c/c2/Latona.jpg/revision/latest?cb=20090716003933&path-prefix=pt",
         "pantheon": "Greek"
     },
     {
         "name": "Maia",
         "description": "The eldest of the Pleiades, mountain nymphs, and mother of the god Hermes.",
         "category": "Creature",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAnjOd7rsnnCqWYK7s0qkK6tUnjXY9pYBDW3JRS41Hg&s=10",
         "pantheon": "Greek"
     },
     {
         "name": "Metis",
         "description": "Titaness of wisdom and counsel, considered part of the second generation of Titans and the first wife of Zeus.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJcaYcljXynYtAEPZ9gn1wNa_1Sz8E7IuEkVNApEtEn2thGEOHMUqZX0A&s=10",
         "pantheon": "Greek"
     },
     {
         "name": "Nemesis",
         "description": "Nemesis is the Greek goddess of vengeance and balance. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Nemesis or Invidia.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT00UW-FaJ9A86UQAFouovoG3A_MVCfGjqcrXlYEVbXUg&s=10",
         "pantheon": "Greek",
         "parents": [
             "Nyx",
@@ -286,7 +286,7 @@
         "name": "Nike",
         "description": "Nike is the Greek goddess of victory. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Victoria.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUd3GJkLLHKikqiXdRge58LVOKnOJcF71GX-1hcwoN-Q&s=10",
         "pantheon": "Greek",
         "parents": [
             "Pallas",
@@ -297,21 +297,21 @@
         "name": "Nyx",
         "description": "The personification of deep night, one of the first forces to emerge in the universe",
         "category": "Primordial",
-        "photoLink": "",
+        "photoLink": "https://greciantiga.org/img/i/i1003.jpg",
         "pantheon": "Greek"
     },
     {
         "name": "Oceanus",
         "description": "The Titan who personifies the immense river that encircled the entire world.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hu-Tv0OnhN5UBLuQe3NKw-YDVwtu-UeYFB0viDSWCg&s=10",
         "pantheon": "Greek"
     },
     {
         "name": "Perses",
         "description": "Titan of destruction and ruin, belonging to the second generation.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRjG6_3nPuCWI6yNL13i3RhRdd9HgUg9N_gGKqg9QKg&s=10",
         "pantheon": "Greek"
     },
     {
@@ -343,21 +343,21 @@
         "name": "Styx",
         "description": "Styx is a highly revered figure who holds a unique dual nature: she is both a Titan goddess and the personification of the main river of the Underworld.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://upload.wikimedia.org/wikipedia/commons/8/80/Inferno_Canto_08_-_Styx_%28148618431%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
         "pantheon": "Greek"
     },
     {
         "name": "Tethys",
         "description": "Titaness of fresh water, sister and wife of Oceanus.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://upload.wikimedia.org/wikipedia/commons/a/af/Detail_Pioneer_Group_Louvre_G65.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
         "pantheon": "Greek"
     },
     {
         "name": "Tyche",
         "description": "The Greek goddess of fortune and luck. After the Battle of Manhattan, she received a cabin for her children at Camp Half-Blood. Her Roman counterpart is Fortuna.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdF4IiyMqitqX3lOt5xrbkc4K5NGvj_thpOfu8ZxomQ&s=10",
         "pantheon": "Greek",
         "parents": [
             "Oceanus",
@@ -368,7 +368,7 @@
         "name": "Uranus",
         "description": "Uranus is the primordial god and personification of the sky and heavens. Known as Caelus in Roman mythology, he was one of the earliest elemental deities, born from Gaia, the Earth, whom he also took as his wife.",
         "category": "Primordial",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl3FpWYmjvOjWPQXWjibb0_j1wR6w0LV-Tu7On55SeCA&s=10",
         "pantheon": "Greek"
     },
     {
