@@ -3,14 +3,14 @@
 		"name": "Agamethus",
 		"description": "Poor Agamethus, the brother of Trophonius, was beheaded in ancient times and now walked around the Waystation communicating via his magic eight ball. For reasons unknown, he glows the exact color of Chee-tohs. Life is hard.",
 		"category": "Mortal",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/08/11225533/agamethu3-195x292.png",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Arachne",
 		"description": "Arachne was a great mortal weaver. She once challenged Athena to a contest to see who really was the best weaver. She was turned into a spider by the goddess Athena because her tapestry was a great insult to the gods. Arachne’s name simply means “spider” in Greek.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2016/04/11230321/Arachne-195x292.jpg",
 		"pantheon": "Greco-Roman"
 	},
 	{
@@ -21,10 +21,10 @@
 		"pantheon": "Greek"
 	},
 	{
-		"name": "Calipso",
+		"name": "Calypso",
 		"description": "Calypso is the daughter of Atlas. She appears briefly in The Battle of the Labyrinth where she meets Percy Jackson and then in The House of Hades and in The Blood of Olympus when she meets and escapes with Leo Valdez.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2016/04/11230320/Calypso-195x292.jpg",
 		"pantheon": "Greek"
 	},
 	{
@@ -38,7 +38,7 @@
 		"name": "Cerberus",
 		"description": "A multi-headed dog that guards the entrance to the Underworld.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/olympians/images/3/30/Cerberus-Disney%2B.jpg/revision/latest?cb=20240126012324",
 		"pantheon": "Greek"
 	},
 	{
@@ -59,7 +59,7 @@
 		"name": "Chiron",
 		"description": "Chiron is the activities director at Camp Half-Blood. He is a centaur and is the son of Kronos. Chiron is also known as Mr. Brunner.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW0B7GkcRDwJV3qc5V5n0q-e59hTBx1jdikWpL0Inp5w&s=10",
 		"camp": "Camp Half-Blood",
 		"pantheon": "Greek",
 		"artifacts": [
@@ -71,7 +71,7 @@
 		"name": "Coach Gleeson Hedge",
 		"description": "Gleeson Hedge is a middle-aged satyr that was formerly filling in as a coach at the Wilderness School. He was the protector of Piper McLean, Jason Grace, Leo Valdez, and Clarisse La Rue. He is also the husband of Mellie and the father of their unborn child.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2016/04/11230259/coach-hedge-195x292.jpg",
 		"pantheon": "Greek"
 	},
 	{
@@ -99,7 +99,7 @@
 		"name": "Ella",
 		"description": "Ella is a small, red-feathered, and skinny harpy. Her eidetic memory gives her the ability to memorize almost anything she reads. She read parts of the sacred Sibylline Books of Rome before they were destroyed and can recite the prophecies from the books, making her a very valuable person, especially to the Romans. The first full prophecy she recited in the series was about the third book, The Mark of Athena. She is currently in a relationship with Tyson, the Cyclops.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2h1c6adTEcovntWJu6Lg63ts6fyNQnmBjPnlQJSuhyQ&s=10",
 		"camp": "Camp Jupiter",
 		"pantheon": "Roman",
 		"artifacts": [
@@ -145,7 +145,7 @@
 		"name": "Grover Underwood",
 		"description": "Grover Underwood is a satyr and a Lord of Nature, along with Silenus and Maron. He is also a Chosen of Pan and carries the soul of Pan. He is the tritagonist of the Percy Jackson and the Olympians series and a secondary character in The Heroes of Olympus and The Trials of Apollo. Grover is the satyr who encountered the demigods Thalia Grace, Nico and Bianca di Angelo, Percy Jackson, Annabeth Chase, and Luke Castellan. Currently, Grover is in a relationship with the dryad Juniper.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpvup4a3ERygh8npK79k-XuFDzkFfXSmK3Ry4DpBKyA&s=10",
 		"camp": "Camp Half-Blood",
 		"pantheon": "Greek",
 		"artifacts": [
@@ -172,7 +172,7 @@
 		"name": "Juniper",
 		"description": "Juniper the dryad lives in the woods at Camp Half-Blood, where she is the nature spirit of a juniper bush. (Duh.) She is currently dating Grover Underwood, satyr extraordinaire.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/olympians/images/e/e0/Juniper.jpg/revision/latest?cb=20170220200546",
 		"pantheon": "Greek"
 	},
 	{
@@ -207,14 +207,14 @@
 		"name": "Medusa",
 		"description": "A Gorgon capable of turning anyone who looked directly at her into stone.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0ztNTpI_eGNlOr8eBU8nGb_lujFZZNQXVRYAt7GFwg&s=10",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Mellie",
 		"description": "Cloud nymph Mellie, the wonderful and courageous wife of Gleeson Hedge, has her hands full keeping the Coach out of trouble and helping to care for their little baby satyr boy Chuck. Fortunately, Millie is very organized and smart, so she’s the right cloud for the job!",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/12/11225133/Mellie-and-Chuck-195x292.jpeg",
 		"pantheon": "Greek"
 	},
 	{
@@ -298,14 +298,14 @@
 		"name": "The Germani",
 		"description": "Bodyguards for the Roman emperors, these fine fellows come from the Gaulish and Germanic tribes outside the empire. They speak very little, but they are great at killing, maiming, and making a hole in crowds. If you ever play chess against these guys, one rule: “Let the Germani win.”",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/05/11225742/germani-195x292.jpg",
 		"pantheon": "Roman"
 	},
 	{
 		"name": "Tyson",
 		"description": "Tyson is a Cyclops, a son of Poseidon, and Percy Jackson’s half brother. He is the current general of the Cyclopes army.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FvhtINLvcw4OXI7QPH-HJQzXRm3twYRdxV6EhU47kw&s=10",
 		"cabin": "3",
 		"camp": "Camp Half-Blood",
 		"pantheon": "Greek",
@@ -317,7 +317,7 @@
 		"name": "Zoë Nightshade",
 		"description": "Zoë Nightshade is a lieutenant in the Artemis Hunters. She was originally a member of the Hesperides, the nymphs of the sunset, and the daughter of the Titan Atlas and the Oceanid Pleione.",
 		"category": "Creature",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73Kz1fqIF3CbfQOkMFqlULIe2Q_QYS-818zZT13IjNQ&s=10",
 		"pantheon": "Greek"
 	}
 ]

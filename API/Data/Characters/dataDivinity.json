@@ -3,7 +3,7 @@
         "name": "Aphrodite",
         "description": "Aphrodite is the Greek goddess of beauty, love, lust, desire, sexuality, and pleasure. Her Roman counterpart is Venus.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/f/fc/Aphrodite-Disney%2B.jpg/revision/latest/thumbnail/width/360/height/360?cb=20260826214139",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -14,7 +14,7 @@
         "name": "Apollo",
         "description": "The Greek god of poetry, music, archery, healing, prophecy, and all that’s awesome. In the Roman pantheon, Apollo kept the same name, being the only one of the great gods of Rome who did not change his name in relation to Greek mythology.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/04/11225840/apoll3o--195x292.jpg",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -25,7 +25,7 @@
         "name": "Ares",
         "description": "Ares is the Greek god of war. His symbols include the boar, dog, wolf, spear, sword, and vulture. His Roman counterpart is Mars.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/5/53/Ares-Disney%2B.jpg/revision/latest?cb=20260819011019",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -36,7 +36,7 @@
         "name": "Artemis",
         "description": "Artemis is the ancient Greek goddess of hunting, the wilderness, wild animals, childbirth, and virginity. She is the leader and founder of the Huntresses of Artemis. Her Roman equivalent is Diana.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/4/46/Artemis-Disney%2B.jpg/revision/latest?cb=20260818200655",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -54,7 +54,7 @@
         "name": "Athena",
         "description": "Athena is the Greek goddess of wisdom, war and useful arts. Her Roman counterpart is Minerva.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/2/2a/Athena-Disney%2B.png/revision/latest?cb=20260819011232",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -65,7 +65,7 @@
         "name": "Atlas",
         "description": "Atlas, also called \"The General\", is the Titan of endurance and the main antagonist of The Titan's Curse. As punishment for leading the armies of Kronos against the gods in the first Titanomachy, Zeus forced him to hold up the sky for all eternity. He is Kronos' second-in-command and is in charge of recruiting monsters for the Titans' cause. While Kronos was regenerating inside of his sarcophagus, Atlas seemed to be in charge of the army.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/8/86/Atlas-Disney%2B.jpg/revision/latest/scale-to-width-down/1200?cb=20260817133857",
         "pantheon": "Greek"
     },
     {
@@ -79,21 +79,21 @@
         "name": "Caligula",
         "description": "Gaius Julius Caesar Augustus Germanicus, better known as Caligula, was a Roman Emperor who was made a god-emperor by his followers. He was the main antagonist in The Burning Maze and a supporting antagonist in The Tyrant's Tomb. He was a Triumvirate Holdings leader alongside Nero and Commodus. He was killed in an explosion caused by Frank Zhang during the Battle of San Francisco Bay.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/villains/images/a/a3/Caligula_viria.jpg/revision/latest?cb=20211218194526",
         "pantheon": "Roman"
     },
     {
         "name": "Commodus",
         "description": "That Emperor Commodus. What a guy! He’s all about fun spectacles and killing his enemies in new and interesting ways. Wanna hang out? Come on over for pizza, demigod slaughter and chill!",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/12/11225130/commdoduss2f2-1-195x292.jpg",
         "pantheon": "Roman"
     },
     {
         "name": "Cronus",
         "description": "Cronos was the King of the Titans and the god of time, harvest, and agriculture. He was defeated and dismembered by his sons: Poseidon, Zeus, and Hades, with his parts thrown into Tartarus. Eras later, with the help of Luke Castellan, he recovered his body and built an army to take Olympus again. His equivalent in Roman mythology is Saturn.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nz4KivjJ9u70AMpNjGs0qouxq8X8a2Atb_-yDbo4vg&s=10",
         "pantheon": "Greek",
         "parents": [
             "Uranus, Gaia"
@@ -103,7 +103,7 @@
         "name": "Demeter",
         "description": "The Greek goddess of agriculture, grains, harvest, and the fertility of the earth. Demeter is a fan of flowers, plants, and cereal. Lots of cereal. Her Roman counterpart is Ceres.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/06/11225538/demeter-195x292.jpg",
         "pantheon": "Greek",
         "parents": [
             "Cronus",
@@ -121,7 +121,7 @@
         "name": "Dionysus ",
         "description": "Dionysus is the Greek god of wine, grape-harvest, fertility, theater, religious ecstasy, and ritual madness. His equivalent in Roman mythology is Bacchus, also associated with the ancient Roman deity Liber Pater.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/heroes-and-villain/images/0/0e/Percy_Jackson_and_the_Olympians_-_1x08_-_The_Prophecy_Comes_True_-_Photography_-_Mr._D.jpg/revision/latest/thumbnail/width/360/height/360?cb=20240820002759",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -132,7 +132,7 @@
         "name": "Emmie",
         "description": "Emmie (Hemethea) was once a Greek princess who was turned into a minor goddess who then became a Hunter of Artemis and then gave up immortality to grow old with the love of her life, Jo. She now runs the Waystation in Indianapolis with a combination of kind hospitality, organic gardening and killer archery skills. She enjoys spending time with her daughter Georgie, taking long walks along the river in her adopted home town, and slaying monsters.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/06/11225539/emmie-195x292.jpg",
         "pantheon": "Greek"
     },
     {
@@ -153,7 +153,7 @@
         "name": "Hades",
         "description": "Hades is the Greek god of the underworld and the ruler of the dead. His equivalent in Roman is Pluto, also associated with Dis Pater or Orcus.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/2/25/Hades-Disney%2B.jpg/revision/latest?cb=20251223011038",
         "pantheon": "Greek",
         "parents": [
             "Cronus",
@@ -186,7 +186,7 @@
         "name": "Hephaestus",
         "description": "The Greek God of fire and blacksmiths, the crippled god Hephaestus is not great with people, but if you need your steam-powered chariot fixed, he’s your guy. His Roman counterpart is Vulcan.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/9/9a/Hephaestus-Disney%2B.jpeg/revision/latest?cb=20260818185843",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -197,7 +197,7 @@
         "name": "Hera",
         "description": "Hera is the Greek goddess of familial love, marriage, motherhood, and women. She is the elder sister and wife of Zeus, therefore making her Queen of Olympus. She is one of the daughters of Rhea and Kronos. Her Roman counterpart is Juno.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2016/04/11225535/heraglowy-195x292.jpg",
         "pantheon": "Greek",
         "parents": [
             "Cronus",
@@ -208,7 +208,7 @@
         "name": "Hermes",
         "description": "Hermes is the Greek god of trade, travelers, thieves, athletes, and the official messenger of the gods, His Roman mythological equivalent is Mercury",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/olympians/images/d/d6/Hermes-Disney%2B.jpg/revision/latest?cb=20260818134558",
         "pantheon": "Greek",
         "parents": [
             "Zeus",
@@ -240,7 +240,7 @@
         "name": "Jo",
         "description": "Jo (Josephine) is a former Hunter of Artemis, a child of Hecate and a master at constructing magical gadgets. With her wife Emmie and their daughter Georgina, she runs the Waystation, a sanctuary for demigods in Indianapolis. Jo is a sweetheart, but don’t threaten her family or you might meet her Celestial bronze Tommy gun, left over from her days as a 1920s Chicago gangster. (Hey, we all make bad choices when we’re young.)",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/06/11225541/jo-195x292.jpg",
         "pantheon": "Greek"
     },
     {
@@ -276,10 +276,10 @@
         ]
     },
     {
-        "name": "Nero ",
+        "name": "Nero",
         "description": "Evil emperor number one, come on down! Nero, one of the Triumvirate, enjoys wearing purple suits, twisting the minds of young demigods, and building gigantic McMansions by bulldozing over human civilization. An all-around nice guy!",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/05/11225743/nero-195x292.jpg",
         "pantheon": "Roman"
     },
     {
@@ -318,7 +318,7 @@
         "name": "Poseidon",
         "description": "Poseidon, Greek god of the seas, earthquakes, storms, and horses. He also has a great passion for tropical shirts. His Roman equivalent is Neptune.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/disney/images/f/f2/Percy_Jackson_and_the_Olympians_-_2x08_-_The_Fleece_Works_Its_Magic_Too_Well_-_Photography_%283%29.jpeg/revision/latest?cb=20260121091925",
         "pantheon": "Greek",
         "parents": [
             "Cronus",
@@ -329,7 +329,7 @@
         "name": "Rhea",
         "description": "Titaness of fertility and motherhood, queen of the Titans, and mother of the principal Olympian gods.",
         "category": "Titan",
-        "photoLink": "",
+        "photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2018/05/11225741/rhea-195x292.jpg",
         "pantheon": "Greek"
     },
     {
@@ -375,7 +375,7 @@
         "name": "Zeus",
         "description": "Zeus is the Greek supreme god of the sky and thunder, and his Roman equivalent is Jupiter, also known as Jove.",
         "category": "Divinity",
-        "photoLink": "",
+        "photoLink": "https://static.wikia.nocookie.net/disney/images/5/5d/Profile_-_Zeus_%28Percy_Jackson_and_the_Olympians%29.jpg/revision/latest?cb=20260121094201",
         "pantheon": "Greek",
         "parents": [
             "Cronus",
