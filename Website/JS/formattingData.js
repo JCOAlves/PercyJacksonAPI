@@ -65,7 +65,7 @@ export default function formattingData(listData, nameRoute) {
         case "sagas/books":
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
+                    <img src="${i.photoLink}" 
                         alt="Picture of ${i.title}" class="rounded-t-lg border-1 min-h-50">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">${i.title}</p>

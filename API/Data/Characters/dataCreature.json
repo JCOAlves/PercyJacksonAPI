@@ -92,7 +92,7 @@
 		"name": "Echidna",
 		"description": "A half-woman, half-serpent monster and mother of many famous monsters.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/olympians/images/6/61/Echidna_-_Disney%2B.jpeg/revision/latest?cb=20240106120418",
 		"pantheon": "Greek"
 	},
 	{
@@ -107,10 +107,10 @@
 		]
 	},
 	{
-		"name": "Erinyes (Furies)",
+		"name": "Furies",
 		"description": "Three supernatural beings who hunted and punished those guilty of terrible crimes.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4BFp6Ewy01zkt6Go36EpbpK62ODBbFihYdyV0_BMujw&s=10",
 		"pantheon": "Greco-Roman"
 	},
 	{
@@ -131,14 +131,14 @@
 		"name": "Gorgons",
 		"description": "A trio of monstrous sisters, including the famous Medusa.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyOe-voJN_-eXtSZ69l6yp7NCe9sJp47L-OpH6yrwhA&s=10",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Griffin",
 		"description": "A lion-eagle creature associated with protection, guardianship, and treasure.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mDGBjPUnvdldIPY6p06mgTCeB8Wtf9SxIUo1sg0e5A&s=10",
 		"pantheon": "Greek"
 	},
 	{
@@ -158,7 +158,7 @@
 		"name": "Harpy",
 		"description": "A winged creature associated with storms, punishment, and torment.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/mitho/images/a/af/317h314.png/revision/latest?cb=20130213010715&path-prefix=pt-br",
 		"pantheon": "Greek"
 	},
 	{
@@ -179,7 +179,7 @@
 		"name": "Ladon",
 		"description": "A giant serpent or dragon that guarded the Golden Apples of the Hesperides.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/my_fics/images/b/ba/L%C3%A1don.png/revision/latest?cb=20200627171940&path-prefix=pt-br",
 		"pantheon": "Greek"
 	},
 	{
@@ -193,14 +193,14 @@
 		"name": "Lemures",
 		"description": "Restless spirits of the dead believed to haunt and disturb the living.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://jt1965blog.files.wordpress.com/2019/05/giuliocesare2.jpg?w=474",
 		"pantheon": "Roman"
 	},
 	{
 		"name": "Lernaean Hydra",
 		"description": "A many-headed serpent whose heads could regenerate when cut off.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/mitho/images/d/da/Hidra-1-.jpg/revision/latest?cb=20131001202206&path-prefix=pt-br",
 		"pantheon": "Greek"
 	},
 	{
@@ -221,7 +221,7 @@
 		"name": "Minotaur",
 		"description": "A bull-headed creature imprisoned in the Labyrinth of Crete.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/disney/images/5/54/Minotaur_%28Percy_Jackson%29.jpg/revision/latest?cb=20240105050316",
 		"pantheon": "Greek"
 	},
 	{
@@ -242,7 +242,7 @@
 		"name": "Pegasus",
 		"description": "A divine winged horse associated with heroes and the heavens.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static0.srcdn.com/wordpress/wp-content/uploads/2026/01/blackjack-flying-in-percy-jackson-season-2.jpg?q=49&fit=crop&w=825&dpr=2",
 		"pantheon": "Greek"
 	},
 	{
@@ -263,7 +263,7 @@
 		"name": "Scylla",
 		"description": "A deadly sea monster that attacked sailors passing through a dangerous strait.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://static.wikia.nocookie.net/olympians/images/0/0c/Scylla-Disney%2B_Fortnite.jpeg/revision/latest/scale-to-width/360?cb=20260106204912",
 		"pantheon": "Greek"
 	},
 	{
@@ -277,14 +277,14 @@
 		"name": "Siren",
 		"description": "A dangerous creature that lured sailors to their deaths with enchanting songs.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkSJcKQT540AXeNwcvn-cN5zC380XUCBjWG5-zv5y2XxlO4Rp-0updk-F&s=10",
 		"pantheon": "Greek"
 	},
 	{
 		"name": "Sphinx",
 		"description": "A lion-bodied creature with a human head, famous for the riddle of Oedipus.",
 		"category": "Monster",
-		"photoLink": "",
+		"photoLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRrMBwQ2vFcdU1gNtct3cp2vOvK_cKbhZdfyGaxXJs5A&s=10",
 		"pantheon": "Greek"
 	},
 	{
