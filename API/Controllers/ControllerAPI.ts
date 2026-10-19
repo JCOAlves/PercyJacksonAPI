@@ -102,6 +102,26 @@ const notFound_API = (req: Request, res: Response): Response | void => {
     }
 };
 
+const notFound_picture = (req: Request, res: Response): Response | void => {
+    try {
+        const { categoryPicture } = req.params;
+
+        if (categoryPicture){
+            return res.status(200).sendFile(path.join(__dirname, "../../Website/Imgs/notFounds", `${categoryPicture}.`));
+
+        } else{
+            const responseAPI = new ResponseHTTP(false, 400, ``);
+            responseAPI.showMessage();
+            return res.status(400).json(responseAPI.returnJSON());
+        };
+        
+    } catch (error) {
+        const responseAPI = new ResponseHTTP(false, 404, `The "picture not found" not found or it does not exist`);
+        responseAPI.showMessage();
+        return res.status(404).json(responseAPI.returnJSON());
+    };
+};
+
 const notFound = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
@@ -116,4 +136,4 @@ const notFound = (req: Request, res: Response): Response | void => {
     };
 };
 
-export { GET_mainPage, GET_docsPage, GET_allData, GET_nameRoutes, notFound_API, notFound };
+export { GET_mainPage, GET_docsPage, GET_allData, GET_nameRoutes, notFound_API, notFound_picture, notFound };

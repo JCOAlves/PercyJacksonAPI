@@ -25,8 +25,8 @@ export default function formattingData(listData, nameRoute) {
         case "artifacts":
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
-                        alt="Picture of ${i.name}" class="rounded-t-lg border-1 min-h-50">
+                    <img src="${i.photoLink}" alt="Picture of ${i.name}" 
+                        class="rounded-t-lg border-1 h-80 md:h-70 object-top object-cover">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3">
                         <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p class="text-justify">${i.description}</p>
@@ -39,8 +39,8 @@ export default function formattingData(listData, nameRoute) {
         case "cabins":
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
-                        alt="Picture of cabin ${i.cabinNumber}" class="rounded-t-lg border-1 min-h-50">
+                    <img src="${i.photoLink}" alt="Picture of cabin ${i.cabinNumber}" 
+                        class="rounded-t-lg border-1 h-80 md:h-70 object-top object-cover">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">Cabin ${i.cabinNumber}</p>
                         <p><strong>Divinity:</strong> ${i.divinity}</p>
@@ -52,8 +52,8 @@ export default function formattingData(listData, nameRoute) {
         case "places":
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_7lzou2aWzuYGyVMJ1vvnnC4yBAeE2nZ2W9LHvXtuA&s=10" 
-                        alt="Picture of ${i.name}" class="rounded-t-lg border-1 min-h-50">
+                    <img src="${i.photoLink}" 
+                        alt="Picture of ${i.name}" class="rounded-t-lg border-1 h-80 md:h-70 object-top object-cover ">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">${i.name}</p>
                         <p><strong>Location:</strong> ${i.location}</p>
@@ -65,8 +65,8 @@ export default function formattingData(listData, nameRoute) {
         case "sagas/books":
             listData = listData.map(i => i = `
                 <div class="flex flex-col min-w-40">
-                    <img src="${i.photoLink}" 
-                        alt="Picture of ${i.title}" class="rounded-t-lg border-1 min-h-50">
+                    <img src="${i.photoLink}" alt="Picture of ${i.title}" 
+                        class="object-top object-contain rounded-t-lg border-1 min-h-50 max-h-80 bg-gray-100">
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">${i.title}</p>
                         <p><strong>Author:</strong> ${i.author}</p>
