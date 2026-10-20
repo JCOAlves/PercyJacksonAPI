@@ -82,7 +82,7 @@
 		"name": "Phillip McCaffrey",
 		"description": "Phillip McCaffrey was a mortal botanist, a descendant of Plemnaeus, and the loving father of the demigod Meg McCaffrey. He had a brief romantic relationship with Demeter, the Greek goddess of the harvest. He raised Meg in a complex of green sanctuaries called Aeithales in Palm Springs, California, where he successfully discovered seven seeds for primordial dryads. Tragically, his work drew the attention of the Roman Triumvirate. He was bankrupted by Caligula, who burned down his greenhouses, and was later murdered in New York City on the orders of Nero, who used the trauma of his death to psychologically manipulate and control Meg.",
 		"category": "Mortal",
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/character"
 	},
 	{
 		"name": "Rachel Elizabeth Dare",
@@ -100,7 +100,7 @@
 		"name": "Sergei Asimov",
 		"description": "Sergei Asimov is a Russian ballet dancer and father of Lavinia Asimov. Not much is known about Sergei’s early life except that he made a name for himself as a professional ballet dancer and had a daughter with Terpsichore, the Muse of dance and choral songs. When his daughter informed him she wanted to study tap dancing rather then ballet, he became disappointed.",
 		"category": "Mortal",
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/character"
 	},
 	{
 		"name": "Tristan McLean",

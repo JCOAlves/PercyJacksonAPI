@@ -36,7 +36,7 @@
 		"category": [
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Athena Parthenos",
@@ -108,7 +108,7 @@
 			"weapon",
 			"attack"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Celestial Bronze Dagger",
@@ -118,7 +118,7 @@
 			"attack",
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Cornucopia",
@@ -135,7 +135,7 @@
 		"category": [
 			"strategy"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Dragon's Tooth Spear",
@@ -233,7 +233,7 @@
 			"attack",
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Magical Toolbelt",
@@ -268,7 +268,7 @@
 		"category": [
 			"magic"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Nectar",
@@ -382,7 +382,7 @@
 			"attack",
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Stygian Ice Whistle",
@@ -434,7 +434,7 @@
 		"category": [
 			"magic"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "The Magic Wheelchair",
@@ -461,7 +461,7 @@
 			"attack",
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "The Sibylline Books",
@@ -470,7 +470,7 @@
 			"item",
 			"magic"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "The Winged Shoes",
@@ -488,7 +488,7 @@
 			"attack",
 			"defense"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Wristwatch Shield",
@@ -497,7 +497,7 @@
 			"defense",
 			"protection"
 		],
-		"photoLink": ""
+		"photoLink": "http://localhost:3000/api/picturesNotFound/artifact"
 	},
 	{
 		"name": "Yankees Cap of Invisibility",

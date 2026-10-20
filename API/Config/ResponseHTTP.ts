@@ -32,10 +32,10 @@ class ResponseHTTP {
 
     showMessage(typeMSG = "") {
         if (typeMSG === "Error" && this.#error) {
-            console.error(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.status} ${this.message}: ${this.#error}`);
+            console.error(`\x1b[31m [${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] \x1b[0m - ${this.status} ${this.message}: ${this.#error}`);
 
         } else {
-            console.log(`[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] - ${this.status} ${this.message}`);
+            console.log(`\x1b[33m[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}]\x1b[0m - ${this.status} ${this.message}`);
         };
         return;
     };

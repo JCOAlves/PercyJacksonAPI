@@ -1,4 +1,4 @@
-import express, { type Express } from 'express';
+import express, { type Express, type Request, type Response } from 'express';
 import cors from "cors";
 import dotenv from "dotenv";
 import ReqLimit from './Config/RequestLimit.ts';
@@ -7,6 +7,7 @@ import path from 'path';
 
 import { GET_mainPage, GET_docsPage, GET_allData, GET_nameRoutes, notFound_API, notFound } from "./Controllers/ControllerAPI.ts";
 
+import RoutersAPI from "./Routers/RoutersAPI.ts";
 import RoutersArtifact from "./Routers/RoutersArtifact.ts";
 import RoutersBook from "./Routers/RoutersBook.ts";
 import RoutersCabin from "./Routers/RoutersCabin.ts";
@@ -36,12 +37,13 @@ app.use("/api/sagas", RoutersBook);
 app.use("/api/cabins", RoutersCabin);
 app.use("/api/characters", RoutersCharacter);
 app.use("/api/places", RoutersPlace);
+app.use("/api/picturesNotFound", RoutersAPI);
 app.all("/api/*notfound", notFound_API);
 
 app.all("/*notfound", notFound);
 
 app.listen(PORT, () => {
-    console.log(`----------- Percy Jackson API -----------`);
+    console.log(`-----------\x1b[34m Percy Jackson API \x1b[0m-----------`);
     console.log(`|    Started on ${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}     |`);
     console.log(`-----------------------------------------`);
 });

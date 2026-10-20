@@ -1,6 +1,7 @@
 import { type Request, type Response } from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
+import { readdir } from 'fs/promises';
 
 import dataArtifacts from '../Data/Artifacts/dataArtifacts.json' with { type: 'json' };
 import dataBooks from '../Data/Books/dataBooks.json' with { type: 'json' };
@@ -22,6 +23,7 @@ import ResponseHTTP, { type Data } from '../Config/ResponseHTTP.ts';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Get pages website
 const GET_mainPage = (req: Request, res: Response): Response | void => {
     try {
         return res.status(200).sendFile(path.join(__dirname, "../../Website/Pages", "main.html"));
@@ -40,6 +42,7 @@ const GET_docsPage = (req: Request, res: Response): Response | void => {
     }
 };
 
+// Get data API
 const GET_allData = (req: Request, res: Response): Response | void => {
     try {
         let AllCharacters: (Character | Demigod | Divinity | Creature)[] = [
@@ -88,6 +91,7 @@ const GET_nameRoutes = (req: Request, res: Response): Response | void => {
     };
 };
 
+// Return "Not Found"
 const notFound_API = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
@@ -102,15 +106,16 @@ const notFound_API = (req: Request, res: Response): Response | void => {
     }
 };
 
-const notFound_picture = (req: Request, res: Response): Response | void => {
+const notFound_picture = async (req: Request, res: Response, picture: string): Promise<Response | void> => {
     try {
-        const { categoryPicture } = req.params;
+        const foldPictures = path.resolve(__dirname, "../../Website/Imgs/notFounds");
+        const namePictures: string[] = await readdir(foldPictures);
 
-        if (categoryPicture){
-            return res.status(200).sendFile(path.join(__dirname, "../../Website/Imgs/notFounds", `${categoryPicture}.`));
+        if (picture && namePictures.includes(String(picture))){
+            return res.status(200).sendFile(path.join(__dirname, "../../Website/Imgs/notFounds", picture));
 
         } else{
-            const responseAPI = new ResponseHTTP(false, 400, ``);
+            const responseAPI = new ResponseHTTP(false, 400, `The "Not Found" picture was not found or it does not exist`);
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
