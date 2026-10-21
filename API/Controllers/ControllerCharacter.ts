@@ -60,7 +60,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
         let characterFound: Character | Demigod | Divinity | Creature | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, 400, "Character name parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Character name parameter not provided or character name invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };

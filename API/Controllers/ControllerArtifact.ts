@@ -51,7 +51,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
         let artifactFound: Artifact | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, 400, "Artifact name parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Artifact name parameter not provided or artifact name invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };

@@ -122,12 +122,12 @@ const GET_nameRoutes = (req: Request, res: Response): Response | void => {
 const notFound_API = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
-        const responseAPI = new ResponseHTTP(false, 404, `The '/api/${notfound[0]}' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, `The \"/api/${notfound[0]}\" route was not found or the route does not exist`);
         responseAPI.showMessage();
         return res.status(404).json(responseAPI.returnJSON());
 
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, 404, `The '/api' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, "The \"/api\" route was not found or the route does not exist");
         responseAPI.showMessage();
         return res.status(404).json(responseAPI.returnJSON());
     }
@@ -142,13 +142,13 @@ const notFound_picture = async (req: Request, res: Response, picture: string): P
             return res.status(200).sendFile(path.join(__dirname, "../../Website/Imgs/notFounds", picture));
 
         } else{
-            const responseAPI = new ResponseHTTP(false, 400, `The "Not Found" picture was not found or it does not exist`);
+            const responseAPI = new ResponseHTTP(false, 400, "The \"Not Found\" picture was not found or it does not exist");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
         
     } catch (error) {
-        const responseAPI = new ResponseHTTP(false, 404, `The "picture not found" not found or it does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, "The \"picture not found\" not found or it does not exist");
         responseAPI.showMessage();
         return res.status(404).json(responseAPI.returnJSON());
     };
@@ -157,7 +157,7 @@ const notFound_picture = async (req: Request, res: Response, picture: string): P
 const notFound = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
-        const responseAPI = new ResponseHTTP(false, 404, `The '/${notfound[0]}' route was not found or the route does not exist`);
+        const responseAPI = new ResponseHTTP(false, 404, "The \"/${notfound[0]}\" route was not found or the route does not exist");
         responseAPI.showMessage();
         return res.status(404).sendFile(path.join(__dirname, "../../Website/Pages", "not-found.html"));
 

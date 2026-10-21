@@ -49,7 +49,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
         let placeFound: Place | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, 400, "Place name parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Place name parameter not provided or place name invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };

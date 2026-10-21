@@ -76,7 +76,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
         let sagaFound: Saga | undefined | null = null;
 
         if (!name) {
-            const responseAPI = new ResponseHTTP(false, 400, "Saga name parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Saga name parameter not provided or saga name invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
@@ -110,7 +110,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
         let bookFound: Book | undefined | null = null;
 
         if (!title) {
-            const responseAPI = new ResponseHTTP(false, 400, "Book title parameter not provided");
+            const responseAPI = new ResponseHTTP(false, 400, "Book title parameter not provided or book title invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };

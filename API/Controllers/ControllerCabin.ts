@@ -46,8 +46,8 @@ const GET_cabin = (req: Request, res: Response): Response | void => {
         const listCabins: Cabin[] = AllCabins;
         let cabinFound: Cabin | undefined | null = null;
 
-        if (!cabinNumber) {
-            const responseAPI = new ResponseHTTP(false, 400, "Cabin number parameter not provided");
+        if (!cabinNumber || Number.isNaN(Number(cabinNumber))) {
+            const responseAPI = new ResponseHTTP(false, 400, "Cabin number parameter not provided or cabin number invalid");
             responseAPI.showMessage();
             return res.status(400).json(responseAPI.returnJSON());
         };
