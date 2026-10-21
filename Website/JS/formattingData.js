@@ -44,6 +44,7 @@ export default function formattingData(listData, nameRoute) {
                     <div class="flex flex-col gap-2 rounded-b-lg  border-x-1 border-b-1 p-3 ">
                         <p class="font-semibold text-[20px] text-center title">Cabin ${i.cabinNumber}</p>
                         <p><strong>Divinity:</strong> ${i.divinity}</p>
+                        ${i.members.length > 0 ? `<p><strong>Members:</strong> ${i.members.join(", ")}` : ""}</p>
                         <p class="text-justify">${i.description}</p>
                     </div>
                 </div>`);

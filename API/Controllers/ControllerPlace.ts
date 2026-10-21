@@ -1,13 +1,23 @@
+import dotenv from "dotenv";
 import { type Request, type Response } from "express";
 import { type Place } from "../Types/Place.ts";
 import dataPlaces from '../Data/Places/dataPlaces.json' with { type: 'json' };
 import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
+dotenv.config();
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = process.env.HOSTAPI || "localhost";
+
+let AllPlaces: Place[] =  dataPlaces as Place[];
+AllPlaces.forEach(p => p.photoLink && p.photoLink === "/api/picturesNotFound/place" ? 
+    p.photoLink = `http://${HOST}:${PORT}${p.photoLink}` : null
+);
+
 const GET_placesList = (req: Request, res: Response): Response | void => {
     try {
         const { location = "", description = "" } = req.query;
 
-        let listPlaces: Place[] = dataPlaces as Place[];
+        let listPlaces: Place[] = AllPlaces;
 
         if (location) listPlaces = listPlaces.filter(p => p.location.toLowerCase().includes(String(location).toLowerCase()));
 
@@ -26,7 +36,7 @@ const GET_placesList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of places");
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
@@ -35,7 +45,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listPlaces: Place[] = dataPlaces as Place[];
+        const listPlaces: Place[] = AllPlaces;
         let placeFound: Place | undefined | null = null;
 
         if (!name) {
@@ -59,7 +69,7 @@ const GET_place = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of place");
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };

@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import { type Request, type Response } from "express";
 import { type Character, type Divinity, type Demigod, type Creature } from "../Types/Character.ts";
 import dataDemigod from '../Data/Characters/dataDemigod.json' with { type: 'json' };
@@ -6,10 +7,17 @@ import dataDivinity from '../Data/Characters/dataDivinity.json' with { type: 'js
 import dataMortal from '../Data/Characters/dataMortal.json' with { type: 'json' };
 import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
+dotenv.config();
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = process.env.HOSTAPI || "localhost";
+
 let AllCharacters: (Character | Demigod | Divinity | Creature)[] = [
     ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
     ...dataDivinity as Divinity[], ...dataMortal as Character[]
 ];
+AllCharacters.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/character" ? 
+    c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+);
 AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
 
 const GET_charactersList = (req: Request, res: Response): Response | void => {
@@ -40,7 +48,7 @@ const GET_charactersList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of characters", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
@@ -72,7 +80,7 @@ const GET_character = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of character", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };

@@ -11,7 +11,13 @@
 			"Athena",
 			"Frederick Chase"
 		],
-		"skills": [],
+		"skills": [
+			"Brilliante interllect",
+			"Unmatched tactical and strategic skills",
+			"Photographic memory",
+			"She is a master of hand-to-hand combat and survival",
+			"Architecture"
+		],
 		"artifacts": [
 			"Yankees Cap of Invisibility",
 			"Celestial Bronze Dagger",
@@ -29,7 +35,11 @@
 		"parents": [
 			"Apollo"
 		],
-		"skills": [],
+		"skills": [
+			"A world-class multi-instrumentalist (specializing in jazz saxophone) who can manipulate sound waves with music.",
+			"Can curse targets to speak exclusively in rhyming couplets for days or weeks.",
+			"Can heal physical injuries by singing ancient Greek hymns."
+		],
 		"artifacts": []
 	},
 	{
@@ -43,7 +53,12 @@
 			"Hades",
 			"Maria Di Angelo"
 		],
-		"skills": [],
+		"skills": [
+			"The ability to instantly destroy the undead",
+			"The resistance to poisons",
+			"Perfect aim",
+			"Immortality (except in combat)."
+		],
 		"artifacts": []
 	},
 	{
@@ -56,7 +71,11 @@
 		"parents": [
 			"Hephaestus"
 		],
-		"skills": [],
+		"skills": [
+			"Had a brilliant mechanical mind, able to build, dismantle, or repair complex machinery, traps, and automation units intuitively.",
+			"Possessed incredible upper-body strength born from working the divine forges, making him formidable in physical combat.",
+			"Like most children of Hephaestus, he had a natural high resistance to heat and burns."
+		],
 		"artifacts": []
 	},
 	{
@@ -69,7 +88,11 @@
 		"parents": [
 			"Ares"
 		],
-		"skills": [],
+		"skills": [
+			"Possesses immense superhuman strength, durability, and a natural proficiency with all types of weaponry.",
+			"Can channel her father's blessing, which temporarily grants her complete invulnerability and unmatched combat fury in battle.",
+			"An expert military leader and tactician capable of commanding armies of demigods."
+		],
 		"artifacts": [
 			"Maimer",
 			"Boar-Headed Shield",
@@ -87,7 +110,11 @@
 		"parents": [
 			"Hermes"
 		],
-		"skills": [],
+		"skills": [
+			"Possess the mystical ability to lock or unlock any type of door, safe, or constraint simply by touching it.",
+			"Can move in absolute silence and steal items from right under someone's nose without being noticed.",
+			"Exceptionally manipulative, clever, and experts at setting complex pranks or traps."
+		],
 		"artifacts": []
 	},
 	{
@@ -102,7 +129,11 @@
 			"Mars",
 			"Emily Zhang"
 		],
-		"skills": [],
+		"skills": [
+			"He possesses the unique gift of metamorphosis, allowing him to transform into any animal while retaining his consciousness.",
+			"He has also inherited the “blessing of Mars,” which temporarily makes him invulnerable and a perfect warrior in battle",
+			"He is a elite archer."
+		],
 		"artifacts": [
 			"Life-Line Piece of Wood",
 			"Dragon's Tooth Spear"
@@ -118,7 +149,9 @@
 			"Jo",
 			"Emmie"
 		],
-		"skills": [],
+		"skills": [
+			"She displayed an early, dangerous affinity with the Oracle of Trophonius, making her a lightning rod for prophecy."
+		],
 		"artifacts": []
 	},
 	{
@@ -133,7 +166,10 @@
 			"Pluto",
 			"Marie Levesque"
 		],
-		"skills": [],
+		"skills": [
+			"She has control over the earth's riches, able to summon and manipulate metals and precious stones that were originally cursed.",
+			"She is also one of the most skilled practitioners of Mist Manipulation, creating perfect illusions."
+		],
 		"artifacts": [
 			"Hazel's Spatha",
 			"Praetor's Badge and Cloak"
@@ -151,7 +187,11 @@
 			"Jupiter",
 			"Beryl Grace"
 		],
-		"skills": [],
+		"skills": [
+			"Ability to shoot and channel powerful bolts of lightning.",
+			"Total control over the air, allowing him to fly on his own and create windstorms.",
+			"Roman warrior training."
+		],
 		"artifacts": [
 			"Ivlivs"
 		]
@@ -166,7 +206,10 @@
 		"parents": [
 			"Apollo"
 		],
-		"skills": [],
+		"skills": [
+			"A flawless marksman whose archery skills rival the Hunters of Artemis.",
+			" Possesses high physical agility and a natural talent for combat-field medicine."
+		],
 		"artifacts": []
 	},
 	{
@@ -179,7 +222,10 @@
 			"Terpsichore",
 			"Sergei Asimov"
 		],
-		"skills": [],
+		"skills": [
+			"Has a supernatural gift for dance, specifically tap-dancing, which she uses dynamically to outmaneuver opponents.",
+			"Possesses endless physical stamina, enabling her to dance, hike, or battle undead hordes for hours without showing signs of fatigue."
+		],
 		"artifacts": []
 	},
 	{
@@ -194,7 +240,11 @@
 			"Hephaestus",
 			"Esperanza Valdez"
 		],
-		"skills": [],
+		"skills": [
+			"He is completely immune to fire.",
+			"The capable of conjuring and shooting flames from his own hands.",
+			"He has a brilliant mechanical mind, able to build or repair any machine in seconds."
+		],
 		"artifacts": [
 			"Magical Toolbelt",
 			"Archimedes Sphere"
@@ -210,7 +260,12 @@
 			"Demeter",
 			"King Midas"
 		],
-		"skills": [],
+		"skills": [
+			"Master Swordsmanship",
+			"Superhuman Physical Attributes",
+			"Agricultural Affinity",
+			"Gold Immunity"
+		],
 		"artifacts": []
 	},
 	{
@@ -224,7 +279,13 @@
 			"Hermes",
 			"May Castellan"
 		],
-		"skills": [],
+		"skills": [
+			"Master swordsman.",
+			"Enhaced stealth skills",
+			"The ability to magically pick any lock",
+			"Great charisma",
+			"Manipulative intellect"
+		],
 		"artifacts": [
 			"Backbiter",
 			"The Winged Shoes",
@@ -242,7 +303,12 @@
 			"Demeter",
 			"Phillip McCaffrey"
 		],
-		"skills": [],
+		"skills": [
+			"Meg can make any seed, plant, or tree grow instantly to gigantic sizes with a single command or stomp.",
+			"She can controls vines, roots, and branches to trap, suffocate, or strike enemies.",
+			"Meg can sense the health of the earth and plants and locate water sources or seeds hidden in the surrounding area.",
+			"Formidable combat agility."
+		],
 		"artifacts": [
 			"The Ring Blades",
 			"Plant Seeds"
@@ -260,7 +326,11 @@
 			"Hades",
 			"Maria Di Angelo"
 		],
-		"skills": [],
+		"skills": [
+			"A master of necrophony and necromancy, capable of summoning and controlling armies of the dead, skeletons, and ghosts.",
+			"He can travel through the shadows (teleport)",
+			"He can control the earth and black stones of the Underworld."
+		],
 		"artifacts": [
 			"Stygian Iron Sword"
 		]
@@ -271,7 +341,10 @@
 		"category": "Legacy",
 		"photoLink": "https://cdn.rickriordan.com/wp-content/uploads/2016/04/11230248/Octavian-2-299x416.jpg",
 		"camp": "Camp Jupiter",
-		"skills": [],
+		"skills": [
+			"As a legacy of Apollo, he possessed a limited form of prophecy. He interpreted the future by reading omens, primarily by cutting open stuffed animals (or real sacrifices).",
+			"A master orator and hyper-charismatic speaker capable of swaying the entire Roman Senate and legion with words alone."
+		],
 		"artifacts": [
 			"Sacrificial Dagger",
 			"The Onager"
@@ -285,7 +358,10 @@
 		"camp": "Camp Half-Blood",
 		"cabin": 18,
 		"parents": "Hebe",
-		"skills": [],
+		"skills": [
+			"Possesses an extremely potent life force that allows him to heal from grievous wounds extraordinarily fast.",
+			"Inherits a constant feeling of youthfulness that gives him superior health, physical stamina, and energy."
+		],
 		"artifacts": []
 	},
 	{
@@ -300,7 +376,13 @@
 			"Poseidon",
 			"Sally Jackson"
 		],
-		"skills": [],
+		"skills": [
+			"Complete control over water, including the ability to create waves and hurricanes.",
+			"Accelerated healing and increased strength when in contact with water.",
+			"He cannot drown, does not get wet unless he wants to, and can breathe underwater.",
+			"He is a master swordsman.",
+			"He can communicate with sea creatures and horses, such as Pegasus."
+		],
 		"artifacts": [
 			"Riptide",
 			"Wristwatch Shield",
@@ -324,7 +406,10 @@
 			"Aphrodite",
 			"Tristan McLean"
 		],
-		"skills": [],
+		"skills": [
+			"She possesses the rare gift of Charm (Charmsspeak), a magical vocal persuasion ability that compels others to do as she asks.",
+			"She can also speak French fluently and naturally."
+		],
 		"artifacts": [
 			"Katoptris",
 			"Cornucopia"
@@ -341,7 +426,11 @@
 			"Bellona",
 			"Julian Ramírez-Arellano"
 		],
-		"skills": [],
+		"skills": [
+			"The ability to share her own strength, courage, and speed with nearby allies during battle.",
+			"Impeccable military skills",
+			"An excellent hand-to-hand combatant."
+		],
 		"artifacts": [
 			"Imperial Gold Gladius",
 			"Purple Praetor Cloak",
@@ -359,7 +448,11 @@
 		"parents": [
 			"Aphrodite"
 		],
-		"skills": [],
+		"skills": [
+			"Possessed subtle control over the emotions of love and desire, enabling her to manipulate the feelings of others.",
+			"An extraordinarily skilled equestrian, sharing a deep, natural bond with pegasi (especially her pegasus, Pelorus).",
+			"Spoke fluent French naturally, as it is the official \"language of love.\""
+		],
 		"artifacts": []
 	},
 	{
@@ -374,7 +467,12 @@
 			"Zeus",
 			"Beryl Grace"
 		],
-		"skills": [],
+		"skills": [
+			"Ability to shoot and channel powerful bolts of lightning.",
+			"Great physical strength.",
+			"Precision with a bow and arrow, both of which improved after she joined the Huntresses of Artemis.",
+			"She can manipulate the Mist."
+		],
 		"artifacts": [
 			"Aegis",
 			"Magical Spear",
@@ -392,7 +490,11 @@
 		"parents": [
 			"Hermes"
 		],
-		"skills": [],
+		"skills": [
+			"Possess the mystical ability to lock or unlock any type of door, safe, or constraint simply by touching it.",
+			"Can move in absolute silence and steal items from right under someone's nose without being noticed.",
+			"Exceptionally manipulative, clever, and experts at setting complex pranks or traps."
+		],
 		"artifacts": []
 	},
 	{
@@ -407,7 +509,13 @@
 			"Apollo",
 			"Naomi Solace"
 		],
-		"skills": [],
+		"skills": [
+			"Advanced Healing",
+			"Sonic Whistle",
+			"He can emit a bright, warm light from his body, which he uses to illuminate dark spaces or blind opponents.",
+			"Elite Archery",
+			"Musicianship"
+		],
 		"artifacts": []
 	}
 ]

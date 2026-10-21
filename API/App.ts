@@ -43,7 +43,7 @@ app.all("/api/*notfound", notFound_API);
 app.all("/*notfound", notFound);
 
 app.listen(PORT, () => {
-    console.log(`-----------\x1b[34m Percy Jackson API \x1b[0m-----------`);
+    console.log(`\n-----------\x1b[34m Percy Jackson API \x1b[0m-----------`);
     console.log(`|    Started on ${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}     |`);
     console.log(`-----------------------------------------`);
 });

@@ -1,13 +1,23 @@
+import dotenv from "dotenv";
 import { type Request, type Response } from "express";
 import { type categoryArtifact, type Artifact } from "../Types/Artifact.ts";
 import dataArtifacts from '../Data/Artifacts/dataArtifacts.json' with { type: 'json' };
 import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
+dotenv.config();
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = process.env.HOSTAPI || "localhost";
+
+let AllArtifact: Artifact[] = dataArtifacts as Artifact[];
+AllArtifact.forEach(a => a.photoLink && a.photoLink === "/api/picturesNotFound/artifact" ? 
+    a.photoLink = `http://${HOST}:${PORT}${a.photoLink}` : null
+);
+
 const GET_artifactsList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "", category = "", description = "" } = req.query;
 
-        let listArtifacts: Artifact[] = dataArtifacts as Artifact[];
+        let listArtifacts: Artifact[] = AllArtifact;
 
         if (name) listArtifacts = listArtifacts.filter(a => a.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -28,7 +38,7 @@ const GET_artifactsList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of artifacts", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
@@ -37,7 +47,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listArtifacts: Artifact[] = dataArtifacts as Artifact[];
+        const listArtifacts: Artifact[] = AllArtifact;
         let artifactFound: Artifact | undefined | null = null;
 
         if (!name) {
@@ -61,7 +71,7 @@ const GET_artifact = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of artifact", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };

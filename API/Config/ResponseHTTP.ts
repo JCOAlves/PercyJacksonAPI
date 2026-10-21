@@ -30,12 +30,15 @@ class ResponseHTTP {
         this.#error = error;
     };
 
-    showMessage(typeMSG = "") {
-        if (typeMSG === "Error" && this.#error) {
-            console.error(`\x1b[31m [${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}] \x1b[0m - ${this.status} ${this.message}: ${this.#error}`);
+    showMessage() {
+        if (!this.success) {
+            let message = "";
+            if(this.status >= 400 && this.status < 500) message = `\x1b[33m[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}]\x1b[0m - \x1b[31m${this.status} ${this.message} ${this.#error ? `: ${this.#error}` : ""}\x1b[0m`;
+            else if(this.status >= 500 && this.status < 600) message = `\x1b[33m[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}]\x1b[0m - \x1b[35m${this.status} ${this.message} ${this.#error ? `: ${this.#error}` : ""}\x1b[0m`;
+            console.error(message);
 
         } else {
-            console.log(`\x1b[33m[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}]\x1b[0m - ${this.status} ${this.message}`);
+            console.log(`\x1b[33m[${new Date().toLocaleString('pt-br', { timeZone: "America/Sao_Paulo" }).replace(",", "")}]\x1b[0m - \x1b[32m${this.status} ${this.message}\x1b[0m`);
         };
         return;
     };

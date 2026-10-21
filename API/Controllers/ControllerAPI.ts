@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import { type Request, type Response } from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
@@ -20,6 +21,9 @@ import { type Saga } from '../Types/Book.ts';
 
 import ResponseHTTP, { type Data } from '../Config/ResponseHTTP.ts';
 
+dotenv.config();
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = process.env.HOSTAPI || "localhost";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -49,14 +53,37 @@ const GET_allData = (req: Request, res: Response): Response | void => {
                 ...dataDemigod as Demigod[], ...dataCreature as Creature[], 
                 ...dataDivinity as Divinity[], ...dataMortal as Character[]
             ];
+        AllCharacters.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/character" ? 
+            c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+        );
         AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
+
+        let AllArtifact: Artifact[] = dataArtifacts as Artifact[];
+        AllArtifact.forEach(a => a.photoLink && a.photoLink === "/api/picturesNotFound/artifact" ? 
+            a.photoLink = `http://${HOST}:${PORT}${a.photoLink}` : null
+        );
+
+        let AllCabins: Cabin[] = dataCabins as Cabin[];
+        AllCabins.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/cabin" ? 
+            c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+        );
+
+        let AllPlaces: Place[] =  dataPlaces as Place[];
+        AllPlaces.forEach(p => p.photoLink && p.photoLink === "/api/picturesNotFound/place" ? 
+            p.photoLink = `http://${HOST}:${PORT}${p.photoLink}` : null
+        );
+
+        let AllSagas: Saga[] = dataBooks as Saga[];
+        AllSagas.forEach(s => s.books.forEach(b => b.photoLink && b.photoLink === "/api/picturesNotFound/book" ? 
+            b.photoLink = `http://${HOST}:${PORT}${b.photoLink}` : null)
+        );
         
         const Data: Data = {
             characters: AllCharacters,
-            artifacts: dataArtifacts as Artifact[],
-            cabins: dataCabins as Cabin[],
-            places: dataPlaces as Place[],
-            books: dataBooks as Saga[]
+            artifacts: AllArtifact,
+            cabins: AllCabins,
+            places: AllPlaces,
+            books: AllSagas
         };
 
         const responseAPI = new ResponseHTTP(true, 200, "Data successfully listed", Data);

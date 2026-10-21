@@ -1,13 +1,23 @@
+import dotenv from "dotenv";
 import { type Request, type Response } from "express";
 import { type Book, type Saga } from "../Types/Book.ts";
 import dataBooks from '../Data/Books/dataBooks.json' with { type: 'json' };
 import ResponseHTTP from "../Config/ResponseHTTP.ts";
 
+dotenv.config();
+const PORT: number = Number(process.env.PORTAPI) || 3000;
+const HOST: string = process.env.HOSTAPI || "localhost";
+
+let AllSagas: Saga[] = dataBooks as Saga[];
+AllSagas.forEach(s => s.books.forEach(b => b.photoLink && b.photoLink === "/api/picturesNotFound/book" ? 
+    b.photoLink = `http://${HOST}:${PORT}${b.photoLink}` : null)
+);
+
 const GET_sagasList = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.query;
 
-        let listSagas: Saga[] = dataBooks as Saga[];
+        let listSagas: Saga[] = AllSagas;
 
         if (name) listSagas = listSagas.filter(s => s.name.toLowerCase().startsWith(String(name).toLowerCase()));
 
@@ -24,7 +34,7 @@ const GET_sagasList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of sagas", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 }
@@ -33,7 +43,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
     try {
         const { saga = "" } = req.query;
 
-        let listSagas: Saga[] = dataBooks as Saga[];
+        let listSagas: Saga[] = AllSagas;
         let listBooks: Book[] = [];
 
         if (saga) listSagas = listSagas.filter(s => s.name.toLocaleLowerCase().startsWith(String(saga).toLowerCase()));
@@ -53,7 +63,7 @@ const GET_booksList = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of books", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
@@ -62,7 +72,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
     try {
         const { name = "" } = req.params;
 
-        const listSagas: Saga[] = dataBooks as Saga[];
+        const listSagas: Saga[] = AllSagas;
         let sagaFound: Saga | undefined | null = null;
 
         if (!name) {
@@ -86,7 +96,7 @@ const GET_saga = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of saga", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
@@ -95,7 +105,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
     try {
         const { title = "" } = req.params;
 
-        const listSagas: Saga[] = dataBooks as Saga[];
+        const listSagas: Saga[] = AllSagas;
         let listBooks: Book[] = [];
         let bookFound: Book | undefined | null = null;
 
@@ -121,7 +131,7 @@ const GET_book = (req: Request, res: Response): Response | void => {
 
     } catch (error) {
         const responseAPI = new ResponseHTTP(false, 500, "Error in the list of book", null, error);
-        responseAPI.showMessage("Error");
+        responseAPI.showMessage();
         return res.status(500).json(responseAPI.returnJSON());
     };
 };
