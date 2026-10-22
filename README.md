@@ -5,10 +5,12 @@ The project aims to make data from the Percy Jackson universe available for prog
 
 The REST API was built with the framework **Express** using **TypeScript**. The data used in this project comes from the official website of the saga author Rick Riordan [*Rickriordan.com*](https://rickriordan.com/), the publisher of the Percy Jackson books [*Readriordan.com*](https://www.readriordan.com/) and the fan website [*Fandom.com*](https://www.fandom.com/).
 
-[![Project tools](https://skillicons.dev/icons?i=express,ts)](https://skillicons.dev)
+In addition, to promote the project, a web page was created using **HTML**, **CSS**, **Tailwind** and **JavaScript**, where users can test the API and read its documentation.
+
+[![Project tools](https://skillicons.dev/icons?i=express,ts,html,css,tailwind,js)](https://skillicons.dev)
 
 ## How to run the Application locally
-1. Clone the application repository to your local machine: 
+1. Clone the application's GitHub repository to your local machine: 
     ```bash
     git clone https://github.com/JCOAlves/PercyJacksonAPI.git
     ```
