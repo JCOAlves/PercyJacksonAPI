@@ -54,28 +54,28 @@ const GET_allData = (req: Request, res: Response): Response | void => {
                 ...dataDivinity as Divinity[], ...dataMortal as Character[]
             ];
         AllCharacters.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/character" ? 
-            c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+            c.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${c.photoLink}` : null
         );
         AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
 
         let AllArtifact: Artifact[] = dataArtifacts as Artifact[];
         AllArtifact.forEach(a => a.photoLink && a.photoLink === "/api/picturesNotFound/artifact" ? 
-            a.photoLink = `http://${HOST}:${PORT}${a.photoLink}` : null
+            a.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${a.photoLink}` : null
         );
 
         let AllCabins: Cabin[] = dataCabins as Cabin[];
         AllCabins.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/cabin" ? 
-            c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+            c.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${c.photoLink}` : null
         );
 
         let AllPlaces: Place[] =  dataPlaces as Place[];
         AllPlaces.forEach(p => p.photoLink && p.photoLink === "/api/picturesNotFound/place" ? 
-            p.photoLink = `http://${HOST}:${PORT}${p.photoLink}` : null
+            p.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${p.photoLink}` : null
         );
 
         let AllSagas: Saga[] = dataBooks as Saga[];
         AllSagas.forEach(s => s.books.forEach(b => b.photoLink && b.photoLink === "/api/picturesNotFound/book" ? 
-            b.photoLink = `http://${HOST}:${PORT}${b.photoLink}` : null)
+            b.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${b.photoLink}` : null)
         );
         
         const Data: Data = {

@@ -10,7 +10,7 @@ const HOST: string = process.env.HOSTAPI || "localhost";
 
 let AllCabins: Cabin[] = dataCabins as Cabin[];
 AllCabins.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/cabin" ? 
-    c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+    c.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${c.photoLink}` : null
 );
 
 const GET_cabinsList = (req: Request, res: Response): Response | void => {

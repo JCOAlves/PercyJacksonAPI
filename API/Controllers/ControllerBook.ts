@@ -10,7 +10,7 @@ const HOST: string = process.env.HOSTAPI || "localhost";
 
 let AllSagas: Saga[] = dataBooks as Saga[];
 AllSagas.forEach(s => s.books.forEach(b => b.photoLink && b.photoLink === "/api/picturesNotFound/book" ? 
-    b.photoLink = `http://${HOST}:${PORT}${b.photoLink}` : null)
+    b.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${b.photoLink}` : null)
 );
 
 const GET_sagasList = (req: Request, res: Response): Response | void => {

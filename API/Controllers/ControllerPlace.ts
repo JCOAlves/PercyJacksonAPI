@@ -10,7 +10,7 @@ const HOST: string = process.env.HOSTAPI || "localhost";
 
 let AllPlaces: Place[] =  dataPlaces as Place[];
 AllPlaces.forEach(p => p.photoLink && p.photoLink === "/api/picturesNotFound/place" ? 
-    p.photoLink = `http://${HOST}:${PORT}${p.photoLink}` : null
+    p.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${p.photoLink}` : null
 );
 
 const GET_placesList = (req: Request, res: Response): Response | void => {

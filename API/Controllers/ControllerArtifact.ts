@@ -10,7 +10,7 @@ const HOST: string = process.env.HOSTAPI || "localhost";
 
 let AllArtifact: Artifact[] = dataArtifacts as Artifact[];
 AllArtifact.forEach(a => a.photoLink && a.photoLink === "/api/picturesNotFound/artifact" ? 
-    a.photoLink = `http://${HOST}:${PORT}${a.photoLink}` : null
+    a.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${a.photoLink}` : null
 );
 
 const GET_artifactsList = (req: Request, res: Response): Response | void => {

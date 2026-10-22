@@ -16,7 +16,7 @@ let AllCharacters: (Character | Demigod | Divinity | Creature)[] = [
     ...dataDivinity as Divinity[], ...dataMortal as Character[]
 ];
 AllCharacters.forEach(c => c.photoLink && c.photoLink === "/api/picturesNotFound/character" ? 
-    c.photoLink = `http://${HOST}:${PORT}${c.photoLink}` : null
+    c.photoLink = `http://${HOST === "localhost" ? `${HOST}:${PORT}` : HOST}${c.photoLink}` : null
 );
 AllCharacters.sort((a, b) => a.name.localeCompare(b.name));
 
