@@ -7,7 +7,7 @@ The REST API was built with the framework **Express** using **TypeScript**. The 
 
 In addition, to promote the project, a website called [**Percy Jackson API**](https://percy-jackson-api.vercel.app) was created using **HTML**, **CSS**, **Tailwind** and **JavaScript**, where users can test the API and read its documentation.
 
-[![Project tools](https://skillicons.dev/icons?i=express,ts,html,css,tailwind,js)](https://skillicons.dev)
+[![Project tools](https://skillicons.dev/icons?i=express,ts,html,css,tailwind,js,vercel)](https://skillicons.dev)
 
 ## How to run the Application locally
 1. Clone the application's GitHub repository to your local machine: 
