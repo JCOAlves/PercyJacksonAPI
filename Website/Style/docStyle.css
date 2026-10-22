@@ -29,6 +29,7 @@ li code {
     padding: 1px 6px;
     border-radius: 4px;
     font-style: italic;
+    word-break: break-all;
 }
 
 p code {
@@ -36,6 +37,7 @@ p code {
     padding: 1px 6px;
     border-radius: 4px;
     font-style: italic;
+    word-break: break-all;
 }
 
 ::-webkit-scrollbar {
