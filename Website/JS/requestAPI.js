@@ -9,7 +9,8 @@ async function GetData(nameRoute, data = {}) {
         });
         const filters = param.length > 0 ? `?${param.join("&")}` : "";
 
-        let Response = await fetch(`http://localhost:3000/api/${nameRoute}${filters}`);
+        const [HTTP, hostname] = ((window.location.href).split("/")).filter(h => h != "");
+        let Response = await fetch(`${HTTP}//${hostname}/api/${nameRoute}${filters}`);
         let Data = await Response.json();
         return Data;
 
@@ -31,7 +32,7 @@ export default async function RequestingData(event) {
         const Form = document.querySelector("form");
         const dataForm = check_formData(new FormData(Form));
         const ResponseServer = await GetData(nameRoute, dataForm);
-        console.log(ResponseServer)
+
         if (ResponseServer.success) {
             let listData = ResponseServer.data;
             listData = formattingData(listData, nameRoute);

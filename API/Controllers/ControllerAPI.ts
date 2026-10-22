@@ -157,7 +157,7 @@ const notFound_picture = async (req: Request, res: Response, picture: string): P
 const notFound = (req: Request, res: Response): Response | void => {
     try {
         const { notfound } = req.params;
-        const responseAPI = new ResponseHTTP(false, 404, "The \"/${notfound[0]}\" route was not found or the route does not exist");
+        const responseAPI = new ResponseHTTP(false, 404, `The \"/${notfound[0]}\" route was not found or the route does not exist`);
         responseAPI.showMessage();
         return res.status(404).sendFile(path.join(__dirname, "../../Website/Pages", "not-found.html"));
 
